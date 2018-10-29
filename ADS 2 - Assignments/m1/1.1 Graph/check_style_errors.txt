@@ -1,17 +1,7 @@
 Starting audit...
 [ERROR] E:\ADS2\ADS 2 - Assignments\m1\1.1 Graph\Bag.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m1\1.1 Graph\Bag.java:68:21: Parameter item should be final. [FinalParameters]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m1\1.1 Graph\Bag.java:83: Line has trailing spaces. [RegexpSingleline]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m1\1.1 Graph\Bag.java:90:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m1\1.1 Graph\Bag.java:92: Line is longer than 80 characters (found 81). [LineLength]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m1\1.1 Graph\Bag.java:92:35: '{' at column 35 should have line break after. [LeftCurly]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m1\1.1 Graph\Bag.java:93: Line is longer than 80 characters (found 81). [LineLength]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m1\1.1 Graph\Bag.java:93:35: '{' at column 35 should have line break after. [LeftCurly]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m1\1.1 Graph\Bag.java:95:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m1\1.1 Graph\Bag.java:96: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m1\1.1 Graph\Bag.java:98: Line has trailing spaces. [RegexpSingleline]
 Audit done.
-Checkstyle ends with 11 errors.
+Checkstyle ends with 1 errors.
 Starting audit...
 Audit done.
 Starting audit...
