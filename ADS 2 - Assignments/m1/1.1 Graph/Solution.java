@@ -25,7 +25,7 @@ class AdjacencyMatrix implements Graph {
 		return this.edgenum;
 	}
 	public void addEdge(int v, int w) {
-		if(v == w) {
+		if (v == w || hasEdge(v, w)) {
 			return;
 		}
 		adjmatrix[v][w] = 1;
@@ -39,11 +39,11 @@ class AdjacencyMatrix implements Graph {
 		return null;
 	}
 	public String toString() {
-		 if(edgenum == 0) {
-		 	System.out.println(vertexval + " vertices, " + edgenum + " edges");
-		 	System.out.println("No edges");
-		 	return null;
-		 }
+		if (edgenum == 0) {
+			System.out.println(vertexval + " vertices, " + edgenum + " edges");
+			System.out.println("No edges");
+			return null;
+		}
 		System.out.println(vertexval + " vertices, " + edgenum + " edges");
 		for (int i = 0; i < vertexval; i++) {
 			String str = "";

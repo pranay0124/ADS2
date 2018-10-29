@@ -58,14 +58,12 @@ Starting audit...
 [ERROR] E:\ADS2\ADS 2 - Assignments\m1\1.1 Graph\Solution.java:27:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] E:\ADS2\ADS 2 - Assignments\m1\1.1 Graph\Solution.java:27:29: Parameter v should be final. [FinalParameters]
 [ERROR] E:\ADS2\ADS 2 - Assignments\m1\1.1 Graph\Solution.java:27:36: Parameter w should be final. [FinalParameters]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m1\1.1 Graph\Solution.java:28:19: 'if' is not followed by whitespace. [WhitespaceAfter]
 [ERROR] E:\ADS2\ADS 2 - Assignments\m1\1.1 Graph\Solution.java:35:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] E:\ADS2\ADS 2 - Assignments\m1\1.1 Graph\Solution.java:35:32: Parameter v should be final. [FinalParameters]
 [ERROR] E:\ADS2\ADS 2 - Assignments\m1\1.1 Graph\Solution.java:35:39: Parameter w should be final. [FinalParameters]
 [ERROR] E:\ADS2\ADS 2 - Assignments\m1\1.1 Graph\Solution.java:38:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] E:\ADS2\ADS 2 - Assignments\m1\1.1 Graph\Solution.java:38:38: Parameter v should be final. [FinalParameters]
 [ERROR] E:\ADS2\ADS 2 - Assignments\m1\1.1 Graph\Solution.java:41:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m1\1.1 Graph\Solution.java:42:20: 'if' is not followed by whitespace. [WhitespaceAfter]
 [ERROR] E:\ADS2\ADS 2 - Assignments\m1\1.1 Graph\Solution.java:43: Line is longer than 80 characters (found 91). [LineLength]
 [ERROR] E:\ADS2\ADS 2 - Assignments\m1\1.1 Graph\Solution.java:47: Line is longer than 80 characters (found 83). [LineLength]
 [ERROR] E:\ADS2\ADS 2 - Assignments\m1\1.1 Graph\Solution.java:58: Missing a Javadoc comment. [JavadocType]
@@ -76,4 +74,4 @@ Starting audit...
 [ERROR] E:\ADS2\ADS 2 - Assignments\m1\1.1 Graph\Solution.java:70: Line is longer than 80 characters (found 83). [LineLength]
 [ERROR] E:\ADS2\ADS 2 - Assignments\m1\1.1 Graph\Solution.java:73: Line is longer than 80 characters (found 106). [LineLength]
 Audit done.
-Checkstyle ends with 45 errors.
+Checkstyle ends with 43 errors.
