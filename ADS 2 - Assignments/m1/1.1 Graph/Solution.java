@@ -1,16 +1,72 @@
+/**
+ * @author : Pranay Kuamr Y.
+ * Date : 29th October,2018.
+ */
 import java.util.Scanner;
+/**
+ * Interface for graph.
+ */
 interface Graph {
+	/**
+	 * { function for number of vertices }.
+	 *
+	 * @return     { description_of_the_return_value }
+	 */
 	public int V();
+	/**
+	 * { function for number of edges }.
+	 *
+	 * @return     { description_of_the_return_value }
+	 */
 	public int E();
+	/**
+	 * Adds an edge.
+	 *
+	 * @param      v     { parameter_description }
+	 * @param      w     { parameter_description }
+	 */
 	public void addEdge(int v, int w);
+	/**
+	 * { function to get vertices adjacent to v }.
+	 *
+	 * @param      v     { parameter_description }
+	 *
+	 * @return     { description_of_the_return_value }
+	 */
 	public Iterable<Integer> adj(int v);
+	/**
+	 * Determines if it has edge.
+	 *
+	 * @param      v     { parameter_description }
+	 * @param      w     { parameter_description }
+	 *
+	 * @return     True if has edge, False otherwise.
+	 */
 	public boolean hasEdge(int v, int w);
 }
+
+/**==========================================================================
+*          List of adjacencies.
+*==========================================================================*/
 class AdjacencyList implements Graph {
+	/**
+	 * { variable for Bags array }.
+	 */
 	Bag<Integer>[] bags;
+	/**
+	 * { variable for vertex value }.
+	 */
 	private int vertexval;
+	/**
+	 * { variable for edge num }.
+	 */
 	private int edgenum;
-	AdjacencyList(int vertex) {
+	/**
+	 * Constructs the object.
+	 *
+	 * @param      vertex  The vertex
+	 */
+	AdjacencyList(final int vertex) {
 		this.vertexval = vertex;
 		bags = (Bag<Integer>[]) new Bag[vertex];
 		for (int l = 0; l < vertex; l++) {
@@ -18,13 +74,29 @@ class AdjacencyList implements Graph {
 		}
 		this.edgenum = 0;
 	}
+	/**
+	 * { function for number of vertices }.
+	 *
+	 * @return     { description_of_the_return_value }
+	 */
 	public int V() {
 		return this.vertexval;
 	}
+	/**
+	 * { function for number of edges }.
+	 *
+	 * @return     { description_of_the_return_value }
+	 */
 	public int E() {
 		return this.edgenum;
 	}
-	public void addEdge(int v, int w) {
+	/**
+	 * Adds an edge.
+	 *
+	 * @param      v     { parameter_description }
+	 * @param      w     { parameter_description }
+	 */
+	public void addEdge(final int v, final int w) {
 		if (v == w || hasEdge(v, w)) {
 			return;
 		}
@@ -32,7 +104,15 @@ class AdjacencyList implements Graph {
 		bags[w].add(v);
 		edgenum++;
 	}
-	public boolean hasEdge(int v, int w) {
+	/**
+	 * Determines if it has edge.
+	 *
+	 * @param      v     { parameter_description }
+	 * @param      w     { parameter_description }
+	 *
+	 * @return     True if has edge, False otherwise.
+	 */
+	public boolean hasEdge(final int v, final int w) {
 		for (Integer eachval : bags[v]) {
 			if (eachval == w) {
 				return true;
@@ -40,13 +120,25 @@ class AdjacencyList implements Graph {
 		}
 		return false;
 	}
-	public Iterable<Integer> adj(int v) {
+	/**
+	 * { function for Iterator }.
+	 *
+	 * @param      v     { parameter_description }
+	 *
+	 * @return     { description_of_the_return_value }
+	 */
+	public Iterable<Integer> adj(final int v) {
 		Queue<Integer> queue = new Queue<>();
 		for (Integer eachval : bags[v]) {
 			queue.enqueue(eachval);
 		}
 		return queue;
 	}
+	/**
+	 * Returns a string representation of the object.
+	 *
+	 * @return     String representation of the object.
+	 */
 	public String toString() {
 		if (edgenum == 0) {
 			System.out.println(vertexval + " vertices, " + edgenum + " edges");
@@ -57,22 +149,55 @@ class AdjacencyList implements Graph {
 		return null;
 	}
 }
+/**==========================================================================
+*          Class for adjacency matrix.
+*==========================================================================*/
 class AdjacencyMatrix implements Graph {
+	/**
+	 * { variable for edgenum }.
+	 */
 	private int edgenum;
+	/**
+	 * { variable for adj matrix }.
+	 */
 	private int[][] adjmatrix;
+	/**
+	 * { variable for vertex val }.
+	 */
 	private int vertexval;
-	AdjacencyMatrix(int vertex) {
+	/**
+	 * Constructs the object.
+	 *
+	 * @param      vertex  The vertex
+	 */
+	AdjacencyMatrix(final int vertex) {
 		this.vertexval = vertex;
 		adjmatrix = new int[vertex][vertex];
 		this.edgenum = 0;
 	}
+	/**
+	 * { function for number of vertices }.
+	 *
+	 * @return     { description_of_the_return_value }
+	 */
 	public int V() {
 		return this.vertexval;
 	}
+	/**
+	 * { function for number of edges }.
+	 *
+	 * @return     { description_of_the_return_value }
+	 */
 	public int E() {
 		return this.edgenum;
 	}
-	public void addEdge(int v, int w) {
+	/**
+	 * Adds an edge.
+	 *
+	 * @param      v     { parameter_description }
+	 * @param      w     { parameter_description }
+	 */
+	public void addEdge(final int v, final int w) {
 		if (v == w || hasEdge(v, w)) {
 			return;
 		}
@@ -80,12 +205,32 @@ class AdjacencyMatrix implements Graph {
 		adjmatrix[w][v] = 1;
 		edgenum++;
 	}
-	public boolean hasEdge(int v, int w) {
+	/**
+	 * Determines if it has edge.
+	 *
+	 * @param      v     { parameter_description }
+	 * @param      w     { parameter_description }
+	 *
+	 * @return     True if has edge, False otherwise.
+	 */
+	public boolean hasEdge(final int v, final int w) {
 		return adjmatrix[v][w] == 1;
 	}
-	public Iterable<Integer> adj(int v) {
+	/**
+	 * { function for Iterator }.
+	 *
+	 * @param      v     { parameter_description }
+	 *
+	 * @return     { description_of_the_return_value }
+	 */
+	public Iterable<Integer> adj(final int v) {
 		return null;
 	}
+	/**
+	 * Returns a string representation of the object.
+	 *
+	 * @return     String representation of the object.
+	 */
 	public String toString() {
 		if (edgenum == 0) {
 			System.out.println(vertexval + " vertices, " + edgenum + " edges");
@@ -103,8 +248,20 @@ class AdjacencyMatrix implements Graph {
 		return null;
 	}
 }
-class Solution {
-	public static void main(String[] args) {
+/**==========================================================================
+*          Class for adjacency matrix.
+*==========================================================================*/
+final class Solution {
+	/**
+	 * Constructs the object.
+	 */
+	private Solution() { }
+	/**
+	 * Main Function.
+	 *
+	 * @param      args  The arguments
+	 */
+	public static void main(final String[] args) {
 		Scanner scan = new Scanner(System.in);
 		String lineone = scan.nextLine();
 		int vertexnum = Integer.parseInt(scan.nextLine());
