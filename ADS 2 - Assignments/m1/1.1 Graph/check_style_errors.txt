@@ -11,20 +11,8 @@ Audit done.
 Starting audit...
 [ERROR] E:\ADS2\ADS 2 - Assignments\m1\1.1 Graph\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] E:\ADS2\ADS 2 - Assignments\m1\1.1 Graph\Solution.java:10:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m1\1.1 Graph\Solution.java:15:9: Redundant 'public' modifier. [RedundantModifier]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m1\1.1 Graph\Solution.java:21:9: Redundant 'public' modifier. [RedundantModifier]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m1\1.1 Graph\Solution.java:28:9: Redundant 'public' modifier. [RedundantModifier]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m1\1.1 Graph\Solution.java:36:9: Redundant 'public' modifier. [RedundantModifier]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m1\1.1 Graph\Solution.java:45:9: Redundant 'public' modifier. [RedundantModifier]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m1\1.1 Graph\Solution.java:55:24: Variable 'bags' must be private and have accessor methods. [VisibilityModifier]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m1\1.1 Graph\Solution.java:144: Line is longer than 80 characters (found 91). [LineLength]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m1\1.1 Graph\Solution.java:148: Line is longer than 80 characters (found 83). [LineLength]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m1\1.1 Graph\Solution.java:236: Line is longer than 80 characters (found 91). [LineLength]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m1\1.1 Graph\Solution.java:240: Line is longer than 80 characters (found 83). [LineLength]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m1\1.1 Graph\Solution.java:270: Line is longer than 80 characters (found 100). [LineLength]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m1\1.1 Graph\Solution.java:276: switch without "default" clause. [MissingSwitchDefault]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m1\1.1 Graph\Solution.java:281: Line is longer than 80 characters (found 104). [LineLength]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m1\1.1 Graph\Solution.java:298: Line is longer than 80 characters (found 83). [LineLength]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m1\1.1 Graph\Solution.java:301: Line is longer than 80 characters (found 106). [LineLength]
+[ERROR] E:\ADS2\ADS 2 - Assignments\m1\1.1 Graph\Solution.java:274: Line is longer than 80 characters (found 100). [LineLength]
+[ERROR] E:\ADS2\ADS 2 - Assignments\m1\1.1 Graph\Solution.java:280: switch without "default" clause. [MissingSwitchDefault]
+[ERROR] E:\ADS2\ADS 2 - Assignments\m1\1.1 Graph\Solution.java:303: Line is longer than 80 characters (found 83). [LineLength]
 Audit done.
-Checkstyle ends with 17 errors.
+Checkstyle ends with 5 errors.

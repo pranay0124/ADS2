@@ -12,20 +12,20 @@ interface Graph {
 	 *
 	 * @return     { description_of_the_return_value }
 	 */
-	public int numberofVertices();
+	int numberofVertices();
 	/**
 	 * { function for number of edges }.
 	 *
 	 * @return     { description_of_the_return_value }
 	 */
-	public int numberofEdges();
+	int numberofEdges();
 	/**
 	 * Adds an edge.
 	 *
 	 * @param      v     { parameter_description }
 	 * @param      w     { parameter_description }
 	 */
-	public void addEdge(int v, int w);
+	void addEdge(int v, int w);
 	/**
 	 * { function to get vertices adjacent to v }.
 	 *
@@ -33,7 +33,7 @@ interface Graph {
 	 *
 	 * @return     { description_of_the_return_value }
 	 */
-	public Iterable<Integer> adj(int v);
+	Iterable<Integer> adj(int v);
 	/**
 	 * Determines if it has edge.
 	 *
@@ -42,7 +42,7 @@ interface Graph {
 	 *
 	 * @return     True if has edge, False otherwise.
 	 */
-	public boolean hasEdge(int v, int w);
+	boolean hasEdge(int v, int w);
 }
 
 /**==========================================================================
@@ -52,7 +52,7 @@ class AdjacencyList implements Graph {
 	/**
 	 * { variable for Bags array }.
 	 */
-	Bag<Integer>[] bags;
+	private Bag<Integer>[] bags;
 	/**
 	 * { variable for vertex value }.
 	 */
@@ -141,11 +141,13 @@ class AdjacencyList implements Graph {
 	 */
 	public String toString() {
 		if (edgenum == 0) {
-			System.out.println(vertexval + " vertices, " + edgenum + " edges");
+			System.out.println(vertexval + " vertices, "
+			                   + edgenum + " edges");
 			System.out.println("No edges");
 			return null;
 		}
-		System.out.println(vertexval + " vertices, " + edgenum + " edges");
+		System.out.println(vertexval + " vertices, "
+		                   + edgenum + " edges");
 		return null;
 	}
 }
@@ -233,11 +235,13 @@ class AdjacencyMatrix implements Graph {
 	 */
 	public String toString() {
 		if (edgenum == 0) {
-			System.out.println(vertexval + " vertices, " + edgenum + " edges");
+			System.out.println(vertexval + " vertices, "
+			                   + edgenum + " edges");
 			System.out.println("No edges");
 			return null;
 		}
-		System.out.println(vertexval + " vertices, " + edgenum + " edges");
+		System.out.println(vertexval + " vertices, "
+		                   + edgenum + " edges");
 		for (int i = 0; i < vertexval; i++) {
 			String str = "";
 			for (int j = 0; j < vertexval; j++) {
@@ -278,7 +282,8 @@ final class Solution {
 			AdjacencyList listobj = new AdjacencyList(vertexnum);
 			for (int k = 0; k < edgenum; k++) {
 				String[] edges = scan.nextLine().split(" ");
-				listobj.addEdge(Integer.parseInt(edges[0]), Integer.parseInt(edges[1]));
+				listobj.addEdge(Integer.parseInt(edges[0]),
+				                Integer.parseInt(edges[1]));
 			}
 			listobj.toString();
 
@@ -298,7 +303,8 @@ final class Solution {
 			AdjacencyMatrix matrixobj = new AdjacencyMatrix(vertexnum);
 			for (int i = 0; i < edgenum; i++) {
 				String[] edges = scan.nextLine().split(" ");
-				matrixobj.addEdge(Integer.parseInt(edges[0]), Integer.parseInt(edges[1]));
+				matrixobj.addEdge(Integer.parseInt(edges[0]),
+				                  Integer.parseInt(edges[1]));
 			}
 			matrixobj.toString();
 			break;
