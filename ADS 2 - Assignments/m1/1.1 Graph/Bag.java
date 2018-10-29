@@ -10,9 +10,9 @@ import java.util.NoSuchElementException;
  * @param      <Item>  The item
  */
 public class Bag<Item> implements Iterable<Item> {
-	/**
-	 * { number of elements in bag }.
-	 */
+    /**
+     * { number of elements in bag }.
+     */
     private int N;
     /**
      * { beginning of bag }.
@@ -23,9 +23,9 @@ public class Bag<Item> implements Iterable<Item> {
      * helper linked list class
      */
     private class Node {
-    	/**
-    	 * { variable for item }.
-    	 */
+        /**
+         * { variable for item }.
+         */
         private Item item;
         /**
          * { variable for next node }.

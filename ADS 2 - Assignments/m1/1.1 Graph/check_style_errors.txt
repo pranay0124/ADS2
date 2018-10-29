@@ -1,6 +1,5 @@
 Starting audit...
 [ERROR] E:\ADS2\ADS 2 - Assignments\m1\1.1 Graph\Bag.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m1\1.1 Graph\Bag.java:13:1: File contains tab characters (this is the first instance). [FileTabCharacter]
 [ERROR] E:\ADS2\ADS 2 - Assignments\m1\1.1 Graph\Bag.java:16:17: Name 'N' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MemberName]
 [ERROR] E:\ADS2\ADS 2 - Assignments\m1\1.1 Graph\Bag.java:68:21: Parameter item should be final. [FinalParameters]
 [ERROR] E:\ADS2\ADS 2 - Assignments\m1\1.1 Graph\Bag.java:83: Line has trailing spaces. [RegexpSingleline]
@@ -13,7 +12,7 @@ Starting audit...
 [ERROR] E:\ADS2\ADS 2 - Assignments\m1\1.1 Graph\Bag.java:96: 'if' construct must use '{}'s. [NeedBraces]
 [ERROR] E:\ADS2\ADS 2 - Assignments\m1\1.1 Graph\Bag.java:98: Line has trailing spaces. [RegexpSingleline]
 Audit done.
-Checkstyle ends with 13 errors.
+Checkstyle ends with 12 errors.
 Starting audit...
 Audit done.
 Starting audit...
