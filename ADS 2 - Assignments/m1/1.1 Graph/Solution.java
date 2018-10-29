@@ -12,13 +12,13 @@ interface Graph {
 	 *
 	 * @return     { description_of_the_return_value }
 	 */
-	public int V();
+	public int numberofVertices();
 	/**
 	 * { function for number of edges }.
 	 *
 	 * @return     { description_of_the_return_value }
 	 */
-	public int E();
+	public int numberofEdges();
 	/**
 	 * Adds an edge.
 	 *
@@ -79,7 +79,7 @@ class AdjacencyList implements Graph {
 	 *
 	 * @return     { description_of_the_return_value }
 	 */
-	public int V() {
+	public int numberofVertices() {
 		return this.vertexval;
 	}
 	/**
@@ -87,7 +87,7 @@ class AdjacencyList implements Graph {
 	 *
 	 * @return     { description_of_the_return_value }
 	 */
-	public int E() {
+	public int numberofEdges() {
 		return this.edgenum;
 	}
 	/**
@@ -180,7 +180,7 @@ class AdjacencyMatrix implements Graph {
 	 *
 	 * @return     { description_of_the_return_value }
 	 */
-	public int V() {
+	public int numberofVertices() {
 		return this.vertexval;
 	}
 	/**
@@ -188,7 +188,7 @@ class AdjacencyMatrix implements Graph {
 	 *
 	 * @return     { description_of_the_return_value }
 	 */
-	public int E() {
+	public int numberofEdges() {
 		return this.edgenum;
 	}
 	/**
@@ -284,7 +284,7 @@ final class Solution {
 
 			for (int j = 0; j < vertexnum; j++) {
 				String str = "";
-				if (listobj.E() == 0) {
+				if (listobj.numberofEdges() == 0) {
 					break;
 				}
 				str = str + placenames[j] + ": ";
