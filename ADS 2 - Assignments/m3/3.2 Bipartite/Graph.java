@@ -22,7 +22,7 @@ public class Graph {
     /**
      * Constructs the object.
      *
-     * @param      v     { parameter_description }
+     * @param      v1     { parameter_description }
      */
     public Graph(final int v1) {
 // if (V < 0) throw new IllegalArgumentException("Too few vertices");
@@ -39,7 +39,7 @@ public class Graph {
      *
      * @return     { v }
      */
-    public int V() {
+    public int numberofVertices() {
         return v;
     }
     /**
@@ -48,7 +48,9 @@ public class Graph {
      *
      * @return     { e }
      */
-    public int E() { return e; }
+    public int numberofEdges() { 
+        return e;
+    }
 
 
     // add undirected edge v-w
@@ -61,7 +63,9 @@ public class Graph {
      * @param      w1     { vertex2 }
      */
     public void addEdge(final int v1, final int w1) {
-        if (!adj[v1][w1]) e++;
+        if (!adj[v1][w1]) {
+            e++;
+        }
         adj[v1][w1] = true;
         adj[w1][v1] = true;
     }
@@ -118,7 +122,9 @@ public class Graph {
          */
         public boolean hasNext() {
             while (w < v) {
-                if (adj[v1][w]) return true;
+                if (adj[v1][w]) {
+                    return true;
+                }
                 w++;
             }
             return false;
@@ -137,7 +143,4 @@ public class Graph {
         }
 
     }
-
-
-
 }
