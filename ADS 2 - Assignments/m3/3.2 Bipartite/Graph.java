@@ -48,7 +48,7 @@ public class Graph {
      *
      * @return     { e }
      */
-    public int numberofEdges() { 
+    public int numberofEdges() {
         return e;
     }
 
@@ -88,18 +88,18 @@ public class Graph {
      * Class for adj iterator.
      */
     private class AdjIterator implements Iterator<Integer>, Iterable<Integer> {
-        /**
+        /**.
          * { vertex }
          */
         private int v1;
-        /**
+        /**.
          * { edge }
          */
         private int w = 0;
         /**
          * Constructs the object.
          *
-         * @param      v     { vertex }
+         * @param      v2     { vertex }
          */
         AdjIterator(int v2) {
             this.v1 = v2;
@@ -130,7 +130,7 @@ public class Graph {
             return false;
         }
 
-        /**
+        /**.
          * { returns next value }
          *
          * @return     { integer }
