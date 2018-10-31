@@ -101,7 +101,7 @@ public class Graph {
          *
          * @param      v2     { vertex }
          */
-        AdjIterator(int v2) {
+        AdjIterator(final int v2) {
             this.v1 = v2;
         }
 
