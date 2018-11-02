@@ -1,4 +1,4 @@
-########## Testcase 0: Failed ##########
+########## Testcase 0: Passed ##########
 Expected Output: 
 15 vertices, 14 edges 
 0: 
@@ -18,19 +18,35 @@ Expected Output:
 14: 13
 
 Your Output: 
-Digraph@73f792cf
+15 vertices, 14 edges 
+0: 
+1: 0 
+2: 0 
+3: 1 
+4: 1 
+5: 1 
+6: 10 
+7: 3 
+8: 3 
+9: 5 
+10: 5 
+11: 10 
+12: 10 
+13: 6 
+14: 13
 ----------------------------------------
 
-########## Testcase 1: Failed ##########
+########## Testcase 1: Passed ##########
 Expected Output: 
 distance = 7, ancestor = entity
 distance = 10, ancestor = entity
 
 Your Output: 
-IllegalArgumentException
+distance = 7, ancestor = entity
+distance = 10, ancestor = entity
 ----------------------------------------
 
-########## Testcase 2: Failed ##########
+########## Testcase 2: Passed ##########
 Expected Output: 
 distance = 7, ancestor = macromolecule supermolecule
 distance = 7, ancestor = macromolecule supermolecule
@@ -40,17 +56,24 @@ distance = 7, ancestor = lipid lipide lipoid
 distance = 1, ancestor = animal_oil
 
 Your Output: 
-IllegalArgumentException
+distance = 7, ancestor = macromolecule supermolecule
+distance = 7, ancestor = macromolecule supermolecule
+distance = 9, ancestor = macromolecule supermolecule
+distance = 8, ancestor = macromolecule supermolecule
+distance = 7, ancestor = lipid lipide lipoid
+distance = 1, ancestor = animal_oil
 ----------------------------------------
 
-########## Testcase 3: Failed ##########
+########## Testcase 3: Passed ##########
 Expected Output: 
 distance = 3, ancestor = wax
 distance = 13, ancestor = thing
 distance = 2, ancestor = wax
 
 Your Output: 
-IllegalArgumentException
+distance = 3, ancestor = wax
+distance = 13, ancestor = thing
+distance = 2, ancestor = wax
 ----------------------------------------
 
 ########## Testcase 4: Passed ##########
@@ -141,7 +164,7 @@ distance = 3, ancestor = f
 distance = 4, ancestor = f
 ----------------------------------------
 
-########## Testcase 8: Failed ##########
+########## Testcase 8: Passed ##########
 Expected Output: 
 8 vertices, 17 edges 
 0: 7 6 5 4 3 1 
@@ -154,7 +177,15 @@ Expected Output:
 7:
 
 Your Output: 
-Digraph@73f792cf
+8 vertices, 17 edges 
+0: 7 6 5 4 3 1 
+1: 7 
+2: 7 6 5 4 3 1 
+3: 7 
+4: 7 
+5: 7 
+6: 7 
+7:
 ----------------------------------------
 
 ########## Testcase 9: Passed ##########
@@ -189,7 +220,7 @@ Your Output:
 IllegalArgumentException
 ----------------------------------------
 
-########## Testcase 13: Failed ##########
+########## Testcase 13: Passed ##########
 Expected Output: 
 distance = 11, ancestor = whole unit
 distance = 8, ancestor = organism being
@@ -210,7 +241,23 @@ distance = 0, ancestor = era epoch
 distance = 8, ancestor = abstraction abstract_entity
 
 Your Output: 
-IllegalArgumentException
+distance = 11, ancestor = whole unit
+distance = 8, ancestor = organism being
+distance = 14, ancestor = entity
+distance = 13, ancestor = object physical_object
+distance = 2, ancestor = decade decennary decennium
+distance = 8, ancestor = substance
+distance = 2, ancestor = port
+distance = 2, ancestor = letter letter_of_the_alphabet alphabetic_character
+distance = 2, ancestor = letter letter_of_the_alphabet alphabetic_character
+distance = 12, ancestor = person individual someone somebody mortal soul
+distance = 15, ancestor = abstraction abstract_entity
+distance = 0, ancestor = 9/11 9-11 September_11 Sept._11 Sep_11
+distance = 2, ancestor = digit figure
+distance = 13, ancestor = abstraction abstract_entity
+distance = 12, ancestor = abstraction abstract_entity
+distance = 0, ancestor = era epoch
+distance = 8, ancestor = abstraction abstract_entity
 ----------------------------------------
 
 ########## Testcase 14: Passed ##########
