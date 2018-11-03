@@ -8,29 +8,29 @@ class PageRank {
 	PageRank(Digraph graph) {
 		this.pagerankGraph = graph;
 		values = new double[pagerankGraph.V()];
-		finalvalues = new double[pagerankGraph.V()];
 		for (int i = 0; i < pagerankGraph.V(); i++) {
 			// System.out.println(pagerankValue[i] + "before");
 			values[i] = (1.0 / (double)(pagerankGraph.V()));
 			// System.out.println(pagerankValue[i] + "after");
 		}
+		finalvalues = new double[pagerankGraph.V()];
 		updateValue();
 	}
-	Digraph tempdi = pagerankGraph.reverse();
+
 	void updateValue() {
-		for (int i = 0; i < 1000; i++) {
+		for (int i = 1; i < 1000; i++) {
 			for (int j = 0; i < pagerankGraph.V(); j++) {
 				test = 0.0;
-				for (int each : tempdi.adj(j)) {
+				for (int each : pagerankGraph.reverse().adj(j)) {
 					// System.out.println(test + " before");
-					test += (values[each]) / (double)(pagerankGraph.outdegree(each));
+					test = test + ((double)values[each]) / (double)(pagerankGraph.outdegree(each));
 					// System.out.println(test + " after");
 				}
 				finalvalues[j] = test;
 			}
 			values = finalvalues.clone();
 		}
-		for (int k = 0; k < pagerankGraph.V(); k++) {
+		for (int k = 0; k < finalvalues.length; k++) {
 			System.out.print(k + " : " + finalvalues[k] + "\n");
 		}
 	}
