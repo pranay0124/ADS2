@@ -15,12 +15,12 @@ class PageRank {
 		}
 		updateValue();
 	}
-	Digraph tempgraph = pagerankGraph;
+
 	void updateValue() {
 		for (int i = 0; i < 1000; i++) {
 			for (int j = 0; i < pagerankGraph.V(); j++) {
 				double test = 0.0;
-				for (Integer each : tempgraph.adj(j)) {
+				for (Integer each : pagerankGraph.adj(j)) {
 					System.out.println(test + " before");
 					test += (values[each]) / (double)(pagerankGraph.outdegree(each));
 					System.out.println(test + " after");
