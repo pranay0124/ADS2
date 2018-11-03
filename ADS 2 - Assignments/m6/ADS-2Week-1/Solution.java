@@ -15,11 +15,12 @@ public class Solution {
 		// iterate count of vertices times 
 		// to read the adjacency list from std input
 		// and build the graph
+		// int verticescopy = vertices;
 		Digraph digraph = new Digraph(vertices);
 		for(int i=0; i<vertices; i++) {
 			String[] vertex = StdIn.readLine().split(" ");
 			for(int j =1;j<vertex.length;j++) {
-				digraph.addEdge(Integer.parseInt(vertex[0]), Integer.parseInt(vertex[1]));
+				digraph.addEdge(Integer.parseInt(vertex[0]), Integer.parseInt(vertex[j]));
 			}
 		}
 		System.out.println(digraph);
