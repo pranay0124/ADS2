@@ -294,6 +294,8 @@ Starting audit...
 [ERROR] E:\ADS2\ADS 2 - Assignments\m6\ADS-2Week-1\Solution.java:8:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] E:\ADS2\ADS 2 - Assignments\m6\ADS-2Week-1\Solution.java:8:18: Parameter graph should be final. [FinalParameters]
 [ERROR] E:\ADS2\ADS 2 - Assignments\m6\ADS-2Week-1\Solution.java:14:52: 'typecast' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] E:\ADS2\ADS 2 - Assignments\m6\ADS-2Week-1\Solution.java:19:9: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] E:\ADS2\ADS 2 - Assignments\m6\ADS-2Week-1\Solution.java:19:17: Variable 'tempdi' must be private and have accessor methods. [VisibilityModifier]
 [ERROR] E:\ADS2\ADS 2 - Assignments\m6\ADS-2Week-1\Solution.java:20:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] E:\ADS2\ADS 2 - Assignments\m6\ADS-2Week-1\Solution.java:21:37: '1000' is a magic number. [MagicNumber]
 [ERROR] E:\ADS2\ADS 2 - Assignments\m6\ADS-2Week-1\Solution.java:26: Line is longer than 80 characters (found 105). [LineLength]
@@ -308,7 +310,7 @@ Starting audit...
 [ERROR] E:\ADS2\ADS 2 - Assignments\m6\ADS-2Week-1\Solution.java:61: Line is longer than 80 characters (found 89). [LineLength]
 [ERROR] E:\ADS2\ADS 2 - Assignments\m6\ADS-2Week-1\Solution.java:73: Line is longer than 80 characters (found 85). [LineLength]
 Audit done.
-Checkstyle ends with 24 errors.
+Checkstyle ends with 26 errors.
 Starting audit...
 [ERROR] E:\ADS2\ADS 2 - Assignments\m6\ADS-2Week-1\Stack.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] E:\ADS2\ADS 2 - Assignments\m6\ADS-2Week-1\Stack.java:13: Line has trailing spaces. [RegexpSingleline]
