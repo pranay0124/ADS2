@@ -6,9 +6,10 @@ class PageRank {
 	PageRank(Digraph graph) {
 		this.pagerankGraph = graph;
 		pagerankValue = new double[pagerankGraph.V()];
-		System.out.println(pagerankValue);
 		for(int i=0; i< pagerankValue.length;i++) {
+			System.out.println(pagerankValue[i] + "before");
 			pagerankValue[i] = (1.0/(pagerankGraph.V()));
+			System.out.println(pagerankValue[i] + "after");
 		}
 		updateValue();
 	}
