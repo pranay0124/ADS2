@@ -292,9 +292,12 @@ Starting audit...
 [ERROR] E:\ADS2\ADS 2 - Assignments\m6\ADS-2Week-1\Solution.java:7:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] E:\ADS2\ADS 2 - Assignments\m6\ADS-2Week-1\Solution.java:7:18: Parameter graph should be final. [FinalParameters]
 [ERROR] E:\ADS2\ADS 2 - Assignments\m6\ADS-2Week-1\Solution.java:13:52: 'typecast' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] E:\ADS2\ADS 2 - Assignments\m6\ADS-2Week-1\Solution.java:18:9: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] E:\ADS2\ADS 2 - Assignments\m6\ADS-2Week-1\Solution.java:18:17: Variable 'tempgraph' must be private and have accessor methods. [VisibilityModifier]
 [ERROR] E:\ADS2\ADS 2 - Assignments\m6\ADS-2Week-1\Solution.java:19:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] E:\ADS2\ADS 2 - Assignments\m6\ADS-2Week-1\Solution.java:20:37: '1000' is a magic number. [MagicNumber]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m6\ADS-2Week-1\Solution.java:25: Line is longer than 80 characters (found 97). [LineLength]
+[ERROR] E:\ADS2\ADS 2 - Assignments\m6\ADS-2Week-1\Solution.java:25: Line is longer than 80 characters (found 105). [LineLength]
+[ERROR] E:\ADS2\ADS 2 - Assignments\m6\ADS-2Week-1\Solution.java:25:74: 'typecast' is not followed by whitespace. [WhitespaceAfter]
 [ERROR] E:\ADS2\ADS 2 - Assignments\m6\ADS-2Week-1\Solution.java:38: Missing a Javadoc comment. [JavadocType]
 [ERROR] E:\ADS2\ADS 2 - Assignments\m6\ADS-2Week-1\Solution.java:43: Missing a Javadoc comment. [JavadocType]
 [ERROR] E:\ADS2\ADS 2 - Assignments\m6\ADS-2Week-1\Solution.java:43:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
@@ -305,7 +308,7 @@ Starting audit...
 [ERROR] E:\ADS2\ADS 2 - Assignments\m6\ADS-2Week-1\Solution.java:60: Line is longer than 80 characters (found 89). [LineLength]
 [ERROR] E:\ADS2\ADS 2 - Assignments\m6\ADS-2Week-1\Solution.java:72: Line is longer than 80 characters (found 85). [LineLength]
 Audit done.
-Checkstyle ends with 21 errors.
+Checkstyle ends with 24 errors.
 Starting audit...
 [ERROR] E:\ADS2\ADS 2 - Assignments\m6\ADS-2Week-1\Stack.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] E:\ADS2\ADS 2 - Assignments\m6\ADS-2Week-1\Stack.java:13: Line has trailing spaces. [RegexpSingleline]
