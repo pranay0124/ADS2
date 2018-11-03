@@ -2,16 +2,18 @@
 class PageRank {
 	private Digraph pagerankGraph;
 	private double[] pagerankValue;
+	// private int ver = pagerankGraph.V();
 	PageRank(Digraph graph) {
 		this.pagerankGraph = graph;
 		pagerankValue = new double[pagerankGraph.V()];
+		System.out.println(pagerankValue);
 		for(int i=0; i< pagerankValue.length;i++) {
 			pagerankValue[i] = (1.0/(pagerankGraph.V()));
 		}
-		updateprValue();
+		updateValue();
 	}
 
-	void updateprValue() {
+	void updateValue() {
 		for(int i=0;i<1000;i++) {
 			for(int j=0;i<pagerankGraph.V();j++) {
 				double test = 0.0;
