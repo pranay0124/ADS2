@@ -295,7 +295,7 @@ Starting audit...
 [ERROR] E:\ADS2\ADS 2 - Assignments\m6\ADS-2Week-1\Solution.java:8:18: Parameter graph should be final. [FinalParameters]
 [ERROR] E:\ADS2\ADS 2 - Assignments\m6\ADS-2Week-1\Solution.java:13:52: 'typecast' is not followed by whitespace. [WhitespaceAfter]
 [ERROR] E:\ADS2\ADS 2 - Assignments\m6\ADS-2Week-1\Solution.java:20:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m6\ADS-2Week-1\Solution.java:21:37: '104' is a magic number. [MagicNumber]
+[ERROR] E:\ADS2\ADS 2 - Assignments\m6\ADS-2Week-1\Solution.java:21:37: '1000' is a magic number. [MagicNumber]
 [ERROR] E:\ADS2\ADS 2 - Assignments\m6\ADS-2Week-1\Solution.java:24: Line is longer than 80 characters (found 81). [LineLength]
 [ERROR] E:\ADS2\ADS 2 - Assignments\m6\ADS-2Week-1\Solution.java:26: Line is longer than 80 characters (found 119). [LineLength]
 [ERROR] E:\ADS2\ADS 2 - Assignments\m6\ADS-2Week-1\Solution.java:26:64: 'typecast' is not followed by whitespace. [WhitespaceAfter]
