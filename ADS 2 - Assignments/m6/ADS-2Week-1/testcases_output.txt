@@ -18,20 +18,12 @@ Your Output:
 2: 0 
 3: 2 
 
-0.0before
-0.25after
-0.0before
-0.25after
-0.0before
-0.25after
-0.0before
-0.25after
 Exception in thread "main" java.lang.IllegalArgumentException: vertex 4 is not between 0 and 3
 	at Digraph.validateVertex(Digraph.java:156)
 	at Digraph.adj(Digraph.java:182)
-	at PageRank.updateValue(Solution.java:21)
-	at PageRank.<init>(Solution.java:14)
-	at Solution.main(Solution.java:53)
+	at PageRank.updateValue(Solution.java:23)
+	at PageRank.<init>(Solution.java:16)
+	at Solution.main(Solution.java:59)
 ----------------------------------------
 
 ########## Testcase 1: Failed ##########
@@ -54,20 +46,12 @@ Your Output:
 2: 3 0 
 3: 0 
 
-0.0before
-0.25after
-0.0before
-0.25after
-0.0before
-0.25after
-0.0before
-0.25after
 Exception in thread "main" java.lang.IllegalArgumentException: vertex 4 is not between 0 and 3
 	at Digraph.validateVertex(Digraph.java:156)
 	at Digraph.adj(Digraph.java:182)
-	at PageRank.updateValue(Solution.java:21)
-	at PageRank.<init>(Solution.java:14)
-	at Solution.main(Solution.java:53)
+	at PageRank.updateValue(Solution.java:23)
+	at PageRank.<init>(Solution.java:16)
+	at Solution.main(Solution.java:59)
 ----------------------------------------
 
 ########## Testcase 2: Failed ##########
@@ -90,20 +74,12 @@ Your Output:
 2: 3 1 0 
 3: 2 0 
 
-0.0before
-0.25after
-0.0before
-0.25after
-0.0before
-0.25after
-0.0before
-0.25after
 Exception in thread "main" java.lang.IllegalArgumentException: vertex 4 is not between 0 and 3
 	at Digraph.validateVertex(Digraph.java:156)
 	at Digraph.adj(Digraph.java:182)
-	at PageRank.updateValue(Solution.java:21)
-	at PageRank.<init>(Solution.java:14)
-	at Solution.main(Solution.java:53)
+	at PageRank.updateValue(Solution.java:23)
+	at PageRank.<init>(Solution.java:16)
+	at Solution.main(Solution.java:59)
 ----------------------------------------
 
 ########## Testcase 3: Failed ##########
@@ -138,28 +114,12 @@ Your Output:
 6: 0 
 7: 0 
 
-0.0before
-0.125after
-0.0before
-0.125after
-0.0before
-0.125after
-0.0before
-0.125after
-0.0before
-0.125after
-0.0before
-0.125after
-0.0before
-0.125after
-0.0before
-0.125after
 Exception in thread "main" java.lang.IllegalArgumentException: vertex 8 is not between 0 and 7
 	at Digraph.validateVertex(Digraph.java:156)
 	at Digraph.adj(Digraph.java:182)
-	at PageRank.updateValue(Solution.java:21)
-	at PageRank.<init>(Solution.java:14)
-	at Solution.main(Solution.java:53)
+	at PageRank.updateValue(Solution.java:23)
+	at PageRank.<init>(Solution.java:16)
+	at Solution.main(Solution.java:59)
 ----------------------------------------
 
 ########## Testcase 4: Failed ##########
@@ -188,24 +148,12 @@ Your Output:
 4: 0 
 5: 
 
-0.0before
-0.16666666666666666after
-0.0before
-0.16666666666666666after
-0.0before
-0.16666666666666666after
-0.0before
-0.16666666666666666after
-0.0before
-0.16666666666666666after
-0.0before
-0.16666666666666666after
 Exception in thread "main" java.lang.IllegalArgumentException: vertex 6 is not between 0 and 5
 	at Digraph.validateVertex(Digraph.java:156)
 	at Digraph.adj(Digraph.java:182)
-	at PageRank.updateValue(Solution.java:21)
-	at PageRank.<init>(Solution.java:14)
-	at Solution.main(Solution.java:53)
+	at PageRank.updateValue(Solution.java:23)
+	at PageRank.<init>(Solution.java:16)
+	at Solution.main(Solution.java:59)
 ----------------------------------------
 
 ########## Testcase 5: Failed ##########
@@ -240,28 +188,12 @@ Your Output:
 6: 
 7: 
 
-0.0before
-0.125after
-0.0before
-0.125after
-0.0before
-0.125after
-0.0before
-0.125after
-0.0before
-0.125after
-0.0before
-0.125after
-0.0before
-0.125after
-0.0before
-0.125after
 Exception in thread "main" java.lang.IllegalArgumentException: vertex 8 is not between 0 and 7
 	at Digraph.validateVertex(Digraph.java:156)
 	at Digraph.adj(Digraph.java:182)
-	at PageRank.updateValue(Solution.java:21)
-	at PageRank.<init>(Solution.java:14)
-	at Solution.main(Solution.java:53)
+	at PageRank.updateValue(Solution.java:23)
+	at PageRank.<init>(Solution.java:16)
+	at Solution.main(Solution.java:59)
 ----------------------------------------
 
 ########## Testcase 6: Failed ##########
@@ -284,20 +216,12 @@ Your Output:
 2: 3 
 3: 0 
 
-0.0before
-0.25after
-0.0before
-0.25after
-0.0before
-0.25after
-0.0before
-0.25after
 Exception in thread "main" java.lang.IllegalArgumentException: vertex 4 is not between 0 and 3
 	at Digraph.validateVertex(Digraph.java:156)
 	at Digraph.adj(Digraph.java:182)
-	at PageRank.updateValue(Solution.java:21)
-	at PageRank.<init>(Solution.java:14)
-	at Solution.main(Solution.java:53)
+	at PageRank.updateValue(Solution.java:23)
+	at PageRank.<init>(Solution.java:16)
+	at Solution.main(Solution.java:59)
 ----------------------------------------
 
 ########## Testcase 7: Failed ##########
@@ -326,24 +250,12 @@ Your Output:
 4: 0 
 5: 
 
-0.0before
-0.16666666666666666after
-0.0before
-0.16666666666666666after
-0.0before
-0.16666666666666666after
-0.0before
-0.16666666666666666after
-0.0before
-0.16666666666666666after
-0.0before
-0.16666666666666666after
 Exception in thread "main" java.lang.IllegalArgumentException: vertex 6 is not between 0 and 5
 	at Digraph.validateVertex(Digraph.java:156)
 	at Digraph.adj(Digraph.java:182)
-	at PageRank.updateValue(Solution.java:21)
-	at PageRank.<init>(Solution.java:14)
-	at Solution.main(Solution.java:53)
+	at PageRank.updateValue(Solution.java:23)
+	at PageRank.<init>(Solution.java:16)
+	at Solution.main(Solution.java:59)
 ----------------------------------------
 
 ########## Testcase 8: Failed ##########
@@ -366,20 +278,12 @@ Your Output:
 2: 3 1 0 
 3: 2 1 0 
 
-0.0before
-0.25after
-0.0before
-0.25after
-0.0before
-0.25after
-0.0before
-0.25after
 Exception in thread "main" java.lang.IllegalArgumentException: vertex 4 is not between 0 and 3
 	at Digraph.validateVertex(Digraph.java:156)
 	at Digraph.adj(Digraph.java:182)
-	at PageRank.updateValue(Solution.java:21)
-	at PageRank.<init>(Solution.java:14)
-	at Solution.main(Solution.java:53)
+	at PageRank.updateValue(Solution.java:23)
+	at PageRank.<init>(Solution.java:16)
+	at Solution.main(Solution.java:59)
 ----------------------------------------
 
 ########## Testcase 9: Failed ##########
@@ -408,24 +312,12 @@ Your Output:
 4: 0 
 5: 
 
-0.0before
-0.16666666666666666after
-0.0before
-0.16666666666666666after
-0.0before
-0.16666666666666666after
-0.0before
-0.16666666666666666after
-0.0before
-0.16666666666666666after
-0.0before
-0.16666666666666666after
 Exception in thread "main" java.lang.IllegalArgumentException: vertex 6 is not between 0 and 5
 	at Digraph.validateVertex(Digraph.java:156)
 	at Digraph.adj(Digraph.java:182)
-	at PageRank.updateValue(Solution.java:21)
-	at PageRank.<init>(Solution.java:14)
-	at Solution.main(Solution.java:53)
+	at PageRank.updateValue(Solution.java:23)
+	at PageRank.<init>(Solution.java:16)
+	at Solution.main(Solution.java:59)
 ----------------------------------------
 
 ########## Testcase 10: Failed ##########
@@ -442,16 +334,12 @@ Your Output:
 0: 1 
 1: 0 
 
-0.0before
-0.5after
-0.0before
-0.5after
 Exception in thread "main" java.lang.IllegalArgumentException: vertex 2 is not between 0 and 1
 	at Digraph.validateVertex(Digraph.java:156)
 	at Digraph.adj(Digraph.java:182)
-	at PageRank.updateValue(Solution.java:21)
-	at PageRank.<init>(Solution.java:14)
-	at Solution.main(Solution.java:53)
+	at PageRank.updateValue(Solution.java:23)
+	at PageRank.<init>(Solution.java:16)
+	at Solution.main(Solution.java:59)
 ----------------------------------------
 
 ########## Testcase 11: Failed ##########
@@ -503,35 +391,11 @@ Your Output:
 10: 0 
 11: 0 
 
-0.0before
-0.08333333333333333after
-0.0before
-0.08333333333333333after
-0.0before
-0.08333333333333333after
-0.0before
-0.08333333333333333after
-0.0before
-0.08333333333333333after
-0.0before
-0.08333333333333333after
-0.0before
-0.08333333333333333after
-0.0before
-0.08333333333333333after
-0.0before
-0.08333333333333333after
-0.0before
-0.08333333333333333after
-0.0before
-0.08333333333333333after
-0.0before
-0.08333333333333333after
 Exception in thread "main" java.lang.IllegalArgumentException: vertex 12 is not between 0 and 11
 	at Digraph.validateVertex(Digraph.java:156)
 	at Digraph.adj(Digraph.java:182)
-	at PageRank.updateValue(Solution.java:21)
-	at PageRank.<init>(Solution.java:14)
-	at Solution.main(Solution.java:53)
+	at PageRank.updateValue(Solution.java:23)
+	at PageRank.<init>(Solution.java:16)
+	at Solution.main(Solution.java:59)
 ----------------------------------------
 
