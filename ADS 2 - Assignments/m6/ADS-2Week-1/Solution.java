@@ -3,6 +3,7 @@ class PageRank {
 	private Digraph pagerankGraph;
 	private double[] values;
 	private double[] finalvalues;
+	double test;
 	// private int ver = pagerankGraph.V();
 	PageRank(Digraph graph) {
 		this.pagerankGraph = graph;
@@ -19,8 +20,8 @@ class PageRank {
 	void updateValue() {
 		for (int i = 0; i < 1000; i++) {
 			for (int j = 0; i < pagerankGraph.V(); j++) {
-				double test = 0.0;
-				for (Integer each : pagerankGraph.adj(j)) {
+				test = 0.0;
+				for (int each : pagerankGraph.adj(j)) {
 					System.out.println(test + " before");
 					test += (values[each]) / (double)(pagerankGraph.outdegree(each));
 					System.out.println(test + " after");
