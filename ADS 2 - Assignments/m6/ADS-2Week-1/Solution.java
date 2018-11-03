@@ -8,7 +8,7 @@ class PageRank {
 		this.pagerankGraph = graph;
 		values = new double[pagerankGraph.V()];
 		finalvalues = new double[pagerankGraph.V()];
-		for (int i = 0; i < values.length; i++) {
+		for (int i = 0; i < pagerankGraph.V(); i++) {
 			// System.out.println(pagerankValue[i] + "before");
 			values[i] = (1.0 / (double)(pagerankGraph.V()));
 			// System.out.println(pagerankValue[i] + "after");
@@ -21,13 +21,13 @@ class PageRank {
 			for (int j = 0; i < pagerankGraph.V(); j++) {
 				double test = 0.0;
 				for (Integer each : pagerankGraph.adj(j)) {
-					test += (values[each] / pagerankGraph.outdegree(each));
+					test += (values[each]) / (pagerankGraph.outdegree(each));
 				}
 				finalvalues[j] = test;
 			}
 			values = finalvalues.clone();
 		}
-		for (int k = 0; k < finalvalues.length; k++) {
+		for (int k = 0; k < pagerankGraph.V(); k++) {
 			System.out.print(k + " : " + finalvalues[k] + "\n");
 		}
 	}

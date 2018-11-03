@@ -294,7 +294,7 @@ Starting audit...
 [ERROR] E:\ADS2\ADS 2 - Assignments\m6\ADS-2Week-1\Solution.java:13:52: 'typecast' is not followed by whitespace. [WhitespaceAfter]
 [ERROR] E:\ADS2\ADS 2 - Assignments\m6\ADS-2Week-1\Solution.java:19:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] E:\ADS2\ADS 2 - Assignments\m6\ADS-2Week-1\Solution.java:20:37: '1000' is a magic number. [MagicNumber]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m6\ADS-2Week-1\Solution.java:24: Line is longer than 80 characters (found 95). [LineLength]
+[ERROR] E:\ADS2\ADS 2 - Assignments\m6\ADS-2Week-1\Solution.java:24: Line is longer than 80 characters (found 97). [LineLength]
 [ERROR] E:\ADS2\ADS 2 - Assignments\m6\ADS-2Week-1\Solution.java:36: Missing a Javadoc comment. [JavadocType]
 [ERROR] E:\ADS2\ADS 2 - Assignments\m6\ADS-2Week-1\Solution.java:41: Missing a Javadoc comment. [JavadocType]
 [ERROR] E:\ADS2\ADS 2 - Assignments\m6\ADS-2Week-1\Solution.java:41:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
