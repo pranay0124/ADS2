@@ -1,6 +1,27 @@
 
 class PageRank {
-	
+	private Digraph pagerankGraph;
+	private double[] pagerankValue;
+	PageRank(Digraph graph) {
+		this.pagerankGraph = graph;
+		pagerankValue = new double[pagerankGraph.V()];
+		for(int i=0; i< pagerankValue.length;i++) {
+			pagerankValue[i] = (1.0/(pagerankGraph.V()));
+		}
+		updateprValue();
+	}
+
+	void updateprValue() {
+		for(int i=0;i<1000;i++) {
+			for(int j=0;i<pagerankGraph.V();j++) {
+				double test = 0.0;
+				for(Integer each : pagerankGraph.adj(j)) {
+					test += (pagerankValue[each]/pagerankGraph.outdegree(each));
+				}
+				pagerankValue[j] = test;
+			}
+		}
+	}
 }
 
 class WebSearch {
@@ -26,8 +47,10 @@ public class Solution {
 		System.out.println(digraph);
 		
 		// Create page rank object and pass the graph object to the constructor*/
+		PageRank pagerank = new PageRank(digraph);
 		
 		// print the page rank object
+		System.out.println(pagerank);
 		
 		// This part is only for the final test case
 		
