@@ -21,7 +21,9 @@ class PageRank {
 			for (int j = 0; i < pagerankGraph.V(); j++) {
 				double test = 0.0;
 				for (Integer each : pagerankGraph.adj(j)) {
+					System.out.println(test + "before");
 					test += (values[each]) / (pagerankGraph.outdegree(each));
+					System.out.println(test + "after");
 				}
 				finalvalues[j] = test;
 			}
