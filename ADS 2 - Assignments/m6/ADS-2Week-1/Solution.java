@@ -1,4 +1,4 @@
-
+import java.util.Arrays;
 class PageRank {
 	private Digraph pagerankGraph;
 	private double[] values;
@@ -18,7 +18,7 @@ class PageRank {
 	}
 
 	void updateValue() {
-		for (int i = 1; i < 1000; i++) {
+		for (int i = 0; i < 1000; i++) {
 			for (int j = 0; i < pagerankGraph.V(); j++) {
 				test = 0.0;
 				for (int each : pagerankGraph.reverse().adj(j)) {
@@ -28,7 +28,11 @@ class PageRank {
 				}
 				finalvalues[j] = test;
 			}
-			values = finalvalues.clone();
+			if(Arrays.equals(values, finalvalues)) {
+				break;
+			} else {
+				values = finalvalues.clone();
+			}
 		}
 		for (int k = 0; k < finalvalues.length; k++) {
 			System.out.print(k + " : " + finalvalues[k] + "\n");
@@ -45,15 +49,28 @@ public class Solution {
 	public static void main(String[] args) {
 		// read the first line of the input to get the number of vertices
 		int vertices = Integer.parseInt(StdIn.readLine());
+		String[] vertex;
 		// iterate count of vertices times
 		// to read the adjacency list from std input
 		// and build the graph
 		// int verticescopy = vertices;
 		Digraph digraph = new Digraph(vertices);
+		Digraph digraphextra = new Digraph(vertices);
 		for (int i = 0; i < vertices; i++) {
-			String[] vertex = StdIn.readLine().split(" ");
-			for (int j = 1; j < vertex.length; j++) {
-				digraph.addEdge(Integer.parseInt(vertex[0]), Integer.parseInt(vertex[j]));
+			vertex = StdIn.readLine().split(" ");
+			if (vertex.length >= 2) {
+				for (int j = 1; j < vertex.length; j++) {
+					digraph.addEdge(Integer.parseInt(vertex[0]), Integer.parseInt(vertex[j]));
+					digraphextra.addEdge(Integer.parseInt(vertex[0]), Integer.parseInt(vertex[j]));
+				}
+			} else {
+				for(int k=0;k<vertices;k++) {
+					if(k==i) {
+						continue;
+					} else {
+						digraphextra.addEdge(Integer.parseInt(vertex[0]),k);
+					}
+				}
 			}
 		}
 		System.out.println(digraph);
@@ -62,7 +79,6 @@ public class Solution {
 		PageRank pagerank = new PageRank(digraph);
 
 		// print the page rank object
-		System.out.println(pagerank);
 
 		// This part is only for the final test case
 
