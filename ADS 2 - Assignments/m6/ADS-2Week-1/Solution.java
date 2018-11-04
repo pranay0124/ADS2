@@ -28,7 +28,7 @@ class PageRank {
 				}
 				finalvalues[j] = test;
 			}
-			if(Arrays.equals(values, finalvalues)) {
+			if (Arrays.equals(values, finalvalues)) {
 				break;
 			} else {
 				values = finalvalues.clone();
@@ -64,11 +64,11 @@ public class Solution {
 					digraphextra.addEdge(Integer.parseInt(vertex[0]), Integer.parseInt(vertex[j]));
 				}
 			} else {
-				for(int k=0;k<vertices;k++) {
-					if(k==i) {
+				for (int k = 0; k < vertices; k++) {
+					if (k == i) {
 						continue;
 					} else {
-						digraphextra.addEdge(Integer.parseInt(vertex[0]),k);
+						digraphextra.addEdge(Integer.parseInt(vertex[0]), k);
 					}
 				}
 			}
@@ -76,7 +76,7 @@ public class Solution {
 		System.out.println(digraph);
 
 		// Create page rank object and pass the graph object to the constructor*/
-		PageRank pagerank = new PageRank(digraph);
+		PageRank pagerank = new PageRank(digraphextra);
 
 		// print the page rank object
 

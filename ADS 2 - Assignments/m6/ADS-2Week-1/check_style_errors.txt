@@ -300,7 +300,6 @@ Starting audit...
 [ERROR] E:\ADS2\ADS 2 - Assignments\m6\ADS-2Week-1\Solution.java:26: Line is longer than 80 characters (found 119). [LineLength]
 [ERROR] E:\ADS2\ADS 2 - Assignments\m6\ADS-2Week-1\Solution.java:26:64: 'typecast' is not followed by whitespace. [WhitespaceAfter]
 [ERROR] E:\ADS2\ADS 2 - Assignments\m6\ADS-2Week-1\Solution.java:26:88: 'typecast' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m6\ADS-2Week-1\Solution.java:31:27: 'if' is not followed by whitespace. [WhitespaceAfter]
 [ERROR] E:\ADS2\ADS 2 - Assignments\m6\ADS-2Week-1\Solution.java:43: Missing a Javadoc comment. [JavadocType]
 [ERROR] E:\ADS2\ADS 2 - Assignments\m6\ADS-2Week-1\Solution.java:48: Missing a Javadoc comment. [JavadocType]
 [ERROR] E:\ADS2\ADS 2 - Assignments\m6\ADS-2Week-1\Solution.java:48:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
@@ -309,22 +308,11 @@ Starting audit...
 [ERROR] E:\ADS2\ADS 2 - Assignments\m6\ADS-2Week-1\Solution.java:50: Line is longer than 80 characters (found 81). [LineLength]
 [ERROR] E:\ADS2\ADS 2 - Assignments\m6\ADS-2Week-1\Solution.java:63: Line is longer than 80 characters (found 114). [LineLength]
 [ERROR] E:\ADS2\ADS 2 - Assignments\m6\ADS-2Week-1\Solution.java:64: Line is longer than 80 characters (found 119). [LineLength]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m6\ADS-2Week-1\Solution.java:67:36: 'for' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m6\ADS-2Week-1\Solution.java:67:42: '=' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m6\ADS-2Week-1\Solution.java:67:43: '=' is not followed by whitespace. [WhitespaceAround]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m6\ADS-2Week-1\Solution.java:67:45: ';' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m6\ADS-2Week-1\Solution.java:67:46: '<' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m6\ADS-2Week-1\Solution.java:67:47: '<' is not followed by whitespace. [WhitespaceAround]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m6\ADS-2Week-1\Solution.java:67:56: ';' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m6\ADS-2Week-1\Solution.java:68:43: 'if' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m6\ADS-2Week-1\Solution.java:68:45: '==' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m6\ADS-2Week-1\Solution.java:68:47: '==' is not followed by whitespace. [WhitespaceAround]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m6\ADS-2Week-1\Solution.java:71: Line is longer than 80 characters (found 100). [LineLength]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m6\ADS-2Week-1\Solution.java:71:98: ',' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] E:\ADS2\ADS 2 - Assignments\m6\ADS-2Week-1\Solution.java:71: Line is longer than 80 characters (found 101). [LineLength]
 [ERROR] E:\ADS2\ADS 2 - Assignments\m6\ADS-2Week-1\Solution.java:78: Line is longer than 80 characters (found 89). [LineLength]
 [ERROR] E:\ADS2\ADS 2 - Assignments\m6\ADS-2Week-1\Solution.java:89: Line is longer than 80 characters (found 85). [LineLength]
 Audit done.
-Checkstyle ends with 40 errors.
+Checkstyle ends with 28 errors.
 Starting audit...
 [ERROR] E:\ADS2\ADS 2 - Assignments\m6\ADS-2Week-1\Stack.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] E:\ADS2\ADS 2 - Assignments\m6\ADS-2Week-1\Stack.java:13: Line has trailing spaces. [RegexpSingleline]
