@@ -1,3 +1,4 @@
+
 import java.util.Arrays;
 class PageRank {
 	private Digraph pagerankGraph;
@@ -16,7 +17,6 @@ class PageRank {
 		finalvalues = new double[pagerankGraph.V()];
 		updateValue();
 	}
-
 	void updateValue() {
 		for (int i = 0; i < 1000; i++) {
 			for (int j = 0; j < pagerankGraph.V(); j++) {
