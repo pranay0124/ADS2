@@ -35,7 +35,7 @@ class PageRank {
 			}
 		}
 		for (int k = 0; k < finalvalues.length; k++) {
-			System.out.print(k + " : " + finalvalues[k] + "\n");
+			System.out.print(k + " - " + finalvalues[k] + "\n");
 		}
 	}
 }
