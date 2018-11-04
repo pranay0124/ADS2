@@ -19,7 +19,7 @@ class PageRank {
 
 	void updateValue() {
 		for (int i = 0; i < 1000; i++) {
-			for (int j = 0; i < pagerankGraph.V(); j++) {
+			for (int j = 0; j < pagerankGraph.V(); j++) {
 				test = 0.0;
 				for (int each : pagerankGraph.reverse().adj(j)) {
 					// System.out.println(test + " before");
