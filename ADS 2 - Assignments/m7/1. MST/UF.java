@@ -35,6 +35,7 @@ public class UF {
 
     /**
      * Searches for the first match.
+     * its complexity is O(N)
      *
      * @param      p     { parameter_description }
      *
@@ -51,7 +52,8 @@ public class UF {
 
     /**
      * Returns the number of components.
-     *
+     * its complexity is O(1)
+     * 
      * @return the number of components
      */
     public int count() {
@@ -60,6 +62,7 @@ public class UF {
 
     /**
      * Returns true if the the two sites are in the same component.
+     * its complexity is O(1)
      *
      * @param      p     { parameter_description }
      * @param      q     The quarter
@@ -73,6 +76,8 @@ public class UF {
     /**
      * Merges the component containing site p with the
      * the component containing site q.
+     * 
+     * its complexity is O(1)
      *
      * @param      p     { parameter_description }
      * @param      q     The quarter
@@ -97,6 +102,7 @@ public class UF {
 
     /**
      * validate that p is a valid index.
+     * its complexity is O(1)
      *
      * @param      p     { parameter_description }
      */
