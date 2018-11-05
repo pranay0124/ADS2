@@ -2,25 +2,16 @@ Starting audit...
 Audit done.
 Starting audit...
 [ERROR] E:\ADS2\ADS 2 - Assignments\m7\1. MST\Edge.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m7\1. MST\Edge.java:3: Line has trailing spaces. [RegexpSingleline]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m7\1. MST\Edge.java:10: Line has trailing spaces. [RegexpSingleline]
 [ERROR] E:\ADS2\ADS 2 - Assignments\m7\1. MST\Edge.java:11:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m7\1. MST\Edge.java:31:27: 'v' hides a field. [HiddenField]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m7\1. MST\Edge.java:31:40: 'w' hides a field. [HiddenField]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m7\1. MST\Edge.java:31:56: 'weight' hides a field. [HiddenField]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m7\1. MST\Edge.java:32: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m7\1. MST\Edge.java:32: Line is longer than 80 characters (found 100). [LineLength]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m7\1. MST\Edge.java:33: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m7\1. MST\Edge.java:33: Line is longer than 80 characters (found 100). [LineLength]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m7\1. MST\Edge.java:34: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m7\1. MST\Edge.java:34: Line is longer than 80 characters (found 86). [LineLength]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m7\1. MST\Edge.java:59: Line is longer than 80 characters (found 81). [LineLength]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m7\1. MST\Edge.java:66: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m7\1. MST\Edge.java:67: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m7\1. MST\Edge.java:68: 'else' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m7\1. MST\Edge.java:79:26: Parameter that should be final. [FinalParameters]
+[ERROR] E:\ADS2\ADS 2 - Assignments\m7\1. MST\Edge.java:31:31: 'v' hides a field. [HiddenField]
+[ERROR] E:\ADS2\ADS 2 - Assignments\m7\1. MST\Edge.java:31:44: 'w' hides a field. [HiddenField]
+[ERROR] E:\ADS2\ADS 2 - Assignments\m7\1. MST\Edge.java:31:60: 'weight' hides a field. [HiddenField]
+[ERROR] E:\ADS2\ADS 2 - Assignments\m7\1. MST\Edge.java:33: Line is longer than 80 characters (found 105). [LineLength]
+[ERROR] E:\ADS2\ADS 2 - Assignments\m7\1. MST\Edge.java:36: Line is longer than 80 characters (found 105). [LineLength]
+[ERROR] E:\ADS2\ADS 2 - Assignments\m7\1. MST\Edge.java:65: Line is longer than 80 characters (found 85). [LineLength]
+[ERROR] E:\ADS2\ADS 2 - Assignments\m7\1. MST\Edge.java:89:30: Parameter that should be final. [FinalParameters]
 Audit done.
-Checkstyle ends with 18 errors.
+Checkstyle ends with 9 errors.
 Starting audit...
 [ERROR] E:\ADS2\ADS 2 - Assignments\m7\1. MST\EdgeWeightedGraph.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] E:\ADS2\ADS 2 - Assignments\m7\1. MST\EdgeWeightedGraph.java:12: Line has trailing spaces. [RegexpSingleline]
