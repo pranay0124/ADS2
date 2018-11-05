@@ -7,7 +7,7 @@ class Solution {
 		EdgeWeightedGraph edgewtGraph = new EdgeWeightedGraph(vertices);
 		while (scan.hasNext()) {
 			String[] tokens = scan.nextLine().split(" ");
-			edgewtGraph.addEdge(new Edge(Integer.parseInt(tokens[0]), Integer.parseInt(tokens[1]), Integer.parseInt(tokens[2])));
+			edgewtGraph.addEdge(new Edge(Integer.parseInt(tokens[0]), Integer.parseInt(tokens[1]), Double.parseDouble(tokens[2])));
 		}
 		KruskalMST kruskal = new KruskalMST(edgewtGraph);
 		System.out.format("%.5f", kruskal.weight());

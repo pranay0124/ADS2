@@ -264,7 +264,7 @@ Starting audit...
 [ERROR] E:\ADS2\ADS 2 - Assignments\m7\1. MST\Solution.java:3:1: File contains tab characters (this is the first instance). [FileTabCharacter]
 [ERROR] E:\ADS2\ADS 2 - Assignments\m7\1. MST\Solution.java:3:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] E:\ADS2\ADS 2 - Assignments\m7\1. MST\Solution.java:3:33: Parameter args should be final. [FinalParameters]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m7\1. MST\Solution.java:10: Line is longer than 80 characters (found 141). [LineLength]
+[ERROR] E:\ADS2\ADS 2 - Assignments\m7\1. MST\Solution.java:10: Line is longer than 80 characters (found 143). [LineLength]
 Audit done.
 Checkstyle ends with 6 errors.
 Starting audit...
