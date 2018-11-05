@@ -26,7 +26,7 @@ class PageRank {
     /**
      * variable for thousand.
      */
-    private int thousand = 1000;
+    private final int thousand = 1000;
     /**
      * Constructs the object.
      * @param graph The graph
@@ -86,7 +86,7 @@ public final class Solution {
      *
      * @param args Solution
      */
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
         // read the first line of the input to get the number of vertices
         int vertices = Integer.parseInt(StdIn.readLine());
         String[] vertex;
