@@ -14,11 +14,9 @@ Audit done.
 Checkstyle ends with 9 errors.
 Starting audit...
 [ERROR] E:\ADS2\ADS 2 - Assignments\m7\1. MST\EdgeWeightedGraph.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m7\1. MST\EdgeWeightedGraph.java:133:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m7\1. MST\EdgeWeightedGraph.java:136: Line is longer than 80 characters (found 84). [LineLength]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m7\1. MST\EdgeWeightedGraph.java:197: 'if' construct must use '{}'s. [NeedBraces]
+[ERROR] E:\ADS2\ADS 2 - Assignments\m7\1. MST\EdgeWeightedGraph.java:140: Line is longer than 80 characters (found 84). [LineLength]
 Audit done.
-Checkstyle ends with 4 errors.
+Checkstyle ends with 2 errors.
 Starting audit...
 [ERROR] E:\ADS2\ADS 2 - Assignments\m7\1. MST\KruskalMST.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] E:\ADS2\ADS 2 - Assignments\m7\1. MST\KruskalMST.java:12: Line has trailing spaces. [RegexpSingleline]

@@ -129,7 +129,11 @@ public class EdgeWeightedGraph {
         return edges;
     }
 
-    // throw an IllegalArgumentException unless {@code 0 <= v < V}
+    /**
+     * throw an IllegalArgumentException unless 0 <= v < V.
+     *
+     * @param      v     { parameter_description }
+     */
     private void validateVertex(final int v) {
         if (v < 0 || v >= vertices) {
             throw new IllegalArgumentException("vertex " + v + " is not"
@@ -194,7 +198,9 @@ public class EdgeWeightedGraph {
                 if (e.other(v) > v) {
                     list.add(e);
                 } else if (e.other(v) == v) {
-                    if (selfLoops % 2 == 0) list.add(e);
+                    if (selfLoops % 2 == 0) {
+                        list.add(e);
+                    }
                     selfLoops++;
                 }
             }
