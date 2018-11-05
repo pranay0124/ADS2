@@ -18,7 +18,7 @@ public class KruskalMST {
     /**
      * Constructs the object.
      *
-     * @param      G     { parameter_description }
+     * @param      graph     { parameter_description }
      */
     public KruskalMST(final EdgeWeightedGraph graph) {
         // more efficient to build heap by passing array of edges
@@ -52,8 +52,11 @@ public class KruskalMST {
     }
 
     /**
-     * Returns the sum of the edge weights in a minimum spanning tree (or forest).
-     * @return the sum of the edge weights in a minimum spanning tree (or forest)
+     * Returns the sum of the edge weights in a
+     * minimum spanning tree (or forest).
+     * 
+     * @return the sum of the edge weights in a
+     *         minimum spanning tree (or forest)
      */
     public double weight() {
         return weight;
@@ -62,7 +65,7 @@ public class KruskalMST {
     /**
      * check optimality conditions.
      *
-     * @param      G     { parameter_description }
+     * @param      graph     { parameter_description }
      *
      * @return     { description_of_the_return_value }
      */

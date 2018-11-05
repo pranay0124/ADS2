@@ -10,18 +10,13 @@ Audit done.
 Checkstyle ends with 1 errors.
 Starting audit...
 [ERROR] E:\ADS2\ADS 2 - Assignments\m7\1. MST\KruskalMST.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m7\1. MST\KruskalMST.java:21:8: Unused @param tag for 'G'. [JavadocMethod]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m7\1. MST\KruskalMST.java:23:47: Expected @param tag for 'graph'. [JavadocMethod]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m7\1. MST\KruskalMST.java:55: Line is longer than 80 characters (found 82). [LineLength]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m7\1. MST\KruskalMST.java:56: Line is longer than 80 characters (found 81). [LineLength]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m7\1. MST\KruskalMST.java:61: Line has trailing spaces. [RegexpSingleline]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m7\1. MST\KruskalMST.java:65:8: Unused @param tag for 'G'. [JavadocMethod]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m7\1. MST\KruskalMST.java:69:51: Expected @param tag for 'graph'. [JavadocMethod]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m7\1. MST\KruskalMST.java:100: Line is longer than 80 characters (found 81). [LineLength]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m7\1. MST\KruskalMST.java:110: Line has trailing spaces. [RegexpSingleline]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m7\1. MST\KruskalMST.java:116: Line is longer than 80 characters (found 96). [LineLength]
+[ERROR] E:\ADS2\ADS 2 - Assignments\m7\1. MST\KruskalMST.java:57: Line has trailing spaces. [RegexpSingleline]
+[ERROR] E:\ADS2\ADS 2 - Assignments\m7\1. MST\KruskalMST.java:64: Line has trailing spaces. [RegexpSingleline]
+[ERROR] E:\ADS2\ADS 2 - Assignments\m7\1. MST\KruskalMST.java:103: Line is longer than 80 characters (found 81). [LineLength]
+[ERROR] E:\ADS2\ADS 2 - Assignments\m7\1. MST\KruskalMST.java:113: Line has trailing spaces. [RegexpSingleline]
+[ERROR] E:\ADS2\ADS 2 - Assignments\m7\1. MST\KruskalMST.java:119: Line is longer than 80 characters (found 96). [LineLength]
 Audit done.
-Checkstyle ends with 11 errors.
+Checkstyle ends with 6 errors.
 Starting audit...
 Audit done.
 Starting audit...
