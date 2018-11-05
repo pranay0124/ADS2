@@ -26,7 +26,7 @@ class PageRank {
     /**
      * variable for thousand.
      */
-    private int thousand;
+    private int thousand = 1000;
     /**
      * Constructs the object.
      * @param graph The graph
