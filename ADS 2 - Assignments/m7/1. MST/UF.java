@@ -37,11 +37,12 @@ public class UF {
      * Searches for the first match.
      * its complexity is O(N)
      *
-     * @param      p     { parameter_description }
+     * @param      p1     { parameter_description }
      *
      * @return     { description_of_the_return_value }
      */
-    public int find(final int p) {
+    public int find(final int p1) {
+    	final int p = p1;
         validate(p);
         while (p != parent[p]) {
             parent[p] = parent[parent[p]];
