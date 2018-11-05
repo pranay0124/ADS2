@@ -51,8 +51,8 @@ class PageRank {
                 test = 0.0;
                 for (int each : pagerankGraph.reverse().adj(j)) {
                     // System.out.println(test + " before");
-                    test = test + ((double)values[each]) /
-                           (double)(pagerankGraph.outdegree(each));
+                    test = test + ((double) values[each])
+                           / (double) (pagerankGraph.outdegree(each));
                     // System.out.println(test + " after");
                 }
                 finalvalues[j] = test;
@@ -83,6 +83,8 @@ public final class Solution {
     private Solution() { }
     /**
      * Main Solution.
+     * 
+     * @param args Solution
      */
     public static void main(String[] args) {
         // read the first line of the input to get the number of vertices
