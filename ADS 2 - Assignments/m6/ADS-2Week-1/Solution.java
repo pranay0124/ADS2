@@ -1,11 +1,32 @@
-
+/**
+ * @author : Pranay Kuamr Y.
+ * Date : 5th November,2018.
+ */
 import java.util.Arrays;
+/**
+ * class Page Rank.
+ */
 class PageRank {
+	/**
+	 * pagerank digraph.
+	 */
 	private Digraph pagerankGraph;
+	/**
+	 * array for values.
+	 */
 	private double[] values;
+	/**
+	 * array for final values.
+	 */
 	private double[] finalvalues;
+	/**
+	 * variable for test.
+	 */
 	double test;
-	// private int ver = pagerankGraph.V();
+	/**
+	 * Constructs the object.
+	 * @param graph
+	 */
 	PageRank(Digraph graph) {
 		this.pagerankGraph = graph;
 		values = new double[pagerankGraph.V()];
@@ -17,6 +38,9 @@ class PageRank {
 		finalvalues = new double[pagerankGraph.V()];
 		updateValue();
 	}
+	/**
+	 * function for update value.
+	 */
 	void updateValue() {
 		for (int i = 0; i < 1000; i++) {
 			for (int j = 0; j < pagerankGraph.V(); j++) {
@@ -40,12 +64,21 @@ class PageRank {
 	}
 }
 
-class WebSearch {
+// class WebSearch {
 
-}
+// }
 
-
-public class Solution {
+/**
+ * class Solution.
+ */
+public final class Solution {
+	/**
+	 * Constructor.
+	 */
+	private Solution() { }
+	/**
+     * Main Solution.
+     */
 	public static void main(String[] args) {
 		// read the first line of the input to get the number of vertices
 		int vertices = Integer.parseInt(StdIn.readLine());
