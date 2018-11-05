@@ -103,13 +103,15 @@ public class UF {
     private void validate(final int p) {
         int n = parent.length;
         if (p < 0 || p >= n) {
-            throw new IllegalArgumentException("index " + p + " is not between 0 and " + (n - 1));
+            throw new IllegalArgumentException("index " + p + " is not"
+                                               + "between 0 and " + (n - 1));
         }
     }
 
     // /**
     //  * Reads in a an integer {@code n} and a sequence of pairs of integers
-    //  * (between {@code 0} and {@code n-1}) from standard input, where each integer
+    //  * (between {@code 0} and {@code n-1}) from standard input,
+    //    where each integer
     //  * in the pair represents some site;
     //  * if the sites are in different components, merge the two components
     //  * and print the pair to standard output.

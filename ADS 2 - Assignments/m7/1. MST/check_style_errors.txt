@@ -247,7 +247,4 @@ Starting audit...
 Audit done.
 Checkstyle ends with 56 errors.
 Starting audit...
-[ERROR] E:\ADS2\ADS 2 - Assignments\m7\1. MST\UF.java:106: Line is longer than 80 characters (found 98). [LineLength]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m7\1. MST\UF.java:112: Line is longer than 80 characters (found 85). [LineLength]
 Audit done.
-Checkstyle ends with 2 errors.
