@@ -42,7 +42,7 @@ public class UF {
      * @return     { description_of_the_return_value }
      */
     public int find(final int p1) {
-    	final int p = p1;
+        final int p = p1;
         validate(p);
         while (p != parent[p]) {
             parent[p] = parent[parent[p]];
@@ -54,7 +54,7 @@ public class UF {
     /**
      * Returns the number of components.
      * its complexity is O(1)
-     * 
+     *
      * @return the number of components
      */
     public int count() {
@@ -77,7 +77,7 @@ public class UF {
     /**
      * Merges the component containing site p with the
      * the component containing site q.
-     * 
+     *
      * its complexity is O(1)
      *
      * @param      p     { parameter_description }
