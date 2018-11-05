@@ -17,14 +17,10 @@ Audit done.
 Starting audit...
 Audit done.
 Starting audit...
-[ERROR] E:\ADS2\ADS 2 - Assignments\m7\1. MST\Solution.java:2: Missing a Javadoc comment. [JavadocType]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m7\1. MST\Solution.java:2:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m7\1. MST\Solution.java:3:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m7\1. MST\Solution.java:3:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m7\1. MST\Solution.java:3:33: Parameter args should be final. [FinalParameters]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m7\1. MST\Solution.java:10: Line is longer than 80 characters (found 143). [LineLength]
+[ERROR] E:\ADS2\ADS 2 - Assignments\m7\1. MST\Solution.java:10:1: File contains tab characters (this is the first instance). [FileTabCharacter]
+[ERROR] E:\ADS2\ADS 2 - Assignments\m7\1. MST\Solution.java:26: Line is longer than 80 characters (found 143). [LineLength]
 Audit done.
-Checkstyle ends with 6 errors.
+Checkstyle ends with 2 errors.
 Starting audit...
 Audit done.
 Starting audit...
