@@ -54,14 +54,14 @@ public class KruskalMST {
     /**
      * Returns the sum of the edge weights in a
      * minimum spanning tree (or forest).
-     * 
+     *
      * @return the sum of the edge weights in a
      *         minimum spanning tree (or forest)
      */
     public double weight() {
         return weight;
     }
-    
+
     /**
      * check optimality conditions.
      *
@@ -77,7 +77,7 @@ public class KruskalMST {
         }
         if (Math.abs(total - weight()) > FLOATING_POINT_EPSILON) {
             System.err.printf("Weight of edges does not equal"
-                + "weight(): %f vs. %f\n", total, weight());
+                              + "weight(): %f vs. %f\n", total, weight());
             return false;
         }
         // check that it is acyclic
@@ -100,7 +100,7 @@ public class KruskalMST {
             }
         }
 
-        // check that it is a minimal spanning forest (cut optimality conditions)
+        // check that it is a minimal spanning forest
         for (Edge e : edges()) {
             // all edges in MST except e
             uf = new UF(graph.numberofVertices());
@@ -110,13 +110,14 @@ public class KruskalMST {
                     uf.union(x, y);
                 }
             }
-            
+
             // check that e is min weight edge in crossing cut
             for (Edge f : graph.edges()) {
                 int x = f.either(), y = f.other(x);
                 if (!uf.connected(x, y)) {
                     if (f.weight() < e.weight()) {
-                        System.err.println("Edge " + f + " violates cut optimality conditions");
+                        System.err.println("Edge " + f
+                        + " violates cut optimality conditions");
                         return false;
                     }
                 }
