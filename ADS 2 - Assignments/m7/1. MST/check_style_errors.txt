@@ -10,27 +10,18 @@ Audit done.
 Checkstyle ends with 1 errors.
 Starting audit...
 [ERROR] E:\ADS2\ADS 2 - Assignments\m7\1. MST\KruskalMST.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m7\1. MST\KruskalMST.java:12: Line has trailing spaces. [RegexpSingleline]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m7\1. MST\KruskalMST.java:43: Line has trailing spaces. [RegexpSingleline]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m7\1. MST\KruskalMST.java:51: Line is longer than 80 characters (found 85). [LineLength]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m7\1. MST\KruskalMST.java:65:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m7\1. MST\KruskalMST.java:67:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m7\1. MST\KruskalMST.java:68:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m7\1. MST\KruskalMST.java:74:23: Parameter G should be final. [FinalParameters]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m7\1. MST\KruskalMST.java:74:41: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m7\1. MST\KruskalMST.java:108: Line is longer than 80 characters (found 82). [LineLength]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m7\1. MST\KruskalMST.java:109: Line is longer than 80 characters (found 81). [LineLength]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m7\1. MST\KruskalMST.java:114: Line has trailing spaces. [RegexpSingleline]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m7\1. MST\KruskalMST.java:116:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m7\1. MST\KruskalMST.java:116:27: Parameter G should be final. [FinalParameters]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m7\1. MST\KruskalMST.java:116:45: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m7\1. MST\KruskalMST.java:124: Line is longer than 80 characters (found 103). [LineLength]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m7\1. MST\KruskalMST.java:148: Line is longer than 80 characters (found 81). [LineLength]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m7\1. MST\KruskalMST.java:155: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m7\1. MST\KruskalMST.java:157: Line has trailing spaces. [RegexpSingleline]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m7\1. MST\KruskalMST.java:163: Line is longer than 80 characters (found 96). [LineLength]
+[ERROR] E:\ADS2\ADS 2 - Assignments\m7\1. MST\KruskalMST.java:21:8: Unused @param tag for 'G'. [JavadocMethod]
+[ERROR] E:\ADS2\ADS 2 - Assignments\m7\1. MST\KruskalMST.java:23:47: Expected @param tag for 'graph'. [JavadocMethod]
+[ERROR] E:\ADS2\ADS 2 - Assignments\m7\1. MST\KruskalMST.java:55: Line is longer than 80 characters (found 82). [LineLength]
+[ERROR] E:\ADS2\ADS 2 - Assignments\m7\1. MST\KruskalMST.java:56: Line is longer than 80 characters (found 81). [LineLength]
+[ERROR] E:\ADS2\ADS 2 - Assignments\m7\1. MST\KruskalMST.java:61: Line has trailing spaces. [RegexpSingleline]
+[ERROR] E:\ADS2\ADS 2 - Assignments\m7\1. MST\KruskalMST.java:65:8: Unused @param tag for 'G'. [JavadocMethod]
+[ERROR] E:\ADS2\ADS 2 - Assignments\m7\1. MST\KruskalMST.java:69:51: Expected @param tag for 'graph'. [JavadocMethod]
+[ERROR] E:\ADS2\ADS 2 - Assignments\m7\1. MST\KruskalMST.java:100: Line is longer than 80 characters (found 81). [LineLength]
+[ERROR] E:\ADS2\ADS 2 - Assignments\m7\1. MST\KruskalMST.java:110: Line has trailing spaces. [RegexpSingleline]
+[ERROR] E:\ADS2\ADS 2 - Assignments\m7\1. MST\KruskalMST.java:116: Line is longer than 80 characters (found 96). [LineLength]
 Audit done.
-Checkstyle ends with 20 errors.
+Checkstyle ends with 11 errors.
 Starting audit...
 Audit done.
 Starting audit...
