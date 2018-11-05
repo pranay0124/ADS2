@@ -5,25 +5,14 @@ Audit done.
 Starting audit...
 Audit done.
 Starting audit...
-[ERROR] E:\ADS2\ADS 2 - Assignments\m6\ADS-2Week-1\Solution.java:10:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m6\ADS-2Week-1\Solution.java:29:32: '1000' is a magic number. [MagicNumber]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m6\ADS-2Week-1\Solution.java:52: Line is longer than 80 characters (found 81). [LineLength]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m6\ADS-2Week-1\Solution.java:54:64: 'typecast' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m6\ADS-2Week-1\Solution.java:54:78: '/' should be on a new line. [OperatorWrap]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m6\ADS-2Week-1\Solution.java:55: Line is longer than 80 characters (found 87). [LineLength]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m6\ADS-2Week-1\Solution.java:55:56: 'typecast' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m6\ADS-2Week-1\Solution.java:87:33: Parameter args should be final. [FinalParameters]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m6\ADS-2Week-1\Solution.java:87:42: Expected @param tag for 'args'. [JavadocMethod]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m6\ADS-2Week-1\Solution.java:88: Line is longer than 80 characters (found 81). [LineLength]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m6\ADS-2Week-1\Solution.java:101: Line is longer than 80 characters (found 84). [LineLength]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m6\ADS-2Week-1\Solution.java:102: Line is longer than 80 characters (found 85). [LineLength]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m6\ADS-2Week-1\Solution.java:103: Line is longer than 80 characters (found 89). [LineLength]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m6\ADS-2Week-1\Solution.java:104: Line is longer than 80 characters (found 90). [LineLength]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m6\ADS-2Week-1\Solution.java:111: Line is longer than 80 characters (found 101). [LineLength]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m6\ADS-2Week-1\Solution.java:118: Line is longer than 80 characters (found 89). [LineLength]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m6\ADS-2Week-1\Solution.java:129: Line is longer than 80 characters (found 85). [LineLength]
+[ERROR] E:\ADS2\ADS 2 - Assignments\m6\ADS-2Week-1\Solution.java:54:44: 'typecast' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] E:\ADS2\ADS 2 - Assignments\m6\ADS-2Week-1\Solution.java:54:58: '/' should be on a new line. [OperatorWrap]
+[ERROR] E:\ADS2\ADS 2 - Assignments\m6\ADS-2Week-1\Solution.java:55:36: 'typecast' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] E:\ADS2\ADS 2 - Assignments\m6\ADS-2Week-1\Solution.java:87:29: Parameter args should be final. [FinalParameters]
+[ERROR] E:\ADS2\ADS 2 - Assignments\m6\ADS-2Week-1\Solution.java:87:38: Expected @param tag for 'args'. [JavadocMethod]
+[ERROR] E:\ADS2\ADS 2 - Assignments\m6\ADS-2Week-1\Solution.java:118: Line is longer than 80 characters (found 81). [LineLength]
 Audit done.
-Checkstyle ends with 17 errors.
+Checkstyle ends with 6 errors.
 Starting audit...
 [ERROR] E:\ADS2\ADS 2 - Assignments\m6\ADS-2Week-1\Stack.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
