@@ -2,8 +2,8 @@ import java.util.Scanner;
 class Solution {
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
-		int vertices = scan.nextInt();
-		int edges = scan.nextInt();
+		int vertices = Integer.parseInt(scan.nextLine());
+		int edges = Integer.parseInt(scan.nextLine());
 		EdgeWeightedGraph edgewtGraph = new EdgeWeightedGraph(vertices);
 		while (scan.hasNext()) {
 			String[] tokens = scan.nextLine().split(" ");
