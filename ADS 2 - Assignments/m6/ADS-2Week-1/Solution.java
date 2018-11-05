@@ -83,7 +83,7 @@ public final class Solution {
     private Solution() { }
     /**
      * Main Solution.
-     * 
+     *
      * @param args Solution
      */
     public static void main(String[] args) {
@@ -117,7 +117,8 @@ public final class Solution {
         }
         System.out.println(digraph);
 
-        // Create page rank object and pass the graph object to the constructor*/
+        // Create page rank object and pass the graph object
+           //to the constructor
         PageRank pagerank = new PageRank(digraphextra);
 
         // print the page rank object
