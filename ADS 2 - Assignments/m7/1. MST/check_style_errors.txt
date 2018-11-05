@@ -2,12 +2,8 @@ Starting audit...
 Audit done.
 Starting audit...
 [ERROR] E:\ADS2\ADS 2 - Assignments\m7\1. MST\Edge.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m7\1. MST\Edge.java:33: Line is longer than 80 characters (found 93). [LineLength]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m7\1. MST\Edge.java:36: Line is longer than 80 characters (found 93). [LineLength]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m7\1. MST\Edge.java:65: Line is longer than 80 characters (found 81). [LineLength]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m7\1. MST\Edge.java:89:26: Parameter that should be final. [FinalParameters]
 Audit done.
-Checkstyle ends with 5 errors.
+Checkstyle ends with 1 errors.
 Starting audit...
 [ERROR] E:\ADS2\ADS 2 - Assignments\m7\1. MST\EdgeWeightedGraph.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.

@@ -30,10 +30,12 @@ public class Edge implements Comparable<Edge> {
      */
     public Edge(final int v1, final int w1, final double weight1) {
         if (v1 < 0) {
-            throw new IllegalArgumentException("vertex index must be a nonnegative integer");
+            throw new IllegalArgumentException(
+                "vertex index must be a nonnegative integer");
         }
         if (w1 < 0) {
-            throw new IllegalArgumentException("vertex index must be a nonnegative integer");
+            throw new IllegalArgumentException(
+                "vertex index must be a nonnegative integer");
         }
         if (Double.isNaN(weight1)) {
             throw new IllegalArgumentException("Weight is NaN");
@@ -62,7 +64,8 @@ public class Edge implements Comparable<Edge> {
     }
 
     /**
-     * Returns the endpoint of this edge that is different from the given vertex.
+     * Returns the endpoint of this edge that is different
+     * from the given vertex.
      *
      * @param      vertex  The vertex
      *
@@ -86,7 +89,7 @@ public class Edge implements Comparable<Edge> {
      * @return     { description_of_the_return_value }
      */
     @Override
-    public int compareTo(Edge that) {
+    public int compareTo(final Edge that) {
         return Double.compare(this.weight, that.weight);
     }
 
@@ -109,4 +112,5 @@ public class Edge implements Comparable<Edge> {
     //     StdOut.println(e);
     // }
 }
+
 
