@@ -95,13 +95,13 @@ public class EdgeWeightedGraph {
      *
      * @param  G the edge-weighted graph to copy
      */
-    public EdgeWeightedGraph(final EdgeWeightedGraph G) {
-        this(G.numberofVertices());
-        this.edges = G.numberofEdges();
-        for (int v = 0; v < G.numberofVertices(); v++) {
+    public EdgeWeightedGraph(final EdgeWeightedGraph graph) {
+        this(graph.numberofVertices());
+        this.edges = graph.numberofEdges();
+        for (int v = 0; v < graph.numberofVertices(); v++) {
             // reverse so that adjacency list is in same order as original
             Stack<Edge> reverse = new Stack<Edge>();
-            for (Edge e : G.adj[v]) {
+            for (Edge e : graph.adj[v]) {
                 reverse.push(e);
             }
             for (Edge e : reverse) {
