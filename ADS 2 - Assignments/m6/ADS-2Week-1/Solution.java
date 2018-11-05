@@ -24,15 +24,19 @@ class PageRank {
 	 */
 	private double test;
 	/**
-	 * Constructs the object.
-	 * @param graph
+	 * variable for thousand.
 	 */
-	PageRank(Digraph graph) {
+	private int thousand = 1000;
+	/**
+	 * Constructs the object.
+	 * @param graph The graph
+	 */
+	PageRank(final Digraph graph) {
 		this.pagerankGraph = graph;
 		values = new double[pagerankGraph.V()];
 		for (int i = 0; i < pagerankGraph.V(); i++) {
 			// System.out.println(pagerankValue[i] + "before");
-			values[i] = (1.0 / (double)(pagerankGraph.V()));
+			values[i] = (1.0 / (double) (pagerankGraph.V()));
 			// System.out.println(pagerankValue[i] + "after");
 		}
 		finalvalues = new double[pagerankGraph.V()];
@@ -42,12 +46,13 @@ class PageRank {
 	 * function for update value.
 	 */
 	void updateValue() {
-		for (int i = 0; i < 1000; i++) {
+		for (int i = 0; i < thousand; i++) {
 			for (int j = 0; j < pagerankGraph.V(); j++) {
 				test = 0.0;
 				for (int each : pagerankGraph.reverse().adj(j)) {
 					// System.out.println(test + " before");
-					test = test + ((double)values[each]) / (double)(pagerankGraph.outdegree(each));
+					test = test + ((double)values[each]) /
+					       (double)(pagerankGraph.outdegree(each));
 					// System.out.println(test + " after");
 				}
 				finalvalues[j] = test;
@@ -69,11 +74,11 @@ class PageRank {
 // }
 
 /**
- * class Solution.
+ * Solution class.
  */
 public final class Solution {
 	/**
-	 * Constructor.
+	 * Constructs the object.
 	 */
 	private Solution() { }
 	/**
@@ -93,8 +98,10 @@ public final class Solution {
 			vertex = StdIn.readLine().split(" ");
 			if (vertex.length >= 2) {
 				for (int j = 1; j < vertex.length; j++) {
-					digraph.addEdge(Integer.parseInt(vertex[0]), Integer.parseInt(vertex[j]));
-					digraphextra.addEdge(Integer.parseInt(vertex[0]), Integer.parseInt(vertex[j]));
+					digraph.addEdge(Integer.parseInt(vertex[0]),
+					                Integer.parseInt(vertex[j]));
+					digraphextra.addEdge(Integer.parseInt(vertex[0]),
+					                     Integer.parseInt(vertex[j]));
 				}
 			} else {
 				for (int k = 0; k < vertices; k++) {
