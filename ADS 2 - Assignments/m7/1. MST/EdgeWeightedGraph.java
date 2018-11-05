@@ -117,25 +117,25 @@ public class EdgeWeightedGraph {
     //     }
     // }
 
-    // /**
-    //  * Initializes a new edge-weighted graph that is a deep copy of {@code G}.
-    //  *
-    //  * @param  G the edge-weighted graph to copy
-    //  */
-    // public EdgeWeightedGraph(EdgeWeightedGraph G) {
-    //     this(G.V());
-    //     this.E = G.E();
-    //     for (int v = 0; v < G.V(); v++) {
-    //         // reverse so that adjacency list is in same order as original
-    //         Stack<Edge> reverse = new Stack<Edge>();
-    //         for (Edge e : G.adj[v]) {
-    //             reverse.push(e);
-    //         }
-    //         for (Edge e : reverse) {
-    //             adj[v].add(e);
-    //         }
-    //     }
-    // }
+    /**
+     * Initializes a new edge-weighted graph that is a deep copy of {@code G}.
+     *
+     * @param  G the edge-weighted graph to copy
+     */
+    public EdgeWeightedGraph(EdgeWeightedGraph G) {
+        this(G.V());
+        this.E = G.E();
+        for (int v = 0; v < G.V(); v++) {
+            // reverse so that adjacency list is in same order as original
+            Stack<Edge> reverse = new Stack<Edge>();
+            for (Edge e : G.adj[v]) {
+                reverse.push(e);
+            }
+            for (Edge e : reverse) {
+                adj[v].add(e);
+            }
+        }
+    }
 
 
     /**

@@ -89,7 +89,8 @@ Starting audit...
 [ERROR] E:\ADS2\ADS 2 - Assignments\m7\1. MST\EdgeWeightedGraph.java:102: Line is longer than 80 characters (found 99). [LineLength]
 [ERROR] E:\ADS2\ADS 2 - Assignments\m7\1. MST\EdgeWeightedGraph.java:103: Line is longer than 80 characters (found 89). [LineLength]
 [ERROR] E:\ADS2\ADS 2 - Assignments\m7\1. MST\EdgeWeightedGraph.java:108: Line is longer than 80 characters (found 96). [LineLength]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m7\1. MST\EdgeWeightedGraph.java:121: Line is longer than 80 characters (found 81). [LineLength]
+[ERROR] E:\ADS2\ADS 2 - Assignments\m7\1. MST\EdgeWeightedGraph.java:125:30: Parameter G should be final. [FinalParameters]
+[ERROR] E:\ADS2\ADS 2 - Assignments\m7\1. MST\EdgeWeightedGraph.java:125:48: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
 [ERROR] E:\ADS2\ADS 2 - Assignments\m7\1. MST\EdgeWeightedGraph.java:146:16: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
 [ERROR] E:\ADS2\ADS 2 - Assignments\m7\1. MST\EdgeWeightedGraph.java:155:16: Name 'E' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
 [ERROR] E:\ADS2\ADS 2 - Assignments\m7\1. MST\EdgeWeightedGraph.java:160:5: Missing a Javadoc comment. [JavadocMethod]
@@ -109,7 +110,7 @@ Starting audit...
 [ERROR] E:\ADS2\ADS 2 - Assignments\m7\1. MST\EdgeWeightedGraph.java:222: 'if' construct must use '{}'s. [NeedBraces]
 [ERROR] E:\ADS2\ADS 2 - Assignments\m7\1. MST\EdgeWeightedGraph.java:234: Line is longer than 80 characters (found 93). [LineLength]
 Audit done.
-Checkstyle ends with 47 errors.
+Checkstyle ends with 48 errors.
 Starting audit...
 [ERROR] E:\ADS2\ADS 2 - Assignments\m7\1. MST\KruskalMST.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] E:\ADS2\ADS 2 - Assignments\m7\1. MST\KruskalMST.java:12: Line has trailing spaces. [RegexpSingleline]
