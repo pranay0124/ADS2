@@ -8,9 +8,9 @@ Expected Output:
 50
 
 Your Output: 
-Exception in thread "main" java.lang.IllegalArgumentException: edge 3->2 -1.00 has negative weight
+Exception in thread "main" java.lang.IllegalArgumentException: edge 3->1 -1.00 has negative weight
 	at DijkstraSP.<init>(DijkstraSP.java:70)
-	at Solution.main(Solution.java:21)
+	at Solution.main(Solution.java:23)
 ----------------------------------------
 
 ########## Testcase 1: Failed ##########
@@ -23,9 +23,9 @@ Expected Output:
 30
 
 Your Output: 
-Exception in thread "main" java.lang.IllegalArgumentException: edge 3->2 -1.00 has negative weight
+Exception in thread "main" java.lang.IllegalArgumentException: edge 3->1 -1.00 has negative weight
 	at DijkstraSP.<init>(DijkstraSP.java:70)
-	at Solution.main(Solution.java:21)
+	at Solution.main(Solution.java:23)
 ----------------------------------------
 
 ########## Testcase 2: Failed ##########
@@ -735,7 +735,7 @@ Exception in thread "main" java.lang.NumberFormatException: For input string: "t
 	at java.base/java.lang.NumberFormatException.forInputString(Unknown Source)
 	at java.base/java.lang.Integer.parseInt(Unknown Source)
 	at java.base/java.lang.Integer.parseInt(Unknown Source)
-	at Solution.main(Solution.java:18)
+	at Solution.main(Solution.java:20)
 ----------------------------------------
 
 ########## Testcase 3: Failed ##########
@@ -4198,7 +4198,7 @@ Exception in thread "main" java.lang.NumberFormatException: For input string: "V
 	at java.base/java.lang.NumberFormatException.forInputString(Unknown Source)
 	at java.base/java.lang.Integer.parseInt(Unknown Source)
 	at java.base/java.lang.Integer.parseInt(Unknown Source)
-	at Solution.main(Solution.java:18)
+	at Solution.main(Solution.java:20)
 ----------------------------------------
 
 ########## Testcase 4: Failed ##########
@@ -6576,7 +6576,7 @@ Exception in thread "main" java.lang.NumberFormatException: For input string: "k
 	at java.base/java.lang.NumberFormatException.forInputString(Unknown Source)
 	at java.base/java.lang.Integer.parseInt(Unknown Source)
 	at java.base/java.lang.Integer.parseInt(Unknown Source)
-	at Solution.main(Solution.java:18)
+	at Solution.main(Solution.java:20)
 ----------------------------------------
 
 ########## Testcase 5: Failed ##########
@@ -11537,6 +11537,6 @@ Exception in thread "main" java.lang.NumberFormatException: For input string: "s
 	at java.base/java.lang.NumberFormatException.forInputString(Unknown Source)
 	at java.base/java.lang.Integer.parseInt(Unknown Source)
 	at java.base/java.lang.Integer.parseInt(Unknown Source)
-	at Solution.main(Solution.java:18)
+	at Solution.main(Solution.java:20)
 ----------------------------------------
 
