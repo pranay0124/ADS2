@@ -249,8 +249,8 @@ Starting audit...
 [ERROR] E:\ADS2\ADS 2 - Assignments\m8\1. Shortest Paths\Solution.java:4:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] E:\ADS2\ADS 2 - Assignments\m8\1. Shortest Paths\Solution.java:4:33: Parameter args should be final. [FinalParameters]
 [ERROR] E:\ADS2\ADS 2 - Assignments\m8\1. Shortest Paths\Solution.java:12: Line is longer than 80 characters (found 95). [LineLength]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m8\1. Shortest Paths\Solution.java:15: Line is longer than 80 characters (found 172). [LineLength]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m8\1. Shortest Paths\Solution.java:16: Line is longer than 80 characters (found 173). [LineLength]
+[ERROR] E:\ADS2\ADS 2 - Assignments\m8\1. Shortest Paths\Solution.java:15: Line is longer than 80 characters (found 171). [LineLength]
+[ERROR] E:\ADS2\ADS 2 - Assignments\m8\1. Shortest Paths\Solution.java:16: Line is longer than 80 characters (found 172). [LineLength]
 [ERROR] E:\ADS2\ADS 2 - Assignments\m8\1. Shortest Paths\Solution.java:23: Line is longer than 80 characters (found 97). [LineLength]
 [ERROR] E:\ADS2\ADS 2 - Assignments\m8\1. Shortest Paths\Solution.java:24: Line is longer than 80 characters (found 91). [LineLength]
 Audit done.

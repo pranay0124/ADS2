@@ -8,9 +8,12 @@ Expected Output:
 50
 
 Your Output: 
-Exception in thread "main" java.lang.IllegalArgumentException: edge 3->1 -1.00 has negative weight
-	at DijkstraSP.<init>(DijkstraSP.java:70)
-	at Solution.main(Solution.java:23)
+10.0
+20.0
+70.0
+30.0
+80.0
+50.0
 ----------------------------------------
 
 ########## Testcase 1: Failed ##########
@@ -23,9 +26,12 @@ Expected Output:
 30
 
 Your Output: 
-Exception in thread "main" java.lang.IllegalArgumentException: edge 3->1 -1.00 has negative weight
-	at DijkstraSP.<init>(DijkstraSP.java:70)
-	at Solution.main(Solution.java:23)
+10.0
+10.0
+20.0
+20.0
+10.0
+30.0
 ----------------------------------------
 
 ########## Testcase 2: Failed ##########
