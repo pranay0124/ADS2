@@ -9,8 +9,8 @@ class Solution {
 		for (int j = 0; j < Integer.parseInt(tokens[0]); j++) {
 			stationlist.add(stations[j]);
 		}
-		EdgeWeightedDigraph ewd = new EdgeWeightedDigraph(Integer.parseInt(tokens[1]));
-		for (int i = 0; i < Integer.parseInt(tokens[0]); i++) {
+		EdgeWeightedDigraph ewd = new EdgeWeightedDigraph(Integer.parseInt(tokens[0]));
+		for (int i = 0; i < Integer.parseInt(tokens[1]); i++) {
 			String[] connections = scan.nextLine().split(" ");
 			DirectedEdge edge = new DirectedEdge(stationlist.indexOf(connections[0]), stationlist.indexOf(connections[1]), Double.parseDouble(connections[2]));
 			DirectedEdge edge1 = new DirectedEdge(stationlist.indexOf(connections[1]), stationlist.indexOf(connections[0]), Double.parseDouble(connections[2]));
