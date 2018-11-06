@@ -21,7 +21,7 @@ class Solution {
 		for (int k = 0; k < noOfQueries; k++) {
 			String[] query = scan.nextLine().split(" ");
 			DijkstraSP dijkstra = new DijkstraSP(ewd, stationlist.indexOf(query[0]));
-			System.out.println(dijkstra.distTo(stationlist.indexOf(query[1])));
+			System.out.println((long) dijkstra.distTo(stationlist.indexOf(query[1])));
 		}
 	}
 }
