@@ -16,11 +16,12 @@ class Solution {
 			ewd.addEdge(edge);
 		}
 		int noOfQueries = Integer.parseInt(scan.nextLine());
-		while (scan.hasNext()) {
+		for (int k = 0; k < noOfQueries; k++) {
 			String[] query = scan.nextLine().split(" ");
 			DijkstraSP dijkstra = new DijkstraSP(ewd, stationlist.indexOf(query[0]));
 			System.out.println(dijkstra.distTo(stationlist.indexOf(query[1])));
 		}
 	}
 }
+
 
