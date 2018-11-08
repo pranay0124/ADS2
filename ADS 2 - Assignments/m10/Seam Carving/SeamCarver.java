@@ -21,7 +21,14 @@ public class SeamCarver {
 
 	// energy of pixel at column x and row y
 	public double energy(int x, int y) {
-		return 0;
+		Color top = picture.get(x-1,y);
+		Color bottom = picture.get(x+1,y);
+		Color left = picture.get(x,y-1);
+		Color right = picture.get(x,y+1);
+		double delta_x = ((right.getRed() - left.getRed())^2 + (right.getGreen() - left.getGreen())^2 + (right.getBlue() - left.getBlue())^2);
+		double delta_y = ((bottom.getRed() - top.getRed())^2 + (bottom.getGreen() - top.getGreen())^2 + (bottom.getBlue() - top.getBlue())^2);
+		double energy = Math.sqrt(delta_x + delta_y);
+		return energy;
 	}
 
 	// sequence of indices for horizontal seam

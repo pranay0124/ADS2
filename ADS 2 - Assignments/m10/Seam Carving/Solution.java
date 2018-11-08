@@ -3,20 +3,20 @@ import java.util.Arrays;
 
 public class Solution {
 
-    // public static void printEnergies(String fileName) {
-    //     Picture picture = new Picture(fileName);
-    //     StdOut.printf("image is %d pixels wide by %d pixels high.\n", picture.width(), picture.height());
+    public static void printEnergies(String fileName) {
+        Picture picture = new Picture(fileName);
+        StdOut.printf("image is %d pixels wide by %d pixels high.\n", picture.width(), picture.height());
 
-    //     SeamCarver sc = new SeamCarver(picture);
+        SeamCarver sc = new SeamCarver(picture);
 
-    //     StdOut.printf("Printing energy calculated for each pixel.\n");
+        StdOut.printf("Printing energy calculated for each pixel.\n");
 
-    //     for (int row = 0; row < sc.height(); row++) {
-    //         for (int col = 0; col < sc.width(); col++)
-    //             StdOut.printf("%9.0f ", sc.energy(col, row));
-    //         StdOut.println();
-    //     }
-    // }
+        for (int row = 0; row < sc.height(); row++) {
+            for (int col = 0; col < sc.width(); col++)
+                StdOut.printf("%9.0f ", sc.energy(col, row));
+            StdOut.println();
+        }
+    }
 
     // public static void printSeam(SeamCarver carver, int[] seam, boolean direction) {
     //     double totalSeamEnergy = 0.0;
@@ -62,12 +62,12 @@ public class Solution {
                 }
                 break;
 
-            // case "energy":
-            //     while (scan.hasNextLine()) {
-            //         String file = scan.nextLine();
-            //         printEnergies("/Files/" + file);
-            //     }
-            //     break;
+            case "energy":
+                while (scan.hasNextLine()) {
+                    String file = scan.nextLine();
+                    printEnergies("/Files/" + file);
+                }
+                break;
 
             // case "findVerticalSeam":
             //     while (scan.hasNextLine()) {
