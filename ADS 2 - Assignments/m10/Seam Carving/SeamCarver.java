@@ -21,7 +21,7 @@ public class SeamCarver {
 
 	// energy of pixel at column x and row y
 	public double energy(int x, int y) {
-		if (x == 0 || y == 0 || x == picture.height() - 1 || y == picture.width() - 1) {
+		if (x == 0 || y == 0 || picture.width() - 1 == 0 || picture.height() - 1 == 0) {
 			return 1000;
 		} else {
 			Color top = picture.get(x - 1, y);
