@@ -39,7 +39,8 @@ public final class Solution {
 			break;
 
 		case "DirectedPaths":
-			// Handle the case of DirectedPaths, where two integers are given.
+			// Handle the case of DirectedPaths,
+			//                     where two integers are given.
 			// First is the source and second is the destination.
 			// If the path exists print the distance between them.
 			// Other wise print "No Path Found."
@@ -56,7 +57,8 @@ public final class Solution {
 
 		case "ViaPaths":
 			// Handle the case of ViaPaths, where three integers are given.
-			// First is the source and second is the via is the one where path should pass throuh.
+			// First is the source and second is the via is the one where
+			//                                    path should pass throuh.
 			// third is the destination.
 			// If the path exists print the distance between them.
 			// Other wise print "No Path Found."
@@ -66,7 +68,8 @@ public final class Solution {
 			int destination = Integer.parseInt(paths[2]);
 			String str = "";
 
-			DijkstraUndirectedSP sp1 = new DijkstraUndirectedSP(ewg, source);
+			DijkstraUndirectedSP sp1 =
+			    new DijkstraUndirectedSP(ewg, source);
 			if (sp1.hasPathTo(destination)) {
 				// str1 = sp1.pathTo(d1).toString();
 				Queue<Integer> queue = new Queue<Integer>();
@@ -90,7 +93,8 @@ public final class Solution {
 						queue.enqueue(vertex);
 					}
 				}
-				DijkstraUndirectedSP sp2 = new DijkstraUndirectedSP(ewg, via);
+				DijkstraUndirectedSP sp2 =
+				    new DijkstraUndirectedSP(ewg, via);
 				for (Edge edge : sp2.pathTo(destination)) {
 					int vertex = edge.either();
 					int other = edge.other(vertex);
@@ -112,7 +116,8 @@ public final class Solution {
 						queue.enqueue(other);
 					}
 				}
-				System.out.println(sp1.distTo(via) + sp2.distTo(destination));
+				System.out.println(sp1.distTo(via)
+				                   + sp2.distTo(destination));
 				while (!queue.isEmpty()) {
 					str += queue.dequeue() + " ";
 				}
