@@ -102,7 +102,8 @@ public class Solution {
 				}
 				System.out.println(sp1.distTo(via) + sp2.distTo(destination));
 				while (!queue.isEmpty()) {
-					System.out.print(queue.dequeue() + " ");
+					String str = queue.dequeue() + " ";
+					System.out.print(str.trim());
 				}
 			} else {
 				System.out.println("No Path Found.");
