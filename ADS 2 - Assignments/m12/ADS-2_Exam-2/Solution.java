@@ -51,10 +51,13 @@ public class Solution {
 			int d2 = Integer.parseInt(paths[2]);
 			double dist1 = 0;
 			double dist2 = 0;
+			String str1;
+			String str2;
+			
 			DijkstraUndirectedSP sp1 = new DijkstraUndirectedSP(ewg, ss);
 			if (sp1.hasPathTo(d1)) {
 				dist1 = sp1.distTo(d1);
-				sp1.pathTo(d1);
+				str1 = sp1.pathTo(d1).toString();
 			} else {
 				System.out.println("No Path Found.");
 				break;
@@ -62,12 +65,14 @@ public class Solution {
 			DijkstraUndirectedSP sp2 = new DijkstraUndirectedSP(ewg, d1);
 			if (sp2.hasPathTo(d2)) {
 				dist2 = sp2.distTo(d2);
-				sp2.pathTo(d2);
+				str2 = sp2.pathTo(d2).toString();
 			} else {
 				System.out.println("No Path Found.");
 				break;
 			}
 			System.out.println(dist1 + dist2);
+			String finalstr = str1+str2;
+			System.out.println(finalstr);
 			break;
 
 		default:
