@@ -14,9 +14,9 @@ public class Solution {
 			ewd.addEdge(new DirectedEdge(Integer.parseInt(tokens[0]),
 			                             Integer.parseInt(tokens[1]),
 			                             Integer.parseInt(tokens[2])));
-			// ewd.addEdge(new DirectedEdge(Integer.parseInt(tokens[1]),
-			//                              Integer.parseInt(tokens[0]),
-			//                              Integer.parseInt(tokens[2])));
+			ewd.addEdge(new DirectedEdge(Integer.parseInt(tokens[1]),
+			                             Integer.parseInt(tokens[0]),
+			                             Integer.parseInt(tokens[2])));
 			edges--;
 		}
 		String query = scan.nextLine();
