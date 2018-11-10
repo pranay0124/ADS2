@@ -52,7 +52,7 @@ public class Solution {
 			String str = "";
 
 			DijkstraUndirectedSP sp1 = new DijkstraUndirectedSP(ewg, source);
-			if (sp1.hasPathTo(via)) {
+			if (sp1.hasPathTo(destination)) {
 				// str1 = sp1.pathTo(d1).toString();
 				Queue<Integer> queue = new Queue<Integer>();
 				for (Edge edge : sp1.pathTo(via)) {
