@@ -51,6 +51,7 @@ public class Solution {
 			int destination = Integer.parseInt(paths[2]);
 			double dist1 = 0;
 			double dist2 = 0;
+			String str = "";
 
 			DijkstraUndirectedSP sp1 = new DijkstraUndirectedSP(ewg, source);
 			if (sp1.hasPathTo(via)) {
@@ -102,9 +103,9 @@ public class Solution {
 				}
 				System.out.println(sp1.distTo(via) + sp2.distTo(destination));
 				while (!queue.isEmpty()) {
-					String str = queue.dequeue() + " ";
-					System.out.print(str.trim());
+					str = queue.dequeue() + " ";
 				}
+				System.out.print(str.trim());
 			} else {
 				System.out.println("No Path Found.");
 			}

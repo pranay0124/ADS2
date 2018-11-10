@@ -68,7 +68,7 @@ No Path Found.
 
 Your Output: 
 Exception in thread "main" java.lang.NullPointerException
-	at Solution.main(Solution.java:82)
+	at Solution.main(Solution.java:83)
 ----------------------------------------
 
 ########## Testcase 5: Failed ##########
@@ -78,6 +78,6 @@ Expected Output:
 
 Your Output: 
 692.0
-254071
+1
 ----------------------------------------
 
