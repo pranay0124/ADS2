@@ -48,7 +48,7 @@ public class Solution {
 			String[] paths = scan.nextLine().split(" ");
 			int source = Integer.parseInt(paths[0]);
 			int via = Integer.parseInt(paths[1]);
-			int destination = Integer.parseInt(paths[2]);
+			int destination = Integer.parseInt(paths[paths.length - 1]);
 			double dist1 = 0;
 			double dist2 = 0;
 			String str = "";
@@ -70,7 +70,6 @@ public class Solution {
 						if (other == i) {
 							count2 = 1;
 						}
-
 					}
 					if (count1 == 0) {
 						queue.enqueue(vertex);
