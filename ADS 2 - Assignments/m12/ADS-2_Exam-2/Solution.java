@@ -46,33 +46,68 @@ public class Solution {
 			// If the path exists print the distance between them.
 			// Other wise print "No Path Found."
 			String[] paths = scan.nextLine().split(" ");
-			int ss = Integer.parseInt(paths[0]);
-			int d1 = Integer.parseInt(paths[1]);
-			int d2 = Integer.parseInt(paths[2]);
+			int source = Integer.parseInt(paths[0]);
+			int via = Integer.parseInt(paths[1]);
+			int destination = Integer.parseInt(paths[2]);
 			double dist1 = 0;
 			double dist2 = 0;
-			String str1;
-			String str2;
-			
-			DijkstraUndirectedSP sp1 = new DijkstraUndirectedSP(ewg, ss);
-			if (sp1.hasPathTo(d1)) {
-				dist1 = sp1.distTo(d1);
-				str1 = sp1.pathTo(d1).toString();
+
+			DijkstraUndirectedSP sp1 = new DijkstraUndirectedSP(ewg, source);
+			if (sp1.hasPathTo(via)) {
+				dist1 = sp1.distTo(via);
+				// str1 = sp1.pathTo(d1).toString();
+				Queue<Integer> queue = new Queue<Integer>();
+				for (Edge edge : sp1.pathTo(via)) {
+					int vertex = edge.either();
+					int other = edge.other(vertex);
+					int count1 = 0;
+					int count2 = 0;
+					for (Integer i : queue) {
+						if (vertex == i) {
+							count1 = 1;
+						}
+						if (other == i) {
+							count2 = 1;
+						}
+
+					}
+					if (count1 == 0) {
+						queue.enqueue(vertex);
+					}
+					if (count2 == 0) {
+						queue.enqueue(other);
+					}
+				}
+				DijkstraUndirectedSP sp2 = new DijkstraUndirectedSP(ewg, via);
+				for (Edge edge : sp2.pathTo(destination)) {
+					int vertex = edge.either();
+					int other = edge.other(vertex);
+					int count1 = 0;
+					int count2 = 0;
+					for (Integer i : queue) {
+						if (vertex == i) {
+							count1 = 1;
+						}
+						if (other == i) {
+							count2 = 1;
+						}
+
+					}
+					if (count1 == 0) {
+						queue.enqueue(vertex);
+					}
+					if (count2 == 0) {
+						queue.enqueue(other);
+					}
+				}
+				System.out.println(sp1.distTo(via) + sp2.distTo(destination));
+				while (!queue.isEmpty()) {
+					System.out.print(queue.dequeue() + " ");
+				}
 			} else {
 				System.out.println("No Path Found.");
-				break;
 			}
-			DijkstraUndirectedSP sp2 = new DijkstraUndirectedSP(ewg, d1);
-			if (sp2.hasPathTo(d2)) {
-				dist2 = sp2.distTo(d2);
-				str2 = sp2.pathTo(d2).toString();
-			} else {
-				System.out.println("No Path Found.");
-				break;
-			}
-			System.out.println(dist1 + dist2);
-			String finalstr = str1+str2;
-			System.out.println(finalstr);
+			// System.out.println(dist1 + dist2);
 			break;
 
 		default:
