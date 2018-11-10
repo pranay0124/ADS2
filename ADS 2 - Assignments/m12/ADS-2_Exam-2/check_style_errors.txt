@@ -7,10 +7,12 @@ Audit done.
 Starting audit...
 Audit done.
 Starting audit...
-[ERROR] E:\ADS2\ADS 2 - Assignments\m12\ADS-2_Exam-2\EdgeWeightedDigraph.java:243:60: '+' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m12\ADS-2_Exam-2\EdgeWeightedDigraph.java:243:61: '+' is not followed by whitespace. [WhitespaceAround]
+[ERROR] E:\ADS2\ADS 2 - Assignments\m12\ADS-2_Exam-2\EdgeWeightedDigraph.java:243:50: '/' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] E:\ADS2\ADS 2 - Assignments\m12\ADS-2_Exam-2\EdgeWeightedDigraph.java:243:51: '/' is not followed by whitespace. [WhitespaceAround]
+[ERROR] E:\ADS2\ADS 2 - Assignments\m12\ADS-2_Exam-2\EdgeWeightedDigraph.java:243:64: '+' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] E:\ADS2\ADS 2 - Assignments\m12\ADS-2_Exam-2\EdgeWeightedDigraph.java:243:65: '+' is not followed by whitespace. [WhitespaceAround]
 Audit done.
-Checkstyle ends with 2 errors.
+Checkstyle ends with 4 errors.
 Starting audit...
 [ERROR] E:\ADS2\ADS 2 - Assignments\m12\ADS-2_Exam-2\EdgeWeightedGraph.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] E:\ADS2\ADS 2 - Assignments\m12\ADS-2_Exam-2\EdgeWeightedGraph.java:218:60: '+' is not preceded with whitespace. [WhitespaceAround]
