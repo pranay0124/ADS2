@@ -48,7 +48,7 @@ public class Solution {
 			String[] paths = scan.nextLine().split(" ");
 			int source = Integer.parseInt(paths[0]);
 			int via = Integer.parseInt(paths[1]);
-			int destination = Integer.parseInt(paths[paths.length - 1]);
+			int destination = Integer.parseInt(paths[2]);
 			String str = "";
 
 			DijkstraUndirectedSP sp1 = new DijkstraUndirectedSP(ewg, source);
