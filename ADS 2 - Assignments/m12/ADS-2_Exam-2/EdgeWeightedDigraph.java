@@ -240,7 +240,7 @@ public class EdgeWeightedDigraph {
      */
     public String toString() {
         StringBuilder s = new StringBuilder();
-        s.append(vertices + " vertices " + (edges/2) + " edges"+NEWLINE);
+        s.append(vertices + " vertices " + (edges) + " edges"+NEWLINE);
         for (int v = 0; v < vertices; v++) {
             s.append(v + ": ");
             for (DirectedEdge e : adj[v]) {
