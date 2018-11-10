@@ -67,7 +67,7 @@ Expected Output:
 No Path Found.
 
 Your Output: 
-4.0
+dist14.0
 No Path Found.
 ----------------------------------------
 
@@ -77,8 +77,8 @@ Expected Output:
 5 2 4 0 7 1
 
 Your Output: 
-179.0
-0.0
+dist1179.0
+dist20.0
 513.0
 ----------------------------------------
 
