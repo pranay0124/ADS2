@@ -194,6 +194,5 @@ public class DijkstraUndirectedSP {
                 + " is not between 0 and " + (v1 - 1));
         }
     }
-
 }
 
