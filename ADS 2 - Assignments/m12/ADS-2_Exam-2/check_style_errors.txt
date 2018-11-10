@@ -3,25 +3,15 @@ Audit done.
 Starting audit...
 [ERROR] E:\ADS2\ADS 2 - Assignments\m12\ADS-2_Exam-2\DijkstraUndirectedSP.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] E:\ADS2\ADS 2 - Assignments\m12\ADS-2_Exam-2\DijkstraUndirectedSP.java:13: First sentence should end with a period. [JavadocStyle]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m12\ADS-2_Exam-2\DijkstraUndirectedSP.java:25: 'if' construct must use '{}'s. [NeedBraces]
 [ERROR] E:\ADS2\ADS 2 - Assignments\m12\ADS-2_Exam-2\DijkstraUndirectedSP.java:26: Line is longer than 80 characters (found 89). [LineLength]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m12\ADS-2_Exam-2\DijkstraUndirectedSP.java:34: 'for' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m12\ADS-2_Exam-2\DijkstraUndirectedSP.java:43: 'for' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m12\ADS-2_Exam-2\DijkstraUndirectedSP.java:62: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m12\ADS-2_Exam-2\DijkstraUndirectedSP.java:63: 'else' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m12\ADS-2_Exam-2\DijkstraUndirectedSP.java:101: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m12\ADS-2_Exam-2\DijkstraUndirectedSP.java:115:8: Unused @param tag for 'G'. [JavadocMethod]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m12\ADS-2_Exam-2\DijkstraUndirectedSP.java:120:51: Expected @param tag for 'g'. [JavadocMethod]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m12\ADS-2_Exam-2\DijkstraUndirectedSP.java:136: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m12\ADS-2_Exam-2\DijkstraUndirectedSP.java:143: Line is longer than 80 characters (found 83). [LineLength]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m12\ADS-2_Exam-2\DijkstraUndirectedSP.java:154: Line is longer than 80 characters (found 90). [LineLength]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m12\ADS-2_Exam-2\DijkstraUndirectedSP.java:156: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m12\ADS-2_Exam-2\DijkstraUndirectedSP.java:158: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m12\ADS-2_Exam-2\DijkstraUndirectedSP.java:174:13: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [LocalVariableName]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m12\ADS-2_Exam-2\DijkstraUndirectedSP.java:175: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m12\ADS-2_Exam-2\DijkstraUndirectedSP.java:176: Line is longer than 80 characters (found 99). [LineLength]
+[ERROR] E:\ADS2\ADS 2 - Assignments\m12\ADS-2_Exam-2\DijkstraUndirectedSP.java:123:8: Unused @param tag for 'G'. [JavadocMethod]
+[ERROR] E:\ADS2\ADS 2 - Assignments\m12\ADS-2_Exam-2\DijkstraUndirectedSP.java:128:51: Expected @param tag for 'g'. [JavadocMethod]
+[ERROR] E:\ADS2\ADS 2 - Assignments\m12\ADS-2_Exam-2\DijkstraUndirectedSP.java:153: Line is longer than 80 characters (found 83). [LineLength]
+[ERROR] E:\ADS2\ADS 2 - Assignments\m12\ADS-2_Exam-2\DijkstraUndirectedSP.java:164: Line is longer than 80 characters (found 90). [LineLength]
+[ERROR] E:\ADS2\ADS 2 - Assignments\m12\ADS-2_Exam-2\DijkstraUndirectedSP.java:188:13: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [LocalVariableName]
+[ERROR] E:\ADS2\ADS 2 - Assignments\m12\ADS-2_Exam-2\DijkstraUndirectedSP.java:190: Line is longer than 80 characters (found 99). [LineLength]
 Audit done.
-Checkstyle ends with 19 errors.
+Checkstyle ends with 9 errors.
 Starting audit...
 Audit done.
 Starting audit...

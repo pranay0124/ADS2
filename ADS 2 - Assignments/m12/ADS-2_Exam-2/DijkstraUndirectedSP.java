@@ -22,8 +22,9 @@ public class DijkstraUndirectedSP {
      */
     public DijkstraUndirectedSP(final EdgeWeightedGraph g, final int s) {
         for (Edge e : g.edges()) {
-            if (e.weight() < 0)
+            if (e.weight() < 0) {
                 throw new IllegalArgumentException("edge " + e + " has negative weight");
+            }
         }
 
         distTo = new double[g.numberofVertices()];
@@ -31,8 +32,9 @@ public class DijkstraUndirectedSP {
 
         validateVertex(s);
 
-        for (int v = 0; v < g.numberofVertices(); v++)
+        for (int v = 0; v < g.numberofVertices(); v++) {
             distTo[v] = Double.POSITIVE_INFINITY;
+        }
         distTo[s] = 0.0;
 
         // relax vertices in order of distance from s
@@ -40,8 +42,9 @@ public class DijkstraUndirectedSP {
         pq.insert(s, distTo[s]);
         while (!pq.isEmpty()) {
             int v = pq.delMin();
-            for (Edge e : g.adj(v))
+            for (Edge e : g.adj(v)) {
                 relax(e, v);
+            }
         }
 
         // check optimality conditions
@@ -59,8 +62,11 @@ public class DijkstraUndirectedSP {
         if (distTo[w] > distTo[v] + e.weight()) {
             distTo[w] = distTo[v] + e.weight();
             edgeTo[w] = e;
-            if (pq.contains(w)) pq.decreaseKey(w, distTo[w]);
-            else                pq.insert(w, distTo[w]);
+            if (pq.contains(w)) {
+                pq.decreaseKey(w, distTo[w]);
+            } else {
+                pq.insert(w, distTo[w]);
+            }
         }
     }
 
@@ -98,7 +104,9 @@ public class DijkstraUndirectedSP {
      */
     public Iterable<Edge> pathTo(final int v) {
         validateVertex(v);
-        if (!hasPathTo(v)) return null;
+        if (!hasPathTo(v)) {
+            return null;
+        }
         Stack<Edge> path = new Stack<Edge>();
         int x = v;
         for (Edge e = edgeTo[v]; e != null; e = edgeTo[x]) {
@@ -133,7 +141,9 @@ public class DijkstraUndirectedSP {
             return false;
         }
         for (int v = 0; v < g.numberofVertices(); v++) {
-            if (v == s) continue;
+            if (v == s) {
+                continue;
+            }
             if (edgeTo[v] == null && distTo[v] != Double.POSITIVE_INFINITY) {
                 System.err.println("distTo[] and edgeTo[] inconsistent");
                 return false;
@@ -153,9 +163,13 @@ public class DijkstraUndirectedSP {
 
         // check that all edges e = v-w on SPT satisfy distTo[w] == distTo[v] + e.weight()
         for (int w = 0; w < g.numberofVertices(); w++) {
-            if (edgeTo[w] == null) continue;
+            if (edgeTo[w] == null) {
+                continue;
+            }
             Edge e = edgeTo[w];
-            if (w != e.either() && w != e.other(e.either())) return false;
+            if (w != e.either() && w != e.other(e.either())) {
+                return false;
+            }
             int v = e.other(w);
             if (distTo[v] + e.weight() != distTo[w]) {
                 System.err.println("edge " + e + " on shortest path not tight");
@@ -172,8 +186,9 @@ public class DijkstraUndirectedSP {
      */
     private void validateVertex(final int v) {
         int V = distTo.length;
-        if (v < 0 || v >= V)
+        if (v < 0 || v >= V) {
             throw new IllegalArgumentException("vertex " + v + " is not between 0 and " + (V - 1));
+        }
     }
 
 }
