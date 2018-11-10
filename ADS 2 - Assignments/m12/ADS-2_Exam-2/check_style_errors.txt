@@ -18,12 +18,9 @@ Audit done.
 Starting audit...
 [ERROR] E:\ADS2\ADS 2 - Assignments\m12\ADS-2_Exam-2\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] E:\ADS2\ADS 2 - Assignments\m12\ADS-2_Exam-2\Solution.java:10:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m12\ADS-2_Exam-2\Solution.java:50: Line is longer than 80 characters (found 83). [LineLength]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m12\ADS-2_Exam-2\Solution.java:59: Line is longer than 80 characters (found 87). [LineLength]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m12\ADS-2_Exam-2\Solution.java:60: Line is longer than 80 characters (found 85). [LineLength]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m12\ADS-2_Exam-2\Solution.java:61: Line is longer than 80 characters (found 86). [LineLength]
+[ERROR] E:\ADS2\ADS 2 - Assignments\m12\ADS-2_Exam-2\Solution.java:42: Line is longer than 80 characters (found 83). [LineLength]
 Audit done.
-Checkstyle ends with 6 errors.
+Checkstyle ends with 3 errors.
 Starting audit...
 Audit done.
 Starting audit...
