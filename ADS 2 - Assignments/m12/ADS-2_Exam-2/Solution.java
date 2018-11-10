@@ -49,13 +49,10 @@ public class Solution {
 			int source = Integer.parseInt(paths[0]);
 			int via = Integer.parseInt(paths[1]);
 			int destination = Integer.parseInt(paths[paths.length - 1]);
-			double dist1 = 0;
-			double dist2 = 0;
 			String str = "";
 
 			DijkstraUndirectedSP sp1 = new DijkstraUndirectedSP(ewg, source);
 			if (sp1.hasPathTo(via)) {
-				dist1 = sp1.distTo(via);
 				// str1 = sp1.pathTo(d1).toString();
 				Queue<Integer> queue = new Queue<Integer>();
 				for (Edge edge : sp1.pathTo(via)) {
@@ -71,11 +68,11 @@ public class Solution {
 							count2 = 1;
 						}
 					}
-					if (count1 == 0) {
-						queue.enqueue(vertex);
-					}
 					if (count2 == 0) {
 						queue.enqueue(other);
+					}
+					if (count1 == 0) {
+						queue.enqueue(vertex);
 					}
 				}
 				DijkstraUndirectedSP sp2 = new DijkstraUndirectedSP(ewg, via);
