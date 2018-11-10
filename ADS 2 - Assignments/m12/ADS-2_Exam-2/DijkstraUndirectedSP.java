@@ -23,8 +23,8 @@ public class DijkstraUndirectedSP {
     public DijkstraUndirectedSP(final EdgeWeightedGraph g, final int s) {
         for (Edge e : g.edges()) {
             if (e.weight() < 0) {
-                throw new IllegalArgumentException("edge " + e +
-                                                   " has negative weight");
+                throw new IllegalArgumentException("edge " + e
+                                                   + " has negative weight");
             }
         }
 
@@ -151,7 +151,7 @@ public class DijkstraUndirectedSP {
             }
         }
 
-        // check that all edges e = v-w satisfy 
+        // check that all edges e = v-w satisfy
         // distTo[w] <= distTo[v] + e.weight()
         for (int v = 0; v < g.numberofVertices(); v++) {
             for (Edge e : g.adj(v)) {
@@ -163,7 +163,7 @@ public class DijkstraUndirectedSP {
             }
         }
 
-        // check that all edges e = v-w on SPT satisfy 
+        // check that all edges e = v-w on SPT satisfy
         // distTo[w] == distTo[v] + e.weight()
         for (int w = 0; w < g.numberofVertices(); w++) {
             if (edgeTo[w] == null) {
@@ -190,7 +190,8 @@ public class DijkstraUndirectedSP {
     private void validateVertex(final int v) {
         int v1 = distTo.length;
         if (v < 0 || v >= v1) {
-            throw new IllegalArgumentException("vertex " + v + " is not between 0 and " + (v1 - 1));
+            throw new IllegalArgumentException("vertex " + v + " is not between 0 and "
+                                               + (v1 - 1));
         }
     }
 

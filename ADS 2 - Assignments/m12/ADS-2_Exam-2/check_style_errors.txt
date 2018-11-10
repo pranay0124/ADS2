@@ -2,12 +2,9 @@ Starting audit...
 Audit done.
 Starting audit...
 [ERROR] E:\ADS2\ADS 2 - Assignments\m12\ADS-2_Exam-2\DijkstraUndirectedSP.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m12\ADS-2_Exam-2\DijkstraUndirectedSP.java:26:64: '+' should be on a new line. [OperatorWrap]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m12\ADS-2_Exam-2\DijkstraUndirectedSP.java:154: Line has trailing spaces. [RegexpSingleline]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m12\ADS-2_Exam-2\DijkstraUndirectedSP.java:166: Line has trailing spaces. [RegexpSingleline]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m12\ADS-2_Exam-2\DijkstraUndirectedSP.java:193: Line is longer than 80 characters (found 100). [LineLength]
+[ERROR] E:\ADS2\ADS 2 - Assignments\m12\ADS-2_Exam-2\DijkstraUndirectedSP.java:193: Line is longer than 80 characters (found 87). [LineLength]
 Audit done.
-Checkstyle ends with 5 errors.
+Checkstyle ends with 2 errors.
 Starting audit...
 Audit done.
 Starting audit...
