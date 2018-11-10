@@ -103,7 +103,7 @@ public class Solution {
 				}
 				System.out.println(sp1.distTo(via) + sp2.distTo(destination));
 				while (!queue.isEmpty()) {
-					str = queue.dequeue() + " ";
+					str += queue.dequeue() + " ";
 				}
 				System.out.print(str.trim());
 			} else {
