@@ -137,7 +137,7 @@ public class EdgeWeightedGraph {
     private void validateVertex(final int v) {
         if (v < 0 || v >= vertices) {
             throw new IllegalArgumentException("vertex " + v + " is not"
-                            + "between 0 and " + (vertices - 1));
+                                               + "between 0 and " + (vertices - 1));
         }
     }
 
@@ -215,7 +215,7 @@ public class EdgeWeightedGraph {
      */
     public String toString() {
         StringBuilder s = new StringBuilder();
-        s.append(vertices + " vertices " + edges +" edges"+ NEWLINE);
+        s.append(vertices + " vertices " + edges + " edges" + NEWLINE);
         for (int v = 0; v < vertices; v++) {
             s.append(v + ": ");
             for (Edge e : adj[v]) {
