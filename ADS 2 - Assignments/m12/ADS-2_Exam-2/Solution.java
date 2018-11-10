@@ -54,6 +54,7 @@ public class Solution {
 			DijkstraUndirectedSP sp1 = new DijkstraUndirectedSP(ewg, ss);
 			if (sp1.hasPathTo(d1)) {
 				dist1 = sp1.distTo(d1);
+				System.out.println(dist1);
 			} else {
 				System.out.println("No Path Found.");
 				break;
@@ -61,6 +62,7 @@ public class Solution {
 			DijkstraUndirectedSP sp2 = new DijkstraUndirectedSP(ewg, d1);
 			if (sp2.hasPathTo(d2)) {
 				dist1 = sp2.distTo(d2);
+				System.out.println(dist2);
 			} else {
 				System.out.println("No Path Found.");
 				break;
