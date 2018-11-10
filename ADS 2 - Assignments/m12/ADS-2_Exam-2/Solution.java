@@ -20,6 +20,8 @@ public class Solution {
 		switch (query) {
 		case "Graph":
 			//Print the Graph Object.
+			System.out.println(vertices + " vertices");
+			System.out.println(edges + " edges");
 			System.out.println(edgewtGraph);
 			break;
 
