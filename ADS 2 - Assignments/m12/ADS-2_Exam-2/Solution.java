@@ -8,15 +8,12 @@ public class Solution {
 		Scanner scan = new Scanner(System.in);
 		int vertices = Integer.parseInt(scan.nextLine());
 		int edges = Integer.parseInt(scan.nextLine());
-		EdgeWeightedDigraph ewd = new EdgeWeightedDigraph(vertices);
+		EdgeWeightedGraph ewd = new EdgeWeightedGraph(vertices);
 		while (edges > 0) {
 			String[] tokens = scan.nextLine().split(" ");
-			ewd.addEdge(new DirectedEdge(Integer.parseInt(tokens[0]),
-			                             Integer.parseInt(tokens[1]),
-			                             Integer.parseInt(tokens[2])));
-			ewd.addEdge(new DirectedEdge(Integer.parseInt(tokens[1]),
-			                             Integer.parseInt(tokens[0]),
-			                             Integer.parseInt(tokens[2])));
+			ewd.addEdge(new Edge(Integer.parseInt(tokens[0]),
+			                     Integer.parseInt(tokens[1]),
+			                     Integer.parseInt(tokens[2])));
 			edges--;
 		}
 		String query = scan.nextLine();
@@ -31,11 +28,11 @@ public class Solution {
 			// First is the source and second is the destination.
 			// If the path exists print the distance between them.
 			// Other wise print "No Path Found."
-			System.out.println("here");
-			String[] path = scan.nextLine().split(" ");
-			DijkstraSP dijkstra = new DijkstraSP(ewd, Integer.parseInt(path[0]));
-			System.out.println((long) dijkstra.distTo(Integer.parseInt(path[1])));
-			break;
+			// System.out.println("here");
+			// String[] path = scan.nextLine().split(" ");
+			// DijkstraSP dijkstra = new DijkstraSP(ewd, Integer.parseInt(path[0]));
+			// System.out.println((long) dijkstra.distTo(Integer.parseInt(path[1])));
+			// break;
 
 		case "ViaPaths":
 			// Handle the case of ViaPaths, where three integers are given.
