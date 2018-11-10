@@ -118,6 +118,7 @@ public class DijkstraUndirectedSP {
             path.push(e);
             x = e.other(x);
         }
+        System.out.println(path);
         return path;
     }
 
