@@ -11,7 +11,7 @@ public class DijkstraUndirectedSP {
      */
     private Edge[] edgeTo;
     /**
-     * priority queue of vertices
+     * priority queue of vertices.
      */
     private IndexMinPQ<Double> pq;
     /**
@@ -23,7 +23,8 @@ public class DijkstraUndirectedSP {
     public DijkstraUndirectedSP(final EdgeWeightedGraph g, final int s) {
         for (Edge e : g.edges()) {
             if (e.weight() < 0) {
-                throw new IllegalArgumentException("edge " + e + " has negative weight");
+                throw new IllegalArgumentException("edge " + e +
+                                                   " has negative weight");
             }
         }
 
@@ -120,7 +121,7 @@ public class DijkstraUndirectedSP {
     /**
      * check optimality conditions.
      *
-     * @param      G     { parameter_description }
+     * @param      g     { parameter_description }
      * @param      s     { parameter_description }
      *
      * @return     { description_of_the_return_value }
@@ -150,7 +151,8 @@ public class DijkstraUndirectedSP {
             }
         }
 
-        // check that all edges e = v-w satisfy distTo[w] <= distTo[v] + e.weight()
+        // check that all edges e = v-w satisfy 
+        // distTo[w] <= distTo[v] + e.weight()
         for (int v = 0; v < g.numberofVertices(); v++) {
             for (Edge e : g.adj(v)) {
                 int w = e.other(v);
@@ -161,7 +163,8 @@ public class DijkstraUndirectedSP {
             }
         }
 
-        // check that all edges e = v-w on SPT satisfy distTo[w] == distTo[v] + e.weight()
+        // check that all edges e = v-w on SPT satisfy 
+        // distTo[w] == distTo[v] + e.weight()
         for (int w = 0; w < g.numberofVertices(); w++) {
             if (edgeTo[w] == null) {
                 continue;
@@ -185,10 +188,11 @@ public class DijkstraUndirectedSP {
      * @param      v     { parameter_description }
      */
     private void validateVertex(final int v) {
-        int V = distTo.length;
-        if (v < 0 || v >= V) {
-            throw new IllegalArgumentException("vertex " + v + " is not between 0 and " + (V - 1));
+        int v1 = distTo.length;
+        if (v < 0 || v >= v1) {
+            throw new IllegalArgumentException("vertex " + v + " is not between 0 and " + (v1 - 1));
         }
     }
 
 }
+
