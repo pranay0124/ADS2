@@ -1,7 +1,50 @@
 Starting audit...
 Audit done.
 Starting audit...
+[ERROR] E:\ADS2\ADS 2 - Assignments\m12\ADS-2_Exam-2\DijkstraUndirectedSP.java:0: File does not end with a newline. [NewlineAtEndOfFile]
+[ERROR] E:\ADS2\ADS 2 - Assignments\m12\ADS-2_Exam-2\DijkstraUndirectedSP.java:9: Line is longer than 80 characters (found 85). [LineLength]
+[ERROR] E:\ADS2\ADS 2 - Assignments\m12\ADS-2_Exam-2\DijkstraUndirectedSP.java:24: Line is longer than 80 characters (found 84). [LineLength]
+[ERROR] E:\ADS2\ADS 2 - Assignments\m12\ADS-2_Exam-2\DijkstraUndirectedSP.java:24:5: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] E:\ADS2\ADS 2 - Assignments\m12\ADS-2_Exam-2\DijkstraUndirectedSP.java:25: Line is longer than 80 characters (found 84). [LineLength]
+[ERROR] E:\ADS2\ADS 2 - Assignments\m12\ADS-2_Exam-2\DijkstraUndirectedSP.java:25:5: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] E:\ADS2\ADS 2 - Assignments\m12\ADS-2_Exam-2\DijkstraUndirectedSP.java:26:5: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] E:\ADS2\ADS 2 - Assignments\m12\ADS-2_Exam-2\DijkstraUndirectedSP.java:37:33: Parameter G should be final. [FinalParameters]
+[ERROR] E:\ADS2\ADS 2 - Assignments\m12\ADS-2_Exam-2\DijkstraUndirectedSP.java:37:51: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
+[ERROR] E:\ADS2\ADS 2 - Assignments\m12\ADS-2_Exam-2\DijkstraUndirectedSP.java:37:54: Parameter s should be final. [FinalParameters]
+[ERROR] E:\ADS2\ADS 2 - Assignments\m12\ADS-2_Exam-2\DijkstraUndirectedSP.java:39: 'if' construct must use '{}'s. [NeedBraces]
+[ERROR] E:\ADS2\ADS 2 - Assignments\m12\ADS-2_Exam-2\DijkstraUndirectedSP.java:40: Line is longer than 80 characters (found 89). [LineLength]
+[ERROR] E:\ADS2\ADS 2 - Assignments\m12\ADS-2_Exam-2\DijkstraUndirectedSP.java:48: 'for' construct must use '{}'s. [NeedBraces]
+[ERROR] E:\ADS2\ADS 2 - Assignments\m12\ADS-2_Exam-2\DijkstraUndirectedSP.java:57: 'for' construct must use '{}'s. [NeedBraces]
+[ERROR] E:\ADS2\ADS 2 - Assignments\m12\ADS-2_Exam-2\DijkstraUndirectedSP.java:66:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] E:\ADS2\ADS 2 - Assignments\m12\ADS-2_Exam-2\DijkstraUndirectedSP.java:66:24: Parameter e should be final. [FinalParameters]
+[ERROR] E:\ADS2\ADS 2 - Assignments\m12\ADS-2_Exam-2\DijkstraUndirectedSP.java:66:32: Parameter v should be final. [FinalParameters]
+[ERROR] E:\ADS2\ADS 2 - Assignments\m12\ADS-2_Exam-2\DijkstraUndirectedSP.java:71: 'if' construct must use '{}'s. [NeedBraces]
+[ERROR] E:\ADS2\ADS 2 - Assignments\m12\ADS-2_Exam-2\DijkstraUndirectedSP.java:72: 'else' construct must use '{}'s. [NeedBraces]
+[ERROR] E:\ADS2\ADS 2 - Assignments\m12\ADS-2_Exam-2\DijkstraUndirectedSP.java:77: Line is longer than 80 characters (found 84). [LineLength]
+[ERROR] E:\ADS2\ADS 2 - Assignments\m12\ADS-2_Exam-2\DijkstraUndirectedSP.java:81: Line is longer than 80 characters (found 84). [LineLength]
+[ERROR] E:\ADS2\ADS 2 - Assignments\m12\ADS-2_Exam-2\DijkstraUndirectedSP.java:82: Line is longer than 80 characters (found 85). [LineLength]
+[ERROR] E:\ADS2\ADS 2 - Assignments\m12\ADS-2_Exam-2\DijkstraUndirectedSP.java:85:26: Parameter v should be final. [FinalParameters]
+[ERROR] E:\ADS2\ADS 2 - Assignments\m12\ADS-2_Exam-2\DijkstraUndirectedSP.java:99:30: Parameter v should be final. [FinalParameters]
+[ERROR] E:\ADS2\ADS 2 - Assignments\m12\ADS-2_Exam-2\DijkstraUndirectedSP.java:105: Line is longer than 80 characters (found 88). [LineLength]
+[ERROR] E:\ADS2\ADS 2 - Assignments\m12\ADS-2_Exam-2\DijkstraUndirectedSP.java:108: Line is longer than 80 characters (found 88). [LineLength]
+[ERROR] E:\ADS2\ADS 2 - Assignments\m12\ADS-2_Exam-2\DijkstraUndirectedSP.java:112:34: Parameter v should be final. [FinalParameters]
+[ERROR] E:\ADS2\ADS 2 - Assignments\m12\ADS-2_Exam-2\DijkstraUndirectedSP.java:114: 'if' construct must use '{}'s. [NeedBraces]
+[ERROR] E:\ADS2\ADS 2 - Assignments\m12\ADS-2_Exam-2\DijkstraUndirectedSP.java:128:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] E:\ADS2\ADS 2 - Assignments\m12\ADS-2_Exam-2\DijkstraUndirectedSP.java:128:27: Parameter G should be final. [FinalParameters]
+[ERROR] E:\ADS2\ADS 2 - Assignments\m12\ADS-2_Exam-2\DijkstraUndirectedSP.java:128:45: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
+[ERROR] E:\ADS2\ADS 2 - Assignments\m12\ADS-2_Exam-2\DijkstraUndirectedSP.java:128:48: Parameter s should be final. [FinalParameters]
+[ERROR] E:\ADS2\ADS 2 - Assignments\m12\ADS-2_Exam-2\DijkstraUndirectedSP.java:144: 'if' construct must use '{}'s. [NeedBraces]
+[ERROR] E:\ADS2\ADS 2 - Assignments\m12\ADS-2_Exam-2\DijkstraUndirectedSP.java:151: Line is longer than 80 characters (found 83). [LineLength]
+[ERROR] E:\ADS2\ADS 2 - Assignments\m12\ADS-2_Exam-2\DijkstraUndirectedSP.java:162: Line is longer than 80 characters (found 90). [LineLength]
+[ERROR] E:\ADS2\ADS 2 - Assignments\m12\ADS-2_Exam-2\DijkstraUndirectedSP.java:164: 'if' construct must use '{}'s. [NeedBraces]
+[ERROR] E:\ADS2\ADS 2 - Assignments\m12\ADS-2_Exam-2\DijkstraUndirectedSP.java:166: 'if' construct must use '{}'s. [NeedBraces]
+[ERROR] E:\ADS2\ADS 2 - Assignments\m12\ADS-2_Exam-2\DijkstraUndirectedSP.java:177:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] E:\ADS2\ADS 2 - Assignments\m12\ADS-2_Exam-2\DijkstraUndirectedSP.java:177:33: Parameter v should be final. [FinalParameters]
+[ERROR] E:\ADS2\ADS 2 - Assignments\m12\ADS-2_Exam-2\DijkstraUndirectedSP.java:178:13: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [LocalVariableName]
+[ERROR] E:\ADS2\ADS 2 - Assignments\m12\ADS-2_Exam-2\DijkstraUndirectedSP.java:179: 'if' construct must use '{}'s. [NeedBraces]
+[ERROR] E:\ADS2\ADS 2 - Assignments\m12\ADS-2_Exam-2\DijkstraUndirectedSP.java:180: Line is longer than 80 characters (found 99). [LineLength]
 Audit done.
+Checkstyle ends with 42 errors.
 Starting audit...
 Audit done.
 Starting audit...
@@ -22,11 +65,12 @@ Starting audit...
 [ERROR] E:\ADS2\ADS 2 - Assignments\m12\ADS-2_Exam-2\Solution.java:4:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] E:\ADS2\ADS 2 - Assignments\m12\ADS-2_Exam-2\Solution.java:4:33: Parameter args should be final. [FinalParameters]
 [ERROR] E:\ADS2\ADS 2 - Assignments\m12\ADS-2_Exam-2\Solution.java:27: Line is longer than 80 characters (found 90). [LineLength]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m12\ADS-2_Exam-2\Solution.java:33: Line is longer than 80 characters (found 96). [LineLength]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m12\ADS-2_Exam-2\Solution.java:34: Line is longer than 80 characters (found 97). [LineLength]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m12\ADS-2_Exam-2\Solution.java:38: Line is longer than 80 characters (found 87). [LineLength]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m12\ADS-2_Exam-2\Solution.java:39: Line is longer than 80 characters (found 110). [LineLength]
+[ERROR] E:\ADS2\ADS 2 - Assignments\m12\ADS-2_Exam-2\Solution.java:34: Line is longer than 80 characters (found 83). [LineLength]
+[ERROR] E:\ADS2\ADS 2 - Assignments\m12\ADS-2_Exam-2\Solution.java:43: Line is longer than 80 characters (found 87). [LineLength]
+[ERROR] E:\ADS2\ADS 2 - Assignments\m12\ADS-2_Exam-2\Solution.java:44: Line is longer than 80 characters (found 110). [LineLength]
 Audit done.
-Checkstyle ends with 11 errors.
+Checkstyle ends with 10 errors.
+Starting audit...
+Audit done.
 Starting audit...
 Audit done.
