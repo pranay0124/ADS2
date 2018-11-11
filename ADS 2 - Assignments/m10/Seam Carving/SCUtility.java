@@ -110,41 +110,26 @@ public class SCUtility {
     // This method is useful for debugging seams. It overlays red
     // pixels over the calculate seam. Due to the lack of a copy
     // constructor, it also alters the original picture.
-    
-    /**
-     * same overlay.
-     *
-     * @param      picture      The picture
-     * @param      horizontal   The horizontal
-     * @param      seamIndices  The seam indices
-     *
-     * @return     { description_of_the_return_value }
-     */
-    public static Picture seamOverlay(final Picture picture,
-                final boolean horizontal, final int[] seamIndices) {
+    public static Picture seamOverlay(Picture picture, boolean horizontal, int[] seamIndices) {
         Picture overlaid = new Picture(picture.width(), picture.height());
         int width = picture.width();
         int height = picture.height();
 
-        for (int col = 0; col < width; col++) {
-            for (int row = 0; row < height; row++) {
+        for (int col = 0; col < width; col++)
+            for (int row = 0; row < height; row++)
                 overlaid.set(col, row, picture.get(col, row));
-            }
-        }
         
 
         // if horizontal seam, then set one pixel in every column
         if (horizontal) {
-            for (int col = 0; col < width; col++) {
+            for (int col = 0; col < width; col++)
                 overlaid.set(col, seamIndices[col], Color.RED);
-            }
         }
 
         // if vertical, put one pixel in every row
         else {
-            for (int row = 0; row < height; row++) {
+            for (int row = 0; row < height; row++)
                 overlaid.set(seamIndices[row], row, Color.RED);
-            }
         }
 
         return overlaid;
