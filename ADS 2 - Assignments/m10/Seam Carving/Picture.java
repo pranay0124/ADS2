@@ -243,7 +243,11 @@ public final class Picture implements ActionListener {
     public int width() {
         return width;
     }
-
+    /**
+     * validateRowIndex.
+     *
+     * @param      row   The row
+     */
     private void validateRowIndex(final int row) {
         if (row < 0 || row >= height()) {
             throw new IllegalArgumentException(
@@ -251,7 +255,11 @@ public final class Picture implements ActionListener {
                 + (height() - 1) + ": " + row);
         }
     }
-
+    /**
+     * validate column index.
+     *
+     * @param      col   The col
+     */
     private void validateColumnIndex(final int col) {
         if (col < 0 || col >= width()) {
             throw new IllegalArgumentException(
@@ -300,7 +308,7 @@ public final class Picture implements ActionListener {
       * @param col the column index
       * @param row the row index
       * @param color the color
-      * @throws IllegalArgumentException unless both (0 <= col < width) 
+      * @throws IllegalArgumentException unless both (0 <= col < width)
       *                                         and (0 <= row < height)
       * @throws IllegalArgumentException if color is null
       */
