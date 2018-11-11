@@ -51,15 +51,17 @@ public final class Picture implements ActionListener {
      */
     public Picture(final int width1, final int height1) {
         if (width1  < 0) {
-            throw new IllegalArgumentException("width must be non-negative");
+            throw new IllegalArgumentException(
+                "width must be non-negative");
         }
         if (height1 < 0) {
-            throw new IllegalArgumentException("height must be non-negative");
+            throw new IllegalArgumentException(
+                "height must be non-negative");
         }
         this.width  = width1;
         this.height = height1;
-        image = new BufferedImage(width1, height1, BufferedImage.TYPE_INT_RGB);
-        // set to TYPE_INT_ARGB here and in next constructor to support transparency
+        image = new BufferedImage(width1, height1,
+            BufferedImage.TYPE_INT_RGB);
     }
 
     /**
@@ -70,11 +72,13 @@ public final class Picture implements ActionListener {
       */
     public Picture(final Picture picture) {
         if (picture == null) {
-            throw new IllegalArgumentException("constructor argument is null");
+            throw new IllegalArgumentException(
+                "constructor argument is null");
         }
         width  = picture.width();
         height = picture.height();
-        image = new BufferedImage(width, height, BufferedImage.TYPE_INT_RGB);
+        image = new BufferedImage(width, height,
+            BufferedImage.TYPE_INT_RGB);
         filename = picture.filename;
         isOriginUpperLeft = picture.isOriginUpperLeft;
         for (int col = 0; col < width(); col++) {
@@ -93,7 +97,8 @@ public final class Picture implements ActionListener {
       */
     public Picture(String filename) {
         if (filename == null) {
-            throw new IllegalArgumentException("constructor argument is null");
+            throw new IllegalArgumentException(
+                "constructor argument is null");
         }
 
         this.filename = filename;
@@ -114,13 +119,15 @@ public final class Picture implements ActionListener {
             }
 
             if (image == null) {
-                throw new IllegalArgumentException("could not read image file: " + filename);
+                throw new IllegalArgumentException(
+                    "could not read image file: " + filename);
             }
 
             width  = image.getWidth(null);
             height = image.getHeight(null);
         } catch (IOException ioe) {
-            throw new IllegalArgumentException("could not open image file: " + filename, ioe);
+            throw new IllegalArgumentException(
+                "could not open image file: " + filename, ioe);
         }
     }
 
@@ -133,16 +140,19 @@ public final class Picture implements ActionListener {
       */
     public Picture(final File file) {
         if (file == null) {
-            throw new IllegalArgumentException("constructor argument is null");
+            throw new IllegalArgumentException(
+                "constructor argument is null");
         }
 
         try {
             image = ImageIO.read(file);
         } catch (IOException ioe) {
-            throw new IllegalArgumentException("could not open file: " + file, ioe);
+            throw new IllegalArgumentException(
+                "could not open file: " + file, ioe);
         }
         if (image == null) {
-            throw new IllegalArgumentException("could not read file: " + file);
+            throw new IllegalArgumentException(
+                "could not read file: " + file);
         }
         width  = image.getWidth(null);
         height = image.getHeight(null);
@@ -150,11 +160,10 @@ public final class Picture implements ActionListener {
     }
 
     /**
-      * Returns a {@link JLabel} containing this picture, for embedding in a {@link JPanel},
-      * {@link JFrame} or other GUI widget.
-      *
-      * @return the {@code JLabel}
-      */
+     * Gets the j label.
+     *
+     * @return     The j label.
+     */
     public JLabel getJLabel() {
         if (image == null) {
             return null;         // no image available
@@ -191,9 +200,10 @@ public final class Picture implements ActionListener {
             menuBar.add(menu);
             JMenuItem menuItem1 = new JMenuItem(" Save...   ");
             menuItem1.addActionListener(this);
-            // use getMenuShortcutKeyMaskEx() in Java 10 (getMenuShortcutKeyMask() deprecated)
+            // use getMenuShortcutKeyMaskEx() in Java 10 
+            // (getMenuShortcutKeyMask() deprecated)
             menuItem1.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_S,
-                                     Toolkit.getDefaultToolkit().getMenuShortcutKeyMask()));
+                Toolkit.getDefaultToolkit().getMenuShortcutKeyMask()));
             menu.add(menuItem1);
             frame.setJMenuBar(menuBar);
 
@@ -236,24 +246,28 @@ public final class Picture implements ActionListener {
 
     private void validateRowIndex(final int row) {
         if (row < 0 || row >= height()) {
-            throw new IllegalArgumentException("row index must be between 0 and " + (height() - 1) + ": " + row);
+            throw new IllegalArgumentException(
+                "row index must be between 0 and "
+                + (height() - 1) + ": " + row);
         }
     }
 
     private void validateColumnIndex(final int col) {
         if (col < 0 || col >= width()) {
-            throw new IllegalArgumentException("column index must be between 0 and " + (width() - 1) + ": " + col);
+            throw new IllegalArgumentException(
+                "column index must be between 0 and "
+                + (width() - 1) + ": " + col);
         }
     }
 
     /**
-      * Returns the color of pixel ({@code col}, {@code row}) as a {@link java.awt.Color}.
-      *
-      * @param col the column index
-      * @param row the row index
-      * @return the color of pixel ({@code col}, {@code row})
-      * @throws IllegalArgumentException unless both {@code 0 <= col < width} and {@code 0 <= row < height}
-      */
+     * Returns the color of pixel.
+     *
+     * @param      col   The col
+     * @param      row   The row
+     *
+     * @return     { description_of_the_return_value }
+     */
     public Color get(final int col, final int row) {
         validateColumnIndex(col);
         validateRowIndex(row);
@@ -262,15 +276,14 @@ public final class Picture implements ActionListener {
     }
 
     /**
-      * Returns the color of pixel ({@code col}, {@code row}) as an {@code int}.
-      * Using this method can be more efficient than {@link #get(int, int)} because
-      * it does not create a {@code Color} object.
-      *
-      * @param col the column index
-      * @param row the row index
-      * @return the integer representation of the color of pixel ({@code col}, {@code row})
-      * @throws IllegalArgumentException unless both {@code 0 <= col < width} and {@code 0 <= row < height}
-      */
+     * Gets the rgb.
+     * Returns the color of pixel
+     *
+     * @param      col   The col
+     * @param      row   The row
+     *
+     * @return     The rgb.
+     */
     public int getRGB(final int col, final int row) {
         validateColumnIndex(col);
         validateRowIndex(row);
@@ -282,13 +295,14 @@ public final class Picture implements ActionListener {
     }
 
     /**
-      * Sets the color of pixel ({@code col}, {@code row}) to given color.
+      * Sets the color of pixel (col, row) to given color.
       *
       * @param col the column index
       * @param row the row index
       * @param color the color
-      * @throws IllegalArgumentException unless both {@code 0 <= col < width} and {@code 0 <= row < height}
-      * @throws IllegalArgumentException if {@code color} is {@code null}
+      * @throws IllegalArgumentException unless both (0 <= col < width) 
+      *                                         and (0 <= row < height)
+      * @throws IllegalArgumentException if color is null
       */
     public void set(final int col, final int row, final Color color) {
         validateColumnIndex(col);
@@ -301,12 +315,13 @@ public final class Picture implements ActionListener {
     }
 
     /**
-      * Sets the color of pixel ({@code col}, {@code row}) to given color.
+      * Sets the color of pixel (col, row) to given color.
       *
       * @param col the column index
       * @param row the row index
       * @param rgb the integer representation of the color
-      * @throws IllegalArgumentException unless both {@code 0 <= col < width} and {@code 0 <= row < height}
+      * @throws IllegalArgumentException unless both (0 <= col < width)
+      *                                         and (0 <= row < height)
       */
     public void setRGB(final int col, final int row, final int rgb) {
         validateColumnIndex(col);
@@ -322,8 +337,8 @@ public final class Picture implements ActionListener {
       * Returns true if this picture is equal to the argument picture.
       *
       * @param other the other picture
-      * @return {@code true} if this picture is the same dimension as {@code other}
-      *         and if all pixels have the same color; {@code false} otherwise
+      * @return true if this picture is the same dimension as  other
+      *         and if all pixels have the same color; false otherwise
       */
     public boolean equals(final Object other) {
         if (other == this) {
@@ -354,7 +369,7 @@ public final class Picture implements ActionListener {
 
     /**
       * Returns a string representation of this picture.
-      * The result is a <code>width</code>-by-<code>height</code> matrix of pixels,
+      * The result is a width-by height matrix of pixels,
       * where the color of a pixel is represented using 6 hex digits to encode
       * the red, green, and blue components.
       *
@@ -363,7 +378,8 @@ public final class Picture implements ActionListener {
     public String toString() {
         final int aaa = 0xFFFFFF;
         StringBuilder sb = new StringBuilder();
-        sb.append(width + "-by-" + height + " picture (RGB values given in hex)\n");
+        sb.append(width + "-by-" + height
+                  + " picture (RGB values given in hex)\n");
         for (int row = 0; row < height; row++) {
             for (int col = 0; col < width; col++) {
                 int rgb = 0;
