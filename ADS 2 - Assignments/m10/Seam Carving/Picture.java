@@ -61,7 +61,7 @@ public final class Picture implements ActionListener {
         this.width  = width1;
         this.height = height1;
         image = new BufferedImage(width1, height1,
-            BufferedImage.TYPE_INT_RGB);
+                                  BufferedImage.TYPE_INT_RGB);
     }
 
     /**
@@ -78,7 +78,7 @@ public final class Picture implements ActionListener {
         width  = picture.width();
         height = picture.height();
         image = new BufferedImage(width, height,
-            BufferedImage.TYPE_INT_RGB);
+                                  BufferedImage.TYPE_INT_RGB);
         filename = picture.filename;
         isOriginUpperLeft = picture.isOriginUpperLeft;
         for (int col = 0; col < width(); col++) {
@@ -107,10 +107,7 @@ public final class Picture implements ActionListener {
             File file = new File(filename);
             if (file.isFile()) {
                 image = ImageIO.read(file);
-            }
-
-            // now try to read from file in same directory as this .class file
-            else {
+            } else {
                 URL url = getClass().getResource(filename);
                 if (url == null) {
                     url = new URL(filename);
@@ -200,10 +197,10 @@ public final class Picture implements ActionListener {
             menuBar.add(menu);
             JMenuItem menuItem1 = new JMenuItem(" Save...   ");
             menuItem1.addActionListener(this);
-            // use getMenuShortcutKeyMaskEx() in Java 10 
+            // use getMenuShortcutKeyMaskEx() in Java 10
             // (getMenuShortcutKeyMask() deprecated)
             menuItem1.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_S,
-                Toolkit.getDefaultToolkit().getMenuShortcutKeyMask()));
+                                     Toolkit.getDefaultToolkit().getMenuShortcutKeyMask()));
             menu.add(menuItem1);
             frame.setJMenuBar(menuBar);
 

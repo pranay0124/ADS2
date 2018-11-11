@@ -2,10 +2,9 @@ Starting audit...
 [ERROR] E:\ADS2\ADS 2 - Assignments\m10\Seam Carving\Picture.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] E:\ADS2\ADS 2 - Assignments\m10\Seam Carving\Picture.java:98:20: Parameter filename should be final. [FinalParameters]
 [ERROR] E:\ADS2\ADS 2 - Assignments\m10\Seam Carving\Picture.java:98:27: 'filename' hides a field. [HiddenField]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m10\Seam Carving\Picture.java:110:13: '}' at column 13 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m10\Seam Carving\Picture.java:203: Line has trailing spaces. [RegexpSingleline]
+[ERROR] E:\ADS2\ADS 2 - Assignments\m10\Seam Carving\Picture.java:203: Line is longer than 80 characters (found 92). [LineLength]
 Audit done.
-Checkstyle ends with 5 errors.
+Checkstyle ends with 4 errors.
 Starting audit...
 [ERROR] E:\ADS2\ADS 2 - Assignments\m10\Seam Carving\PrintEnergy.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] E:\ADS2\ADS 2 - Assignments\m10\Seam Carving\PrintEnergy.java:5: Line has trailing spaces. [RegexpSingleline]
