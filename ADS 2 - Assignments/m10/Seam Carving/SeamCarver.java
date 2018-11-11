@@ -1,5 +1,4 @@
 import java.awt.Color;
-import java.lang.Math;
 /**
  * Class for seam carver.
  */
@@ -43,7 +42,7 @@ public class SeamCarver {
         return width;
     }
     /**
-     *height of current picture
+     *height of current picture.
      *
      * @return height of image.
      */
@@ -51,48 +50,52 @@ public class SeamCarver {
         return height;
     }
     /**
-     *energy of pixel at column x and row y
+     *energy of pixel at column x and row y.
      *
      * @param      x  x coordinate
      * @param      y   y coordinate
      *
      * @return energy of pixel.
      */
-    public double energy(int x, int y) {
+    public double energy(final int x, final int y) {
         //handle exceptions
-        if(x == 0 || y == 0 || y == (height - 1) || x == (width - 1)) {
-            return 1000.0;
+        final double num = 1000.0;
+        if (x == 0 || y == 0 || y == (height - 1) || x == (width - 1)) {
+            return num;
         }
         double xCoordinate = 0.0;
         double yCoordinate = 0.0;
-        Color object = picture.get(x,y);
+        Color object = picture.get(x, y);
         Color leftObj = picture.get(x, y - 1);
         Color rightObj = picture.get(x, y + 1);
         double xRed = Math.abs((leftObj.getRed() - rightObj.getRed()));
         double xGreen = Math.abs((leftObj.getGreen() - rightObj.getGreen()));
         double xBlue = Math.abs((leftObj.getBlue() - rightObj.getBlue()));
-        xCoordinate = Math.pow(xRed, 2) + Math.pow(xBlue, 2) + Math.pow(xGreen, 2);
+        xCoordinate = Math.pow(xRed, 2) + Math.pow(xBlue, 2)
+        + Math.pow(xGreen, 2);
         Color topObj = picture.get(x - 1, y);
         Color bottomObj = picture.get(x + 1, y);
         double yRed = Math.abs((topObj.getRed() - bottomObj.getRed()));
         double yGreen = Math.abs((topObj.getGreen() - bottomObj.getGreen()));
         double yBlue = Math.abs((topObj.getBlue() - bottomObj.getBlue()));
-        yCoordinate = Math.pow(yRed, 2) + Math.pow(yBlue, 2) + Math.pow(yGreen, 2);
+        yCoordinate = Math.pow(yRed, 2) + Math.pow(yBlue, 2)
+        + Math.pow(yGreen, 2);
         double sum = Math.sqrt((xCoordinate + yCoordinate));
         return sum;
     }
-    /**sequence of indices for horizontal seam
+    /**sequence of indices for horizontal seam.
      *
      *time complexity is O(w*h)
      *w is the width and h is the height
      * @return  sequence of indices of horizontal seam
      */
     public int[] findHorizontalSeam() {
+        final int n = 1000;
         int[][] edgeTo = new int[height][width];
         double[][] distTo = new double[height][width];
         reset(distTo);
         for (int row = 0; row < height; row++) {
-            distTo[row][0] = 1000;
+            distTo[row][0] = n;
         }
         // this is for relaxation.
         for (int col = 0; col < width - 1; col++) {
@@ -116,7 +119,8 @@ public class SeamCarver {
         }
         return indices;
     }
-    private void relaxH(int row, int col, int[][] edgeTo, double[][] distTo) {
+    private void relaxH(final int row, final int col,
+        final int[][] edgeTo, final double[][] distTo) {
         int nextCol = col + 1;
         for (int i = -1; i <= 1; i++) {
             int nextRow = row + i;

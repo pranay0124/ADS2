@@ -33,12 +33,15 @@
 
 import edu.princeton.cs.algs4.Picture;
 import edu.princeton.cs.algs4.StdOut;
-
+/**
+ * Class for print seams.
+ */
 public class PrintSeams {
-    private static final boolean HORIZONTAL   = true;
-    private static final boolean VERTICAL     = false;
+    private static final boolean HORIZONTAL = true;
+    private static final boolean VERTICAL = false;
 
-    private static void printSeam(SeamCarver carver, int[] seam, boolean direction) {
+    private static void printSeam(final SeamCarver carver,
+        final int[] seam, final boolean direction) {
         double totalSeamEnergy = 0.0;
 
         for (int row = 0; row < carver.height(); row++) {
@@ -46,7 +49,7 @@ public class PrintSeams {
                 double energy = carver.energy(col, row);
                 String marker = " ";
                 if ((direction == HORIZONTAL && row == seam[col]) ||
-                    (direction == VERTICAL   && col == seam[row])) {
+                    (direction == VERTICAL && col == seam[row])) {
                     marker = "*";
                     totalSeamEnergy += energy;
                 }
@@ -62,7 +65,8 @@ public class PrintSeams {
 
     public static void main(String[] args) {
         Picture picture = new Picture(args[0]);
-        StdOut.printf("%s (%d-by-%d image)\n", args[0], picture.width(), picture.height());
+        StdOut.printf("%s (%d-by-%d image)\n", args[0],
+            picture.width(), picture.height());
         StdOut.println();
         StdOut.println("The table gives the dual-gradient energies of each pixel.");
         StdOut.println("The asterisks denote a minimum energy vertical or horizontal seam.");
