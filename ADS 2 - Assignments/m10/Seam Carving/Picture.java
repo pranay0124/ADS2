@@ -91,7 +91,7 @@ public final class Picture implements ActionListener {
     /**
       * Creates a picture by reading an image from a file or URL.
       *
-      * @param  filename the name of the file (.png, .gif, or .jpg) or URL.
+      * @param  filename1 the name of the file (.png, .gif, or .jpg) or URL.
       * @throws IllegalArgumentException if cannot read image
       * @throws IllegalArgumentException if {@code filename} is {@code null}
       */
