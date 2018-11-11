@@ -98,15 +98,16 @@ Starting audit...
 [ERROR] E:\ADS2\ADS 2 - Assignments\m10\Seam Carving\SeamCarver.java:79: Line is longer than 80 characters (found 85). [LineLength]
 [ERROR] E:\ADS2\ADS 2 - Assignments\m10\Seam Carving\SeamCarver.java:80: Line is longer than 80 characters (found 82). [LineLength]
 [ERROR] E:\ADS2\ADS 2 - Assignments\m10\Seam Carving\SeamCarver.java:136: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m10\Seam Carving\SeamCarver.java:138: Line is longer than 80 characters (found 111). [LineLength]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m10\Seam Carving\SeamCarver.java:139: Line is longer than 80 characters (found 112). [LineLength]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m10\Seam Carving\SeamCarver.java:143: Line is longer than 80 characters (found 102). [LineLength]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m10\Seam Carving\SeamCarver.java:144: Line is longer than 80 characters (found 104). [LineLength]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m10\Seam Carving\SeamCarver.java:167:40: '1000.0' is a magic number. [MagicNumber]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m10\Seam Carving\SeamCarver.java:193: First sentence should end with a period. [JavadocStyle]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m10\Seam Carving\SeamCarver.java:229: Line is longer than 80 characters (found 83). [LineLength]
+[ERROR] E:\ADS2\ADS 2 - Assignments\m10\Seam Carving\SeamCarver.java:140: Line is longer than 80 characters (found 83). [LineLength]
+[ERROR] E:\ADS2\ADS 2 - Assignments\m10\Seam Carving\SeamCarver.java:141: Line is longer than 80 characters (found 94). [LineLength]
+[ERROR] E:\ADS2\ADS 2 - Assignments\m10\Seam Carving\SeamCarver.java:148: Line is longer than 80 characters (found 86). [LineLength]
+[ERROR] E:\ADS2\ADS 2 - Assignments\m10\Seam Carving\SeamCarver.java:171:40: '1000.0' is a magic number. [MagicNumber]
+[ERROR] E:\ADS2\ADS 2 - Assignments\m10\Seam Carving\SeamCarver.java:197: First sentence should end with a period. [JavadocStyle]
+[ERROR] E:\ADS2\ADS 2 - Assignments\m10\Seam Carving\SeamCarver.java:233: Line is longer than 80 characters (found 83). [LineLength]
+[ERROR] E:\ADS2\ADS 2 - Assignments\m10\Seam Carving\SeamCarver.java:234: Line is longer than 80 characters (found 94). [LineLength]
+[ERROR] E:\ADS2\ADS 2 - Assignments\m10\Seam Carving\SeamCarver.java:241: Line is longer than 80 characters (found 86). [LineLength]
 Audit done.
-Checkstyle ends with 14 errors.
+Checkstyle ends with 15 errors.
 Starting audit...
 Audit done.
 Starting audit...

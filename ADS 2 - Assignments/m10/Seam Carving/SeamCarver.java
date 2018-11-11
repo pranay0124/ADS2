@@ -135,13 +135,17 @@ public class SeamCarver {
 			int nextRow = row + i;
 			if (nextRow < 0 || nextRow >= height) continue;
 			if (i == 0) {
-				if (distTo[nextRow][nextCol] >= distTo[row][col]  + energy(nextCol, nextRow)) {
-					distTo[nextRow][nextCol] = distTo[row][col]  + energy(nextCol, nextRow);
+				if (distTo[nextRow][nextCol] >= distTo[row][col]
+				        + energy(nextCol, nextRow)) {
+					distTo[nextRow][nextCol] = distTo[row][col]
+					                           + energy(nextCol, nextRow);
 					edgeTo[nextRow][nextCol] = i;
 				}
 			}
-			if (distTo[nextRow][nextCol] > distTo[row][col]  + energy(nextCol, nextRow)) {
-				distTo[nextRow][nextCol] = distTo[row][col]  + energy(nextCol, nextRow);
+			if (distTo[nextRow][nextCol] > distTo[row][col]
+			        + energy(nextCol, nextRow)) {
+				distTo[nextRow][nextCol] = distTo[row][col]
+				                           + energy(nextCol, nextRow);
 				edgeTo[nextRow][nextCol] = i;
 			}
 		}
@@ -227,14 +231,14 @@ public class SeamCarver {
 				if (distTo[nextRow][nextCol] >= distTo[row][col]
 				        + energy(nextCol, nextRow)) {
 					distTo[nextRow][nextCol] = distTo[row][col]
-			               + energy(nextCol, nextRow);
+					                           + energy(nextCol, nextRow);
 					edgeTo[nextRow][nextCol] = i;
 				}
 			}
 			if (distTo[nextRow][nextCol] > distTo[row][col]
 			        + energy(nextCol, nextRow)) {
 				distTo[nextRow][nextCol] = distTo[row][col]
-				                + energy(nextCol, nextRow);
+				                           + energy(nextCol, nextRow);
 				edgeTo[nextRow][nextCol] = i;
 			}
 		}
@@ -251,7 +255,7 @@ public class SeamCarver {
 		for (int col = 0; col < width; col++) {
 			for (int row = seam[col]; row < height - 1; row++) {
 				this.picture.set(col, row, this.picture.get(
-					col, row + 1));
+				                     col, row + 1));
 			}
 		}
 		height--;
@@ -266,7 +270,7 @@ public class SeamCarver {
 		for (int row = 0; row < height; row++) {
 			for (int col = seam[row]; col < width - 1; col++) {
 				this.picture.set(col, row, this.picture.get(
-					col + 1, row));
+				                     col + 1, row));
 			}
 		}
 		width--;
