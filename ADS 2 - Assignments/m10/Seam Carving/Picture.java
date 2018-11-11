@@ -95,8 +95,8 @@ public final class Picture implements ActionListener {
       * @throws IllegalArgumentException if cannot read image
       * @throws IllegalArgumentException if {@code filename} is {@code null}
       */
-    public Picture(String filename) {
-        if (filename == null) {
+    public Picture(final String filename1) {
+        if (filename1 == null) {
             throw new IllegalArgumentException(
                 "constructor argument is null");
         }
@@ -200,7 +200,7 @@ public final class Picture implements ActionListener {
             // use getMenuShortcutKeyMaskEx() in Java 10
             // (getMenuShortcutKeyMask() deprecated)
             menuItem1.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_S,
-                                     Toolkit.getDefaultToolkit().getMenuShortcutKeyMask()));
+                Toolkit.getDefaultToolkit().getMenuShortcutKeyMask()));
             menu.add(menuItem1);
             frame.setJMenuBar(menuBar);
 
