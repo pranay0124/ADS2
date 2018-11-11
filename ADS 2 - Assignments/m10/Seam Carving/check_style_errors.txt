@@ -104,16 +104,9 @@ Starting audit...
 [ERROR] E:\ADS2\ADS 2 - Assignments\m10\Seam Carving\SeamCarver.java:144: Line is longer than 80 characters (found 104). [LineLength]
 [ERROR] E:\ADS2\ADS 2 - Assignments\m10\Seam Carving\SeamCarver.java:167:40: '1000.0' is a magic number. [MagicNumber]
 [ERROR] E:\ADS2\ADS 2 - Assignments\m10\Seam Carving\SeamCarver.java:193: First sentence should end with a period. [JavadocStyle]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m10\Seam Carving\SeamCarver.java:209:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m10\Seam Carving\SeamCarver.java:221: Line is longer than 80 characters (found 83). [LineLength]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m10\Seam Carving\SeamCarver.java:222: Line is longer than 80 characters (found 94). [LineLength]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m10\Seam Carving\SeamCarver.java:229: Line is longer than 80 characters (found 86). [LineLength]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m10\Seam Carving\SeamCarver.java:234: Line has trailing spaces. [RegexpSingleline]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m10\Seam Carving\SeamCarver.java:245: Line is longer than 80 characters (found 91). [LineLength]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m10\Seam Carving\SeamCarver.java:256:40: Parameter seam should be final. [FinalParameters]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m10\Seam Carving\SeamCarver.java:259: Line is longer than 80 characters (found 91). [LineLength]
+[ERROR] E:\ADS2\ADS 2 - Assignments\m10\Seam Carving\SeamCarver.java:229: Line is longer than 80 characters (found 83). [LineLength]
 Audit done.
-Checkstyle ends with 21 errors.
+Checkstyle ends with 14 errors.
 Starting audit...
 Audit done.
 Starting audit...

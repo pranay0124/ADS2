@@ -206,6 +206,14 @@ public class SeamCarver {
 			}
 		}
 	}
+	/**
+	 * relax V function.
+	 *
+	 * @param      row     The row
+	 * @param      col     The col
+	 * @param      edgeTo  The edge to
+	 * @param      distTo  The distance to
+	 */
 	private void relaxV(final int row, final int col,
 	                    final int[][] edgeTo, final double[][] distTo) {
 		int nextRow = row + 1;
@@ -219,19 +227,19 @@ public class SeamCarver {
 				if (distTo[nextRow][nextCol] >= distTo[row][col]
 				        + energy(nextCol, nextRow)) {
 					distTo[nextRow][nextCol] = distTo[row][col]
-					                           + energy(nextCol, nextRow);
+			               + energy(nextCol, nextRow);
 					edgeTo[nextRow][nextCol] = i;
 				}
 			}
 			if (distTo[nextRow][nextCol] > distTo[row][col]
 			        + energy(nextCol, nextRow)) {
 				distTo[nextRow][nextCol] = distTo[row][col]
-				                           + energy(nextCol, nextRow);
+				                + energy(nextCol, nextRow);
 				edgeTo[nextRow][nextCol] = i;
 			}
 		}
 	}
-	
+
 	/**
 	 * Removes a horizontal seam.
 	 * time complexity is O(width * height).
@@ -242,7 +250,8 @@ public class SeamCarver {
 		//handle exceptions
 		for (int col = 0; col < width; col++) {
 			for (int row = seam[col]; row < height - 1; row++) {
-				this.picture.set(col, row, this.picture.get(col, row + 1));
+				this.picture.set(col, row, this.picture.get(
+					col, row + 1));
 			}
 		}
 		height--;
@@ -253,10 +262,11 @@ public class SeamCarver {
 	 *
 	 * @param      seam  The seam
 	 */
-	public void removeVerticalSeam(int[] seam) {
+	public void removeVerticalSeam(final int[] seam) {
 		for (int row = 0; row < height; row++) {
 			for (int col = seam[row]; col < width - 1; col++) {
-				this.picture.set(col, row, this.picture.get(col + 1, row));
+				this.picture.set(col, row, this.picture.get(
+					col + 1, row));
 			}
 		}
 		width--;
