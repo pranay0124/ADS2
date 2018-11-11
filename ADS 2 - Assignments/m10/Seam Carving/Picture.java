@@ -16,7 +16,7 @@ import javax.swing.JLabel;
 import javax.swing.JMenu;
 import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
-import javax.swing.JPanel;
+// import javax.swing.JPanel;
 import javax.swing.KeyStroke;
 
 /**
@@ -46,19 +46,19 @@ public final class Picture implements ActionListener {
     /**
      * Constructs the object.
      *
-     * @param      width   The width
-     * @param      height  The height
+     * @param      width1   The width
+     * @param      height1  The height
      */
-    public Picture(final int width, final int height) {
-        if (width  < 0) {
+    public Picture(final int width1, final int height1) {
+        if (width1  < 0) {
             throw new IllegalArgumentException("width must be non-negative");
         }
-        if (height < 0) {
+        if (height1 < 0) {
             throw new IllegalArgumentException("height must be non-negative");
         }
-        this.width  = width;
-        this.height = height;
-        image = new BufferedImage(width, height, BufferedImage.TYPE_INT_RGB);
+        this.width  = width1;
+        this.height = height1;
+        image = new BufferedImage(width1, height1, BufferedImage.TYPE_INT_RGB);
         // set to TYPE_INT_ARGB here and in next constructor to support transparency
     }
 
@@ -361,6 +361,7 @@ public final class Picture implements ActionListener {
       * @return a string representation of this picture
       */
     public String toString() {
+        final int aaa = 0xFFFFFF;
         StringBuilder sb = new StringBuilder();
         sb.append(width + "-by-" + height + " picture (RGB values given in hex)\n");
         for (int row = 0; row < height; row++) {
@@ -371,7 +372,7 @@ public final class Picture implements ActionListener {
                 } else {
                     rgb = image.getRGB(col, height - row - 1);
                 }
-                sb.append(String.format("#%06X ", rgb & 0xFFFFFF));
+                sb.append(String.format("#%06X ", rgb & aaa));
             }
             sb.append("\n");
         }
@@ -385,7 +386,8 @@ public final class Picture implements ActionListener {
      * @throws UnsupportedOperationException if called
      */
     public int hashCode() {
-        throw new UnsupportedOperationException("hashCode() is not supported because pictures are mutable");
+        throw new UnsupportedOperationException(
+            "hashCode() is not supported because pictures are mutable");
     }
 
     /**
@@ -435,7 +437,8 @@ public final class Picture implements ActionListener {
     @Override
     public void actionPerformed(final ActionEvent e) {
         FileDialog chooser = new FileDialog(frame,
-                                            "Use a .png or .jpg extension", FileDialog.SAVE);
+                                            "Use a .png or .jpg extension",
+                                            FileDialog.SAVE);
         chooser.setVisible(true);
         if (chooser.getFile() != null) {
             save(chooser.getDirectory() + File.separator + chooser.getFile());
