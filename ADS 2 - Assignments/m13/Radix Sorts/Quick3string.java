@@ -1,70 +1,54 @@
-/******************************************************************************
- *  Compilation:  javac Quick3string.java
- *  Execution:    java Quick3string < input.txt
- *  Dependencies: StdIn.java StdOut.java 
- *  Data files:   http://algs4.cs.princeton.edu/51radix/words3.txt
- *                http://algs4.cs.princeton.edu/51radix/shells.txt
- *
- *  Reads string from standard input and 3-way string quicksort them.
- *
- *  % java Quick3string < shell.txt
- *  are
- *  by
- *  sea
- *  seashells
- *  seashells
- *  sells
- *  sells
- *  she
- *  she
- *  shells
- *  shore
- *  surely
- *  the
- *  the
- *
- *
- ******************************************************************************/
-
-
 /**
- *  The {@code Quick3string} class provides static methods for sorting an
- *  array of strings using 3-way radix quicksort.
- *  <p>
- *  For additional documentation,
- *  see <a href="http://algs4.cs.princeton.edu/51radix">Section 5.1</a> of
- *  <i>Algorithms, 4th Edition</i> by Robert Sedgewick and Kevin Wayne.
- *
- *  @author Robert Sedgewick
- *  @author Kevin Wayne
+ * Class for quick 3 string.
  */
 public class Quick3string {
-    private static final int CUTOFF =  15;   // cutoff to insertion sort
+    /**
+     * cutoff to insertion sort.
+     */
+    private static final int CUTOFF =  15;
+    /**
+     * Constructs the object.
+     */
+    public Quick3string() { }
 
-    // do not instantiate
-    public Quick3string() { } 
-
-    /**  
+    /**
      * Rearranges the array of strings in ascending order.
      *
      * @param a the array to be sorted
      */
-    public static void sort(String[] a) {
+    public static void sort(final String[] a) {
         // StdRandom.shuffle(a);
-        sort(a, 0, a.length-1, 0);
+        sort(a, 0, a.length - 1, 0);
         assert isSorted(a);
     }
 
-    // return the dth character of s, -1 if d = length of s
-    private static int charAt(String s, int d) { 
+    /**
+     * return the dth character of s, -1 if d = length of s.
+     *
+     * @param      s     { parameter_description }
+     * @param      d     { parameter_description }
+     *
+     * @return     { description_of_the_return_value }
+     */
+    private static int charAt(final String s, final int d) {
         assert d >= 0 && d <= s.length();
-        if (d == s.length()) return -1;
+        if (d == s.length()) {
+            return -1;
+        }
         return s.charAt(d);
     }
 
 
-    // 3-way string quicksort a[lo..hi] starting at dth character
-    private static void sort(String[] a, int lo, int hi, int d) { 
+    /**
+     * 3-way string quicksort a[lo..hi] starting at dth character.
+     *
+     * @param      a     { parameter_description }
+     * @param      lo    The lower
+     * @param      hi    The higher
+     * @param      d     { parameter_description }
+     */
+    private static void sort(final String[] a, final int lo,
+                             final int hi, final int d) {
 
         // cutoff to insertion sort for small subarrays
         if (hi <= lo + CUTOFF) {
@@ -77,26 +61,48 @@ public class Quick3string {
         int i = lo + 1;
         while (i <= gt) {
             int t = charAt(a[i], d);
-            if      (t < v) exch(a, lt++, i++);
-            else if (t > v) exch(a, i, gt--);
-            else              i++;
+            if (t < v) {
+                exch(a, lt++, i++);
+            } else if (t > v) {
+                exch(a, i, gt--);
+            } else {
+                i++;
+            }
         }
 
-        // a[lo..lt-1] < v = a[lt..gt] < a[gt+1..hi]. 
-        sort(a, lo, lt-1, d);
-        if (v >= 0) sort(a, lt, gt, d+1);
-        sort(a, gt+1, hi, d);
+        // a[lo..lt-1] < v = a[lt..gt] < a[gt+1..hi].
+        sort(a, lo, lt - 1, d);
+        if (v >= 0) {
+            sort(a, lt, gt, d + 1);
+        }
+        sort(a, gt + 1, hi, d);
     }
 
-    // sort from a[lo] to a[hi], starting at the dth character
-    private static void insertion(String[] a, int lo, int hi, int d) {
-        for (int i = lo; i <= hi; i++)
-            for (int j = i; j > lo && less(a[j], a[j-1], d); j--)
-                exch(a, j, j-1);
+    /**
+     * sort from a[lo] to a[hi], starting at the dth character.
+     *
+     * @param      a     { parameter_description }
+     * @param      lo    The lower
+     * @param      hi    The higher
+     * @param      d     { parameter_description }
+     */
+    private static void insertion(final String[] a, final int lo,
+                                  final int hi, final int d) {
+        for (int i = lo; i <= hi; i++) {
+            for (int j = i; j > lo && less(a[j], a[j - 1], d); j--) {
+                exch(a, j, j - 1);
+            }
+        }
     }
 
-    // exchange a[i] and a[j]
-    private static void exch(String[] a, int i, int j) {
+    /**
+     * exchange a[i] and a[j].
+     *
+     * @param      a     { parameter_description }
+     * @param      i     { parameter_description }
+     * @param      j     { parameter_description }
+     */
+    private static void exch(final String[] a, final int i, final int j) {
         String temp = a[i];
         a[i] = a[j];
         a[j] = temp;
@@ -106,32 +112,59 @@ public class Quick3string {
     // DEPRECATED BECAUSE OF SLOW SUBSTRING EXTRACTION IN JAVA 7
     // private static boolean less(String v, String w, int d) {
     //    assert v.substring(0, d).equals(w.substring(0, d));
-    //    return v.substring(d).compareTo(w.substring(d)) < 0; 
+    //    return v.substring(d).compareTo(w.substring(d)) < 0;
     // }
 
-    // is v less than w, starting at character d
-    private static boolean less(String v, String w, int d) {
+    /**
+     * is v less than w, starting at character d.
+     *
+     * @param      v     { parameter_description }
+     * @param      w     { parameter_description }
+     * @param      d     { parameter_description }
+     *
+     * @return     { description_of_the_return_value }
+     */
+    private static boolean less(final String v, final String w, final int d) {
         assert v.substring(0, d).equals(w.substring(0, d));
         for (int i = d; i < Math.min(v.length(), w.length()); i++) {
-            if (v.charAt(i) < w.charAt(i)) return true;
-            if (v.charAt(i) > w.charAt(i)) return false;
+            if (v.charAt(i) < w.charAt(i)) {
+                return true;
+            }
+            if (v.charAt(i) > w.charAt(i)) {
+                return false;
+            }
         }
         return v.length() < w.length();
     }
 
-    // is the array sorted
+    /**
+     * Determines if sorted.
+     *
+     * @param      a     { parameter_description }
+     *
+     * @return     True if sorted, False otherwise.
+     */
     private static boolean isSorted(String[] a) {
-        for (int i = 1; i < a.length; i++)
-            if (a[i].compareTo(a[i-1]) < 0) return false;
+        for (int i = 1; i < a.length; i++) {
+            if (a[i].compareTo(a[i - 1]) < 0) {
+                return false;
+            }
+        }
         return true;
     }
-
-    public String toString(String[] array) {
+    /**
+     * Returns a string representation of the object.
+     *
+     * @param      array  The array
+     *
+     * @return     String representation of the object.
+     */
+    public String toString(final String[] array) {
         String str = "[";
-        for(int i=0;i<array.length-1;i++) {
+        for (int i = 0; i < array.length - 1; i++) {
             str += array[i] + ", ";
         }
-        str += array[array.length-1] + "]";
+        str += array[array.length - 1] + "]";
         return str;
     }
 
@@ -158,26 +191,3 @@ public class Quick3string {
     // }
 }
 
-/******************************************************************************
- *  Copyright 2002-2016, Robert Sedgewick and Kevin Wayne.
- *
- *  This file is part of algs4.jar, which accompanies the textbook
- *
- *      Algorithms, 4th edition by Robert Sedgewick and Kevin Wayne,
- *      Addison-Wesley Professional, 2011, ISBN 0-321-57351-X.
- *      http://algs4.cs.princeton.edu
- *
- *
- *  algs4.jar is free software: you can redistribute it and/or modify
- *  it under the terms of the GNU General Public License as published by
- *  the Free Software Foundation, either version 3 of the License, or
- *  (at your option) any later version.
- *
- *  algs4.jar is distributed in the hope that it will be useful,
- *  but WITHOUT ANY WARRANTY; without even the implied warranty of
- *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- *  GNU General Public License for more details.
- *
- *  You should have received a copy of the GNU General Public License
- *  along with algs4.jar.  If not, see http://www.gnu.org/licenses.
- ******************************************************************************/

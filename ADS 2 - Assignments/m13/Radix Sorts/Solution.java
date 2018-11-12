@@ -1,6 +1,22 @@
+/**
+ * @author : Pranay Kumar Y.
+ * Date : 12th November,2018.
+ */
 import java.util.Scanner;
-class Solution {
-	public static void main(String[] args) {
+/**
+ * Class for solution.
+ */
+final class Solution {
+	/**
+	 * Constructs the object.
+	 */
+	private Solution() { }
+	/**
+	 * Main function.
+	 *
+	 * @param      args  The arguments
+	 */
+	public static void main(final String[] args) {
 		Scanner scan = new Scanner(System.in);
 		int n = Integer.parseInt(scan.nextLine());
 		String[] array = new String[n];
