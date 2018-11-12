@@ -1,15 +1,6 @@
 Starting audit...
 [ERROR] E:\ADS2\ADS 2 - Assignments\m13\Radix Sorts\Quick3string.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m13\Radix Sorts\Quick3string.java:147:37: Parameter a should be final. [FinalParameters]
 Audit done.
-Checkstyle ends with 2 errors.
+Checkstyle ends with 1 errors.
 Starting audit...
-[ERROR] E:\ADS2\ADS 2 - Assignments\m13\Radix Sorts\Solution.java:10:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m13\Radix Sorts\Solution.java:23:20: 'for' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m13\Radix Sorts\Solution.java:23:26: '=' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m13\Radix Sorts\Solution.java:23:27: '=' is not followed by whitespace. [WhitespaceAround]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m13\Radix Sorts\Solution.java:23:31: '<' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m13\Radix Sorts\Solution.java:23:32: '<' is not followed by whitespace. [WhitespaceAround]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m13\Radix Sorts\Solution.java:23:34: ';' is not followed by whitespace. [WhitespaceAfter]
 Audit done.
-Checkstyle ends with 7 errors.
