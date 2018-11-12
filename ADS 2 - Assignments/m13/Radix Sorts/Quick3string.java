@@ -13,6 +13,7 @@ public class Quick3string {
 
     /**
      * Rearranges the array of strings in ascending order.
+     * Time Complexity : (1.39N logN)
      *
      * @param a the array to be sorted
      */
@@ -24,6 +25,7 @@ public class Quick3string {
 
     /**
      * return the dth character of s, -1 if d = length of s.
+     * Time Complexity : (1)
      *
      * @param      s     { parameter_description }
      * @param      d     { parameter_description }
@@ -41,6 +43,7 @@ public class Quick3string {
 
     /**
      * 3-way string quicksort a[lo..hi] starting at dth character.
+     * Time Complexity : (1.39N logN)
      *
      * @param      a     { parameter_description }
      * @param      lo    The lower
@@ -80,6 +83,7 @@ public class Quick3string {
 
     /**
      * sort from a[lo] to a[hi], starting at the dth character.
+     * Time Complexity : (N^2)
      *
      * @param      a     { parameter_description }
      * @param      lo    The lower
@@ -97,6 +101,7 @@ public class Quick3string {
 
     /**
      * exchange a[i] and a[j].
+     * Time Complexity : (1)
      *
      * @param      a     { parameter_description }
      * @param      i     { parameter_description }
@@ -117,6 +122,7 @@ public class Quick3string {
 
     /**
      * is v less than w, starting at character d.
+     * Time Complexity : (N)
      *
      * @param      v     { parameter_description }
      * @param      w     { parameter_description }
@@ -139,6 +145,7 @@ public class Quick3string {
 
     /**
      * Determines if sorted.
+     * Time Complexity : (N)
      *
      * @param      a     { parameter_description }
      *
@@ -154,6 +161,7 @@ public class Quick3string {
     }
     /**
      * Returns a string representation of the object.
+     * Time Complexity : (N)
      *
      * @param      array  The array
      *
