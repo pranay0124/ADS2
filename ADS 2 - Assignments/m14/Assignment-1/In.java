@@ -30,7 +30,7 @@ public final class In {
      */
     private static final Locale LOCALE = Locale.US;
 
-    /**
+    /**.
      * the default token separator; we maintain the
      * invariant that this value is held by the
      * scanner's delimiter between calls
@@ -113,12 +113,13 @@ public final class In {
       * @throws IllegalArgumentException if cannot open {@code file}
       * @throws IllegalArgumentException if {@code file} is {@code null}
       */
-    public In(File file) {
+    public In(final File file) {
         if (file == null) {
             throw new IllegalArgumentException("file argument is null");
         }
         try {
-            // for consistency with StdIn, wrap with BufferedInputStream instead of use
+            // for consistency with StdIn, wrap with
+            // BufferedInputStream instead of use
             // file as argument to Scanner
             FileInputStream fis = new FileInputStream(file);
             scanner = new Scanner(new BufferedInputStream(fis), CHARSET_NAME);
@@ -137,7 +138,7 @@ public final class In {
       *         a file or URL
       * @throws IllegalArgumentException if {@code name} is {@code null}
       */
-    public In(String name) {
+    public In(final String name) {
         if (name == null) {
             throw new IllegalArgumentException("argument is null");
         }
@@ -188,14 +189,14 @@ public final class In {
      * Note that this does not create a defensive copy, so the
      * scanner will be mutated as you read on.
      *
-     * @param  scanner the scanner
+     * @param  scanner1 the scanner
      * @throws IllegalArgumentException if {@code scanner} is {@code null}
      */
-    public In(Scanner scanner) {
-        if (scanner == null) {
+    public In(final Scanner scanner1) {
+        if (scanner1 == null) {
             throw new IllegalArgumentException("scanner argument is null");
         }
-        this.scanner = scanner;
+        this.scanner = scanner1;
     }
 
     /**
@@ -686,3 +687,4 @@ public final class In {
         return new In().readAllStrings();
     }
 }
+

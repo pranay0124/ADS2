@@ -1,13 +1,7 @@
 Starting audit...
 [ERROR] E:\ADS2\ADS 2 - Assignments\m14\Assignment-1\In.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m14\Assignment-1\In.java:33: First sentence should end with a period. [JavadocStyle]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m14\Assignment-1\In.java:116:15: Parameter file should be final. [FinalParameters]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m14\Assignment-1\In.java:121: Line is longer than 80 characters (found 87). [LineLength]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m14\Assignment-1\In.java:140:15: Parameter name should be final. [FinalParameters]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m14\Assignment-1\In.java:194:15: Parameter scanner should be final. [FinalParameters]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m14\Assignment-1\In.java:194:23: 'scanner' hides a field. [HiddenField]
 Audit done.
-Checkstyle ends with 7 errors.
+Checkstyle ends with 1 errors.
 Starting audit...
 Audit done.
 Starting audit...
