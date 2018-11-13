@@ -55,7 +55,8 @@ public class TST<Value> {
 	 */
 	public boolean contains(final String key) {
 		if (key == null) {
-			throw new IllegalArgumentException("argument to contains() is null");
+			throw new IllegalArgumentException(
+			    "argument to contains() is null");
 		}
 		return get(key) != null;
 	}
@@ -63,13 +64,15 @@ public class TST<Value> {
 	/**
 	 * Returns the value associated with the given key.
 	 * @param key the key
-	 * @return the value associated with the given key if the key is in the symbol table
+	 * @return the value associated with the given key
+	 *     if the key is in the symbol table
 	 *     and {null} if the key is not in the symbol table
 	 * @throws IllegalArgumentException if {key} is {null}
 	 */
 	public Value get(final String key) {
 		if (key == null) {
-			throw new IllegalArgumentException("calls get() with null argument");
+			throw new IllegalArgumentException(
+			    "calls get() with null argument");
 		}
 		if (key.length() == 0) {
 			throw new IllegalArgumentException("key must have length >= 1");
@@ -170,7 +173,8 @@ public class TST<Value> {
 	 */
 	public String longestPrefixOf(final String query) {
 		if (query == null) {
-			throw new IllegalArgumentException("calls longestPrefixOf() with null argument");
+			throw new IllegalArgumentException(
+			    "calls longestPrefixOf() with null argument");
 		}
 		if (query.length() == 0) {
 			return null;
@@ -181,7 +185,7 @@ public class TST<Value> {
 		while (x != null && i < query.length()) {
 			char c = query.charAt(i);
 			if (c < x.c) {
-			x = x.left;
+				x = x.left;
 			} else if (c > x.c) {
 				x = x.right;
 			} else {
@@ -216,7 +220,8 @@ public class TST<Value> {
 	 */
 	public Iterable<String> keysWithPrefix(final String prefix) {
 		if (prefix == null) {
-			throw new IllegalArgumentException("calls keysWithPrefix() with null argument");
+			throw new IllegalArgumentException(
+			    "calls keysWithPrefix() with null argument");
 		}
 		Queue<String> queue = new Queue<String>();
 		Node<Value> x = get(root, prefix, 0);

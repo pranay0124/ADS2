@@ -151,14 +151,9 @@ Checkstyle ends with 1 errors.
 Starting audit...
 [ERROR] E:\ADS2\ADS 2 - Assignments\m14\Assignment-1\TST.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] E:\ADS2\ADS 2 - Assignments\m14\Assignment-1\TST.java:7:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m14\Assignment-1\TST.java:58: Line is longer than 80 characters (found 93). [LineLength]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m14\Assignment-1\TST.java:66: Line is longer than 80 characters (found 92). [LineLength]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m14\Assignment-1\TST.java:72: Line is longer than 80 characters (found 93). [LineLength]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m14\Assignment-1\TST.java:75: Line is longer than 80 characters (found 88). [LineLength]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m14\Assignment-1\TST.java:99: Line is longer than 80 characters (found 88). [LineLength]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m14\Assignment-1\TST.java:125: Line is longer than 80 characters (found 88). [LineLength]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m14\Assignment-1\TST.java:173: Line is longer than 80 characters (found 105). [LineLength]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m14\Assignment-1\TST.java:219: Line is longer than 80 characters (found 104). [LineLength]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m14\Assignment-1\TST.java:294: Line is longer than 80 characters (found 90). [LineLength]
+[ERROR] E:\ADS2\ADS 2 - Assignments\m14\Assignment-1\TST.java:78: Line is longer than 80 characters (found 88). [LineLength]
+[ERROR] E:\ADS2\ADS 2 - Assignments\m14\Assignment-1\TST.java:102: Line is longer than 80 characters (found 88). [LineLength]
+[ERROR] E:\ADS2\ADS 2 - Assignments\m14\Assignment-1\TST.java:128: Line is longer than 80 characters (found 88). [LineLength]
+[ERROR] E:\ADS2\ADS 2 - Assignments\m14\Assignment-1\TST.java:299: Line is longer than 80 characters (found 90). [LineLength]
 Audit done.
-Checkstyle ends with 11 errors.
+Checkstyle ends with 6 errors.
