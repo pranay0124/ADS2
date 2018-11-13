@@ -75,7 +75,8 @@ public class TST<Value> {
 			    "calls get() with null argument");
 		}
 		if (key.length() == 0) {
-			throw new IllegalArgumentException("key must have length >= 1");
+			throw new IllegalArgumentException(
+			    "key must have length >= 1");
 		}
 		Node<Value> x = get(root, key, 0);
 		if (x == null) {
@@ -99,7 +100,8 @@ public class TST<Value> {
 			return null;
 		}
 		if (key.length() == 0) {
-			throw new IllegalArgumentException("key must have length >= 1");
+			throw new IllegalArgumentException(
+			    "key must have length >= 1");
 		}
 		char c = key.charAt(d);
 		if (c < x.c) {
@@ -125,7 +127,8 @@ public class TST<Value> {
 	 */
 	public void put(final String key, final Value val) {
 		if (key == null) {
-			throw new IllegalArgumentException("calls put() with null key");
+			throw new IllegalArgumentException(
+			    "calls put() with null key");
 		}
 		if (!contains(key)) {
 			n++;
@@ -296,7 +299,8 @@ public class TST<Value> {
 				queue.enqueue(prefix.toString() + x.c);
 			}
 			if (i < pattern.length() - 1) {
-				collect(x.mid, prefix.append(x.c), i + 1, pattern, queue);
+				collect(x.mid, prefix.append(x.c), i + 1, pattern,
+				        queue);
 				prefix.deleteCharAt(prefix.length() - 1);
 			}
 		}
