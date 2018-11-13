@@ -146,29 +146,8 @@ Starting audit...
 Audit done.
 Starting audit...
 [ERROR] E:\ADS2\ADS 2 - Assignments\m14\Assignment-1\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m14\Assignment-1\Solution.java:3: Missing a Javadoc comment. [JavadocType]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m14\Assignment-1\Solution.java:3:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m14\Assignment-1\Solution.java:4:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m14\Assignment-1\Solution.java:4:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m14\Assignment-1\Solution.java:4:33: Parameter args should be final. [FinalParameters]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m14\Assignment-1\Solution.java:8:27: '=' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m14\Assignment-1\Solution.java:8:28: '=' is not followed by whitespace. [WhitespaceAround]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m14\Assignment-1\Solution.java:8:30: ';' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m14\Assignment-1\Solution.java:8:31: '<' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m14\Assignment-1\Solution.java:8:32: '<' is not followed by whitespace. [WhitespaceAround]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m14\Assignment-1\Solution.java:8:45: ';' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m14\Assignment-1\Solution.java:9:28: 'for' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m14\Assignment-1\Solution.java:9:34: '=' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m14\Assignment-1\Solution.java:9:35: '=' is not followed by whitespace. [WhitespaceAround]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m14\Assignment-1\Solution.java:9:37: ';' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m14\Assignment-1\Solution.java:9:38: '<' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m14\Assignment-1\Solution.java:9:39: '<' is not followed by whitespace. [WhitespaceAround]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m14\Assignment-1\Solution.java:9:57: ';' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m14\Assignment-1\Solution.java:11:35: 'if' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m14\Assignment-1\Solution.java:17:20: 'for' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m14\Assignment-1\Solution.java:22:9: Missing a Javadoc comment. [JavadocMethod]
 Audit done.
-Checkstyle ends with 22 errors.
+Checkstyle ends with 1 errors.
 Starting audit...
 [ERROR] E:\ADS2\ADS 2 - Assignments\m14\Assignment-1\TST.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] E:\ADS2\ADS 2 - Assignments\m14\Assignment-1\TST.java:47: Line is longer than 80 characters (found 84). [LineLength]
