@@ -1,14 +1,8 @@
 Starting audit...
-[ERROR] E:\ADS2\ADS 2 - Assignments\m14\Assignment-1\In.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
-Checkstyle ends with 1 errors.
+Starting audit...
+Audit done.
 Starting audit...
 Audit done.
 Starting audit...
-[ERROR] E:\ADS2\ADS 2 - Assignments\m14\Assignment-1\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
-Checkstyle ends with 1 errors.
-Starting audit...
-[ERROR] E:\ADS2\ADS 2 - Assignments\m14\Assignment-1\TST.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-Audit done.
-Checkstyle ends with 1 errors.
