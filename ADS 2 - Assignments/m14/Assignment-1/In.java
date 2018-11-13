@@ -35,7 +35,8 @@ public final class In {
 	 * invariant that this value is held by the
 	 * scanner's delimiter between calls
 	 */
-	private static final Pattern WHITESPACE_PATTERN = Pattern.compile("\\p{javaWhitespace}+");
+	private static final Pattern WHITESPACE_PATTERN =
+	    Pattern.compile("\\p{javaWhitespace}+");
 
 	/**
 	 * makes whitespace characters significant.
