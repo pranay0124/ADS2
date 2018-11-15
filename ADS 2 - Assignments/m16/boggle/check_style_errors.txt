@@ -586,16 +586,17 @@ Starting audit...
 [ERROR] E:\ADS2\ADS 2 - Assignments\m16\boggle\BoggleSolver.java:48:9: Class 'BoggleSolver' looks like designed for extension (can be subclassed), but the method 'scoreOf' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'BoggleSolver' final or making the method 'scoreOf' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
 [ERROR] E:\ADS2\ADS 2 - Assignments\m16\boggle\BoggleSolver.java:48:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] E:\ADS2\ADS 2 - Assignments\m16\boggle\BoggleSolver.java:48:28: Parameter word should be final. [FinalParameters]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m16\boggle\BoggleSolver.java:52:33: '3' is a magic number. [MagicNumber]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m16\boggle\BoggleSolver.java:52:43: '4' is a magic number. [MagicNumber]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m16\boggle\BoggleSolver.java:54:33: '5' is a magic number. [MagicNumber]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m16\boggle\BoggleSolver.java:56:33: '6' is a magic number. [MagicNumber]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m16\boggle\BoggleSolver.java:57:32: '3' is a magic number. [MagicNumber]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m16\boggle\BoggleSolver.java:58:33: '7' is a magic number. [MagicNumber]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m16\boggle\BoggleSolver.java:59:32: '5' is a magic number. [MagicNumber]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m16\boggle\BoggleSolver.java:61:32: '11' is a magic number. [MagicNumber]
+[ERROR] E:\ADS2\ADS 2 - Assignments\m16\boggle\BoggleSolver.java:49:37: '8' is a magic number. [MagicNumber]
+[ERROR] E:\ADS2\ADS 2 - Assignments\m16\boggle\BoggleSolver.java:50:32: '11' is a magic number. [MagicNumber]
+[ERROR] E:\ADS2\ADS 2 - Assignments\m16\boggle\BoggleSolver.java:51:45: '7' is a magic number. [MagicNumber]
+[ERROR] E:\ADS2\ADS 2 - Assignments\m16\boggle\BoggleSolver.java:52:32: '5' is a magic number. [MagicNumber]
+[ERROR] E:\ADS2\ADS 2 - Assignments\m16\boggle\BoggleSolver.java:53:45: '6' is a magic number. [MagicNumber]
+[ERROR] E:\ADS2\ADS 2 - Assignments\m16\boggle\BoggleSolver.java:54:32: '3' is a magic number. [MagicNumber]
+[ERROR] E:\ADS2\ADS 2 - Assignments\m16\boggle\BoggleSolver.java:55:45: '5' is a magic number. [MagicNumber]
+[ERROR] E:\ADS2\ADS 2 - Assignments\m16\boggle\BoggleSolver.java:57:45: '3' is a magic number. [MagicNumber]
+[ERROR] E:\ADS2\ADS 2 - Assignments\m16\boggle\BoggleSolver.java:57:67: '4' is a magic number. [MagicNumber]
 Audit done.
-Checkstyle ends with 34 errors.
+Checkstyle ends with 35 errors.
 Starting audit...
 [ERROR] E:\ADS2\ADS 2 - Assignments\m16\boggle\In.java:28: Line has trailing spaces. [RegexpSingleline]
 [ERROR] E:\ADS2\ADS 2 - Assignments\m16\boggle\In.java:33: Line has trailing spaces. [RegexpSingleline]
