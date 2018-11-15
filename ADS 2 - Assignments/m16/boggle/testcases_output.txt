@@ -235,6 +235,6 @@ Expected Output:
 board is null
 
 Your Output: 
-Score = 0
+null
 ----------------------------------------
 
