@@ -1,9 +1,9 @@
-########## Testcase 0: Passed ##########
+########## Testcase 0: Failed ##########
 Expected Output: 
 Score = 33
 
 Your Output: 
-Score = 33
+Score = 75
 ----------------------------------------
 
 ########## Testcase 1: Failed ##########
@@ -11,7 +11,7 @@ Expected Output:
 Score = 84
 
 Your Output: 
-Score = 62
+Score = 172
 ----------------------------------------
 
 ########## Testcase 2: Passed ##########
@@ -30,12 +30,12 @@ Your Output:
 Score = 2
 ----------------------------------------
 
-########## Testcase 4: Passed ##########
+########## Testcase 4: Failed ##########
 Expected Output: 
 Score = 3
 
 Your Output: 
-Score = 3
+Score = 12
 ----------------------------------------
 
 ########## Testcase 5: Failed ##########
@@ -43,7 +43,7 @@ Expected Output:
 Score = 1000
 
 Your Output: 
-Score = 857
+Score = 2787
 ----------------------------------------
 
 ########## Testcase 6: Failed ##########
@@ -51,7 +51,7 @@ Expected Output:
 Score = 400
 
 Your Output: 
-Score = 378
+Score = 1287
 ----------------------------------------
 
 ########## Testcase 7: Passed ##########
@@ -67,7 +67,7 @@ Expected Output:
 Score = 155
 
 Your Output: 
-Score = 144
+Score = 483
 ----------------------------------------
 
 ########## Testcase 9: Failed ##########
@@ -75,7 +75,7 @@ Expected Output:
 Score = 172
 
 Your Output: 
-Score = 161
+Score = 295
 ----------------------------------------
 
 ########## Testcase 10: Failed ##########
@@ -83,7 +83,7 @@ Expected Output:
 Score = 68
 
 Your Output: 
-Score = 57
+Score = 145
 ----------------------------------------
 
 ########## Testcase 11: Failed ##########
@@ -91,7 +91,7 @@ Expected Output:
 Score = 147
 
 Your Output: 
-Score = 136
+
 ----------------------------------------
 
 ########## Testcase 12: Failed ##########
@@ -99,7 +99,7 @@ Expected Output:
 Score = 687
 
 Your Output: 
-Score = 599
+Score = 1696
 ----------------------------------------
 
 ########## Testcase 13: Passed ##########
@@ -115,7 +115,7 @@ Expected Output:
 Score = 172
 
 Your Output: 
-Score = 161
+Score = 295
 ----------------------------------------
 
 ########## Testcase 15: Failed ##########
@@ -123,7 +123,7 @@ Expected Output:
 Score = 129
 
 Your Output: 
-Score = 118
+Score = 1054
 ----------------------------------------
 
 ########## Testcase 16: Passed ##########
@@ -134,12 +134,12 @@ Your Output:
 Score = 2
 ----------------------------------------
 
-########## Testcase 17: Passed ##########
+########## Testcase 17: Failed ##########
 Expected Output: 
 Score = 1
 
 Your Output: 
-Score = 1
+Score = 2
 ----------------------------------------
 
 ########## Testcase 18: Failed ##########
@@ -147,15 +147,15 @@ Expected Output:
 Score = 14
 
 Your Output: 
-Score = 3
+Score = 4
 ----------------------------------------
 
-########## Testcase 19: Passed ##########
+########## Testcase 19: Failed ##########
 Expected Output: 
 Score = 11
 
 Your Output: 
-Score = 11
+Score = 17
 ----------------------------------------
 
 ########## Testcase 20: Failed ##########
@@ -163,31 +163,31 @@ Expected Output:
 Score = 33
 
 Your Output: 
-Score = 22
+Score = 60
 ----------------------------------------
 
-########## Testcase 21: Passed ##########
+########## Testcase 21: Failed ##########
 Expected Output: 
 Score = 23
 
 Your Output: 
-Score = 23
+Score = 44
 ----------------------------------------
 
-########## Testcase 22: Passed ##########
+########## Testcase 22: Failed ##########
 Expected Output: 
 Score = 24
 
 Your Output: 
-Score = 24
+Score = 66
 ----------------------------------------
 
-########## Testcase 23: Passed ##########
+########## Testcase 23: Failed ##########
 Expected Output: 
 Score = 30
 
 Your Output: 
-Score = 30
+Score = 191
 ----------------------------------------
 
 ########## Testcase 24: Passed ##########
@@ -203,7 +203,7 @@ Expected Output:
 Score = 26539
 
 Your Output: 
-Score = 18300
+Score = 56148
 ----------------------------------------
 
 ########## Testcase 26: Failed ##########
@@ -211,7 +211,7 @@ Expected Output:
 Score = 19797
 
 Your Output: 
-Score = 13560
+Score = 39502
 ----------------------------------------
 
 ########## Testcase 27: Failed ##########
@@ -219,7 +219,7 @@ Expected Output:
 Score = 27325
 
 Your Output: 
-Score = 18888
+Score = 58148
 ----------------------------------------
 
 ########## Testcase 28: Failed ##########
@@ -227,7 +227,7 @@ Expected Output:
 Score = 32175
 
 Your Output: 
-Score = 22605
+Score = 97584
 ----------------------------------------
 
 ########## Testcase 29: Passed ##########

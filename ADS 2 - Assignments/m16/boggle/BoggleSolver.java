@@ -39,14 +39,20 @@ public class BoggleSolver {
 				arraylist.add(str);
 			}
 		}
-		for (int i = row - 1; i < row + 2; i++) { // i < row-1 + 3
-			for (int j = col - 1; j < col + 2; j++) {
-				if ((i >= 0 && i < board.rows() && j >= 0 && j < board.cols()) && !(marked[i][j])) {
+		for (int i = row - 1; i < row + 3; i++) { // i < row-1 + 3
+			for (int j = col - 1; j < col + 3; j++) {
+				if (validate(i, j, board) && !(marked[i][j])) {
 					dfs(board, arraylist, marked, i, j, str);
 					marked[i][j] = false;
 				}
 			}
 		}
+	}
+	public boolean validate(int i, int j, BoggleBoard board) {
+		if (i >= 0 && i < board.rows() && j >= 0 && j < board.cols()) {
+			return true;
+		}
+		return false;
 	}
 
 
