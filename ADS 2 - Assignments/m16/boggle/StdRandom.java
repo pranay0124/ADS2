@@ -147,7 +147,7 @@ public final class StdRandom {
      *         {@code false} with probability 1/2
      */
     public static boolean bernoulli() {
-        final int zeroPointFive = 0.5;
+        final double zeroPointFive = 0.5;
         return bernoulli(zeroPointFive);
     }
 
@@ -261,7 +261,7 @@ public final class StdRandom {
      * @return a random real number from the Cauchy distribution.
      */
     public static double cauchy() {
-        final int zeroPointFive = 0.5;
+        final double zeroPointFive = 0.5;
         return Math.tan(Math.PI * (uniform() - zeroPointFive));
     }
 
@@ -602,7 +602,7 @@ public final class StdRandom {
         final double zeroPointThree = 0.3;
         final double zeroPointTwo = 0.2;
         final double zeroPointOne = 0.1;
-        final double hundred = 100;
+        final double hundred = 100.0;
         final double ten = 10.0;
         final double ninetynine = 99.0;
         final double nine = 9.0;
