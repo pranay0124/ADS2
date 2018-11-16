@@ -127,12 +127,12 @@ public class BoggleBoard {
     /**
      * Initializes a random m-by-n board, according to the frequency
      * of letters in the English language.
-     * @param m the number of rows
-     * @param n the number of columns
+     * @param m1 the number of rows
+     * @param n1 the number of columns
      */
-    public BoggleBoard(final int m, final int n) {
-        this.m = m;
-        this.n = n;
+    public BoggleBoard(final int m1, final int n1) {
+        this.m = m1;
+        this.n = n1;
         if (m <= 0) {
             throw new IllegalArgumentException(
                 "number of rows must be a positive integer");
@@ -221,8 +221,9 @@ public class BoggleBoard {
                 sb.append(board[i][j]);
                 if (board[i][j] == 'Q') {
                     sb.append("u ");
+                } else {
+                    sb.append("  ");
                 }
-                else sb.append("  ");
             }
             sb.append("\n");
         }
@@ -230,7 +231,9 @@ public class BoggleBoard {
     }
 
     /**
-     * Unit tests the BoggleBoard data type.
+     * Main Function.
+     *
+     * @param      args  The arguments
      */
     public static void main(final String[] args) {
 
@@ -243,17 +246,17 @@ public class BoggleBoard {
         // initialize a 4-by-4 board using letter
         //frequencies in English language
         StdOut.println("Random 4-by-4 board:");
-        BoggleBoard board2 = new BoggleBoard(4, 4);
+        BoggleBoard board2 = new BoggleBoard(2 + 2, 2 + 2);
         StdOut.println(board2);
         StdOut.println();
 
         // initialize a 4-by-4 board from a 2d char array
         StdOut.println("4-by-4 board from 2D character array:");
         char[][] a =  {
-            { 'D', 'O', 'T', 'Y' },
-            { 'T', 'R', 'S', 'F' },
-            { 'M', 'X', 'M', 'O' },
-            { 'Z', 'A', 'B', 'W' }
+            {'D', 'O', 'T', 'Y' },
+            {'T', 'R', 'S', 'F' },
+            {'M', 'X', 'M', 'O' },
+            {'Z', 'A', 'B', 'W' }
         };
         BoggleBoard board3 = new BoggleBoard(a);
         StdOut.println(board3);
