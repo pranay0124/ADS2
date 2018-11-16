@@ -277,7 +277,7 @@ public final class StdRandom {
         if (probabilities == null) {
             throw new IllegalArgumentException("argument array is null");
         }
-        double EPSILON = 1E-14;
+        final double epsilon = 1E-14;
         double sum = 0.0;
         for (int i = 0; i < probabilities.length; i++) {
             if (!(probabilities[i] >= 0.0)) {
@@ -287,14 +287,12 @@ public final class StdRandom {
             }
             sum += probabilities[i];
         }
-        if (sum > 1.0 + EPSILON || sum < 1.0 - EPSILON) {
+        if (sum > 1.0 + epsilon || sum < 1.0 - epsilon) {
             throw new IllegalArgumentException("sum of array entries does not "
                                                + "approximately equal 1.0: "
                                                + sum);
         }
 
-        // the for loop may not return a value when both r is (nearly) 1.0 and when the
-        // cumulative sum is less than 1.0 (as a result of floating-point roundoff error)
         while (true) {
             double r = uniform();
             sum = 0.0;
@@ -538,7 +536,7 @@ public final class StdRandom {
     }
 
     /**
-     * Returns a uniformly random permutation of elements
+     * Returns a uniformly random permutation of elements.
      *
      * @param  n number of elements
      * @throws IllegalArgumentException if {@code n} is negative
@@ -558,7 +556,7 @@ public final class StdRandom {
     }
 
     /**
-     * Returns a uniformly random permutation of elements
+     * Returns a uniformly random permutation of elements.
      *
      * @param  n number of elements
      * @param  k number of elements to select
@@ -583,7 +581,9 @@ public final class StdRandom {
         }
         for (int i = k; i < n; i++) {
             int r = uniform(i + 1);  // between 0 and i
-            if (r < k) perm[r] = i;
+            if (r < k) {
+                perm[r] = i;
+            }
         }
         return perm;
     }
@@ -610,7 +610,7 @@ public final class StdRandom {
         double[] probabilities = {zeroPointFive, zeroPointThree,
                                   zeroPointOne, zeroPointOne
                                  };
-        int[] frequencies = { 2 + 2 + 1, 2 + 1, 1, 1 };
+        int[] frequencies = {2 + 2 + 1, 2 + 1, 1, 1 };
         String[] a = "A B C D E F G".split(" ");
 
         System.out.println("seed = " + StdRandom.getSeed());

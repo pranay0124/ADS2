@@ -565,16 +565,8 @@ Starting audit...
 [ERROR] E:\ADS2\ADS 2 - Assignments\m16\boggle\StdRandom.java:212:31: Parameter lambda should be final. [FinalParameters]
 [ERROR] E:\ADS2\ADS 2 - Assignments\m16\boggle\StdRandom.java:250: 'if' construct must use '{}'s. [NeedBraces]
 [ERROR] E:\ADS2\ADS 2 - Assignments\m16\boggle\StdRandom.java:261:48: '0.5' is a magic number. [MagicNumber]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m16\boggle\StdRandom.java:280:16: Name 'EPSILON' must match pattern '^[a-z][a-zA-Z0-9]*$'. [LocalVariableName]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m16\boggle\StdRandom.java:280:26: '1E-14' is a magic number. [MagicNumber]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m16\boggle\StdRandom.java:296: Line is longer than 80 characters (found 87). [LineLength]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m16\boggle\StdRandom.java:297: Line is longer than 80 characters (found 89). [LineLength]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m16\boggle\StdRandom.java:540: First sentence should end with a period. [JavadocStyle]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m16\boggle\StdRandom.java:560: First sentence should end with a period. [JavadocStyle]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m16\boggle\StdRandom.java:586: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m16\boggle\StdRandom.java:613:30: '{' is followed by whitespace. [NoWhitespaceAfter]
 Audit done.
-Checkstyle ends with 19 errors.
+Checkstyle ends with 11 errors.
 Starting audit...
 [ERROR] E:\ADS2\ADS 2 - Assignments\m16\boggle\TST.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
