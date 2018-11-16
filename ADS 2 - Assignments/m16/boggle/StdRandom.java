@@ -98,7 +98,7 @@ public final class StdRandom {
      * @throws IllegalArgumentException if {@code b <= a}
      * @throws IllegalArgumentException if {@code b - a >= Integer.MAX_VALUE}
      */
-    public static int uniform(int a, int b) {
+    public static int uniform(final int a, final int b) {
         if ((b <= a) || ((long) b - a >= Integer.MAX_VALUE)) {
             throw new IllegalArgumentException("invalid range: ["
                                                + a + ", " + b + "]");
@@ -114,7 +114,7 @@ public final class StdRandom {
      * @return a random real number uniformly in [a, b)
      * @throws IllegalArgumentException unless {@code a < b}
      */
-    public static double uniform(double a, double b) {
+    public static double uniform(final double a, final double b) {
         if (!(a < b)) {
             throw new IllegalArgumentException("invalid range: ["
                                                + a + ", " + b + "]");
@@ -131,7 +131,7 @@ public final class StdRandom {
      *         {@code false} with probability {@code p}
      * @throws IllegalArgumentException
      */
-    public static boolean bernoulli(double p) {
+    public static boolean bernoulli(final double p) {
         if (!(p >= 0.0 && p <= 1.0)) {
             throw new IllegalArgumentException(
                 "probability p must be between 0.0 and 1.0");
@@ -147,7 +147,8 @@ public final class StdRandom {
      *         {@code false} with probability 1/2
      */
     public static boolean bernoulli() {
-        return bernoulli(0.5);
+        final int zeroPointFive = 0.5;
+        return bernoulli(zeroPointFive);
     }
 
     /**
@@ -158,13 +159,14 @@ public final class StdRandom {
      */
     public static double gaussian() {
         // use the polar form of the Box-Muller transform
+        final int minusTwo = -2;
         double r, x, y;
         do {
             x = uniform(-1.0, 1.0);
             y = uniform(-1.0, 1.0);
             r = x * x + y * y;
         } while (r >= 1 || r == 0);
-        return x * Math.sqrt(-2 * Math.log(r) / r);
+        return x * Math.sqrt(minusTwo * Math.log(r) / r);
 
         // Remark:  y * Math.sqrt(-2 * Math.log(r) / r)
         // is an independent random gaussian
@@ -209,7 +211,7 @@ public final class StdRandom {
      * @return a random integer from a Poisson distribution with mean {lambda}
      * @throws IllegalArgumentException unless {lambda > 0.0} and not infinite
      */
-    public static int poisson(double lambda) {
+    public static int poisson(final double lambda) {
         if (!(lambda > 0.0)) {
             throw new IllegalArgumentException("lambda must be positive");
         }
@@ -247,8 +249,9 @@ public final class StdRandom {
      * @throws IllegalArgumentException unless {@code alpha > 0.0}
      */
     public static double pareto(final double alpha) {
-        if (!(alpha > 0.0))
+        if (!(alpha > 0.0)) {
             throw new IllegalArgumentException("alpha must be positive");
+        }
         return Math.pow(1 - uniform(), -1.0 / alpha) - 1.0;
     }
 
@@ -258,7 +261,8 @@ public final class StdRandom {
      * @return a random real number from the Cauchy distribution.
      */
     public static double cauchy() {
-        return Math.tan(Math.PI * (uniform() - 0.5));
+        final int zeroPointFive = 0.5;
+        return Math.tan(Math.PI * (uniform() - zeroPointFive));
     }
 
     /**

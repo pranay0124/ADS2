@@ -555,18 +555,8 @@ Starting audit...
 Audit done.
 Starting audit...
 [ERROR] E:\ADS2\ADS 2 - Assignments\m16\boggle\StdRandom.java:69:31: Parameter n should be final. [FinalParameters]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m16\boggle\StdRandom.java:101:31: Parameter a should be final. [FinalParameters]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m16\boggle\StdRandom.java:101:38: Parameter b should be final. [FinalParameters]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m16\boggle\StdRandom.java:117:34: Parameter a should be final. [FinalParameters]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m16\boggle\StdRandom.java:117:44: Parameter b should be final. [FinalParameters]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m16\boggle\StdRandom.java:134:37: Parameter p should be final. [FinalParameters]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m16\boggle\StdRandom.java:150:26: '0.5' is a magic number. [MagicNumber]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m16\boggle\StdRandom.java:167:30: '-2' is a magic number. [MagicNumber]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m16\boggle\StdRandom.java:212:31: Parameter lambda should be final. [FinalParameters]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m16\boggle\StdRandom.java:250: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m16\boggle\StdRandom.java:261:48: '0.5' is a magic number. [MagicNumber]
 Audit done.
-Checkstyle ends with 11 errors.
+Checkstyle ends with 1 errors.
 Starting audit...
 [ERROR] E:\ADS2\ADS 2 - Assignments\m16\boggle\TST.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
