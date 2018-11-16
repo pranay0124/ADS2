@@ -583,7 +583,7 @@ Starting audit...
 [ERROR] E:\ADS2\ADS 2 - Assignments\m16\boggle\BoggleSolver.java:27:93: Parameter row should be final. [FinalParameters]
 [ERROR] E:\ADS2\ADS 2 - Assignments\m16\boggle\BoggleSolver.java:27:102: Parameter col should be final. [FinalParameters]
 [ERROR] E:\ADS2\ADS 2 - Assignments\m16\boggle\BoggleSolver.java:27:111: Parameter str should be final. [FinalParameters]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m16\boggle\BoggleSolver.java:44: Line is longer than 80 characters (found 114). [LineLength]
+[ERROR] E:\ADS2\ADS 2 - Assignments\m16\boggle\BoggleSolver.java:44: Line is longer than 80 characters (found 116). [LineLength]
 [ERROR] E:\ADS2\ADS 2 - Assignments\m16\boggle\BoggleSolver.java:45: Line is longer than 80 characters (found 81). [LineLength]
 [ERROR] E:\ADS2\ADS 2 - Assignments\m16\boggle\BoggleSolver.java:53: Line is longer than 80 characters (found 82). [LineLength]
 [ERROR] E:\ADS2\ADS 2 - Assignments\m16\boggle\BoggleSolver.java:55:9: Class 'BoggleSolver' looks like designed for extension (can be subclassed), but the method 'scoreOf' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'BoggleSolver' final or making the method 'scoreOf' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
