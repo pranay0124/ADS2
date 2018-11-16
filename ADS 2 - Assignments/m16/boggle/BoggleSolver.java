@@ -27,7 +27,7 @@ public class BoggleSolver {
 	public void dfs(BoggleBoard board, ArrayList<String> arraylist, boolean[][] marked, int row, int col, String str) {
 		marked[row][col] = true;
 		if (board.getLetter(row, col) == 'Q') {
-			str += board.getLetter(row, col) + "U";
+			str += board.getLetter(row, col) + "u";
 		} else {
 			str += board.getLetter(row, col);
 		}
@@ -39,8 +39,8 @@ public class BoggleSolver {
 				arraylist.add(str);
 			}
 		}
-		for (int i = row - 1; i < row + 3; i++) { // i < row-1 + 3
-			for (int j = col - 1; j < col + 3; j++) {
+		for (int i = row - 1; i < row + 2; i++) { // i < row-1 + 3
+			for (int j = col - 1; j < col + 2; j++) {
 				if (validate(i, j, board) && !(marked[i][j])) {
 					dfs(board, arraylist, marked, i, j, str);
 					marked[i][j] = false;
