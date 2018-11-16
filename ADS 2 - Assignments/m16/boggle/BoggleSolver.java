@@ -1,43 +1,43 @@
 import java.util.ArrayList;
 public class BoggleSolver {
 	// Initializes the data structure using the given array of strings as the dictionary.
-	TST<Integer> tst;
 	// (You can assume each word in the dictionary contains only the uppercase letters A through Z.)
+	TST<Integer> tstDict;
+
 	public BoggleSolver(String[] dictionary) {
-		tst = new TST<Integer>();
+		tstDict = new TST<Integer>();
 		for (int i = 0; i < dictionary.length; i++) {
-			tst.put(dictionary[i], i);
+			tstDict.put(dictionary[i], i);
 		}
 	}
 
 	// Returns the set of all valid words in the given Boggle board, as an Iterable.
 	public Iterable<String> getAllValidWords(BoggleBoard board) {
-		ArrayList<String> bag = new ArrayList<String>();
-		boolean[][] marked = new boolean[board.rows()][board.cols()];
+		ArrayList<String> arraylist = new ArrayList<String>();
 		for (int i = 0; i < board.rows(); i++) {
 			for (int j = 0; j < board.cols(); j++) {
-				marked[i][j] = true;
-				String str = board.getLetter(i, j) + "";
-				dfs(i, j, str, marked, board, bag);
+				boolean[][] marked = new boolean[board.rows()][board.cols()];
+				String str = "";
+				dfs(board, arraylist, marked, i, j, str);
 			}
 		}
-		return bag;
+		return arraylist;
 	}
 
-	public void dfs(int row, int col, String str, boolean[][] marked, BoggleBoard board, ArrayList<String> bag) {
-		if (str.length() > 2 && tst.contains(str)) {
-			if (!bag.contains(str)) {
-				bag.add(str);
+	public void dfs(BoggleBoard board, ArrayList<String> arraylist, boolean[][] marked, int row, int col, String str) {
+		marked[row][col] = true;
+		str += board.getLetter(row, col);
+		if (str.length() > 2 && tstDict.contains(str)) {
+			if (!arraylist.contains(str)) {
+				arraylist.add(str);
 			}
 		}
-		for (int i = 0; i < board.rows(); i++) {
-			for (int j = 0; j < board.cols(); j++) {
-				if (marked[i][j]) {
-					continue;
+		for (int i = row - 1; i < row + 2; i++) { // i < row-1 + 3
+			for (int j = col - 1; j < col + 2; j++) {
+				if (i >= 0 && j >= 0 && i < board.rows() && j < board.cols() && !(marked[i][j])) {
+					dfs(board, arraylist, marked, i, j, str);
+					marked[i][j] = false;
 				}
-				marked[i][j] = true;
-				str += board.getLetter(i, j) + "";
-				dfs(i, j, str, marked, board, bag);
 			}
 		}
 	}
