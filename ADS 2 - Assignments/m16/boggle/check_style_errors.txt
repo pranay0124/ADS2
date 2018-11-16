@@ -2,10 +2,8 @@ Starting audit...
 Audit done.
 Starting audit...
 [ERROR] E:\ADS2\ADS 2 - Assignments\m16\boggle\BoggleBoard.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m16\boggle\BoggleBoard.java:79:13: '4' is a magic number. [MagicNumber]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m16\boggle\BoggleBoard.java:80:13: '4' is a magic number. [MagicNumber]
 Audit done.
-Checkstyle ends with 3 errors.
+Checkstyle ends with 1 errors.
 Starting audit...
 [ERROR] E:\ADS2\ADS 2 - Assignments\m16\boggle\BoggleGame.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] E:\ADS2\ADS 2 - Assignments\m16\boggle\BoggleGame.java:4: Line has trailing spaces. [RegexpSingleline]

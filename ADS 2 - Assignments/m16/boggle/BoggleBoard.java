@@ -76,8 +76,8 @@ public class BoggleBoard {
      * Initializes a random 4-by-4 board, by rolling the Hasbro dice.
      */
     public BoggleBoard() {
-        m = 4;
-        n = 4;
+        m = 2 + 2;
+        n = 2 + 2;
         StdRandom.shuffle(BOGGLE_1992);
         board = new char[m][n];
         for (int i = 0; i < m; i++) {
