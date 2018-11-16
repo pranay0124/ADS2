@@ -549,10 +549,8 @@ Audit done.
 Checkstyle ends with 6 errors.
 Starting audit...
 [ERROR] E:\ADS2\ADS 2 - Assignments\m16\boggle\StdIn.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m16\boggle\StdIn.java:141: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m16\boggle\StdIn.java:472:50: 'scanner' hides a field. [HiddenField]
 Audit done.
-Checkstyle ends with 3 errors.
+Checkstyle ends with 1 errors.
 Starting audit...
 Audit done.
 Starting audit...

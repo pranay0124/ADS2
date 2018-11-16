@@ -138,8 +138,9 @@ public final class StdIn {
       * @throws NoSuchElementException if standard input is empty
       */
     public static String readAll() {
-        if (!scanner.hasNextLine())
+        if (!scanner.hasNextLine()) {
             return "";
+        }
 
         String result = scanner.useDelimiter(EVERYTHING_PATTERN).next();
         // not that important to reset delimeter, since now scanner is empty
@@ -467,10 +468,10 @@ public final class StdIn {
     /**
      * Sets the scanner.
      *
-     * @param      scanner  The scanner
+     * @param      scanner1  The scanner
      */
-    private static void setScanner(final Scanner scanner) {
-        StdIn.scanner = scanner;
+    private static void setScanner(final Scanner scanner1) {
+        StdIn.scanner = scanner1;
         StdIn.scanner.useLocale(LOCALE);
     }
 
