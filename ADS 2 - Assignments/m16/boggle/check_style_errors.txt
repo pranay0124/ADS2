@@ -532,9 +532,8 @@ Audit done.
 Checkstyle ends with 465 errors.
 Starting audit...
 [ERROR] E:\ADS2\ADS 2 - Assignments\m16\boggle\BoggleSolver.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m16\boggle\BoggleSolver.java:15:18: Variable 'tstDict' must be private and have accessor methods. [VisibilityModifier]
 Audit done.
-Checkstyle ends with 2 errors.
+Checkstyle ends with 1 errors.
 Starting audit...
 Audit done.
 Starting audit...

@@ -12,7 +12,7 @@ public class BoggleSolver {
     /**
      * TST to store values.
      */
-    TST<Integer> tstDict;
+    private TST<Integer> tstDict;
     /**
      * Constructs the object.
      *
