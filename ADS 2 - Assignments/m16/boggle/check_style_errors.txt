@@ -572,22 +572,9 @@ Starting audit...
 [ERROR] E:\ADS2\ADS 2 - Assignments\m16\boggle\StdRandom.java:540: First sentence should end with a period. [JavadocStyle]
 [ERROR] E:\ADS2\ADS 2 - Assignments\m16\boggle\StdRandom.java:560: First sentence should end with a period. [JavadocStyle]
 [ERROR] E:\ADS2\ADS 2 - Assignments\m16\boggle\StdRandom.java:586: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m16\boggle\StdRandom.java:601:35: '{' is followed by whitespace. [NoWhitespaceAfter]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m16\boggle\StdRandom.java:601:36: '0.5' is a magic number. [MagicNumber]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m16\boggle\StdRandom.java:601:41: '0.3' is a magic number. [MagicNumber]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m16\boggle\StdRandom.java:601:46: '0.1' is a magic number. [MagicNumber]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m16\boggle\StdRandom.java:601:51: '0.1' is a magic number. [MagicNumber]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m16\boggle\StdRandom.java:602:30: '{' is followed by whitespace. [NoWhitespaceAfter]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m16\boggle\StdRandom.java:602:31: '5' is a magic number. [MagicNumber]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m16\boggle\StdRandom.java:602:34: '3' is a magic number. [MagicNumber]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m16\boggle\StdRandom.java:607:45: '100' is a magic number. [MagicNumber]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m16\boggle\StdRandom.java:608:45: '10.0' is a magic number. [MagicNumber]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m16\boggle\StdRandom.java:608:51: '99.0' is a magic number. [MagicNumber]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m16\boggle\StdRandom.java:609:47: '0.5' is a magic number. [MagicNumber]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m16\boggle\StdRandom.java:610:46: '9.0' is a magic number. [MagicNumber]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m16\boggle\StdRandom.java:610:51: '0.2' is a magic number. [MagicNumber]
+[ERROR] E:\ADS2\ADS 2 - Assignments\m16\boggle\StdRandom.java:613:30: '{' is followed by whitespace. [NoWhitespaceAfter]
 Audit done.
-Checkstyle ends with 32 errors.
+Checkstyle ends with 19 errors.
 Starting audit...
 [ERROR] E:\ADS2\ADS 2 - Assignments\m16\boggle\TST.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
