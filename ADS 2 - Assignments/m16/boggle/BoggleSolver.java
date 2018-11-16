@@ -52,7 +52,7 @@ public class BoggleSolver {
      * @param      marked     The marked
      * @param      row        The row
      * @param      col        The col
-     * @param      str        The string
+     * @param      str1        The string
      */
     public void dfs(final BoggleBoard board, final ArrayList<String> arraylist,
                     final boolean[][] marked,
@@ -95,16 +95,26 @@ public class BoggleSolver {
      * @return     { description_of_the_return_value }
      */
     public int scoreOf(final String word) {
-        if (word.length() >= 8) {
-            return 11;
-        } else if (word.length() == 7) {
-            return 5;
-        } else if (word.length() == 6) {
-            return 3;
-        } else if (word.length() == 5) {
-            return 2;
-        } else if (word.length() == 3 || word.length() == 4) {
-            return 1;
+        final int one = 1;
+        final int two = 2;
+        final int three = 3;
+        final int four = 4;
+        final int five = 5;
+        final int six = 6;
+        final int seven = 7;
+        final int eight = 8;
+        final int eleven = 11;
+
+        if (word.length() >= eight) {
+            return eleven;
+        } else if (word.length() == seven) {
+            return five;
+        } else if (word.length() == six) {
+            return three;
+        } else if (word.length() == five) {
+            return two;
+        } else if (word.length() == three || word.length() == four) {
+            return one;
         } else {
             return 0;
         }
