@@ -583,21 +583,21 @@ Starting audit...
 [ERROR] E:\ADS2\ADS 2 - Assignments\m16\boggle\BoggleSolver.java:27:93: Parameter row should be final. [FinalParameters]
 [ERROR] E:\ADS2\ADS 2 - Assignments\m16\boggle\BoggleSolver.java:27:102: Parameter col should be final. [FinalParameters]
 [ERROR] E:\ADS2\ADS 2 - Assignments\m16\boggle\BoggleSolver.java:27:111: Parameter str should be final. [FinalParameters]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m16\boggle\BoggleSolver.java:37: Line is longer than 80 characters (found 114). [LineLength]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m16\boggle\BoggleSolver.java:38: Line is longer than 80 characters (found 81). [LineLength]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m16\boggle\BoggleSolver.java:46: Line is longer than 80 characters (found 82). [LineLength]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m16\boggle\BoggleSolver.java:48:9: Class 'BoggleSolver' looks like designed for extension (can be subclassed), but the method 'scoreOf' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'BoggleSolver' final or making the method 'scoreOf' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m16\boggle\BoggleSolver.java:48:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m16\boggle\BoggleSolver.java:48:28: Parameter word should be final. [FinalParameters]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m16\boggle\BoggleSolver.java:49:37: '8' is a magic number. [MagicNumber]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m16\boggle\BoggleSolver.java:50:32: '11' is a magic number. [MagicNumber]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m16\boggle\BoggleSolver.java:51:45: '7' is a magic number. [MagicNumber]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m16\boggle\BoggleSolver.java:52:32: '5' is a magic number. [MagicNumber]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m16\boggle\BoggleSolver.java:53:45: '6' is a magic number. [MagicNumber]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m16\boggle\BoggleSolver.java:54:32: '3' is a magic number. [MagicNumber]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m16\boggle\BoggleSolver.java:55:45: '5' is a magic number. [MagicNumber]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m16\boggle\BoggleSolver.java:57:45: '3' is a magic number. [MagicNumber]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m16\boggle\BoggleSolver.java:57:67: '4' is a magic number. [MagicNumber]
+[ERROR] E:\ADS2\ADS 2 - Assignments\m16\boggle\BoggleSolver.java:41: Line is longer than 80 characters (found 114). [LineLength]
+[ERROR] E:\ADS2\ADS 2 - Assignments\m16\boggle\BoggleSolver.java:42: Line is longer than 80 characters (found 81). [LineLength]
+[ERROR] E:\ADS2\ADS 2 - Assignments\m16\boggle\BoggleSolver.java:50: Line is longer than 80 characters (found 82). [LineLength]
+[ERROR] E:\ADS2\ADS 2 - Assignments\m16\boggle\BoggleSolver.java:52:9: Class 'BoggleSolver' looks like designed for extension (can be subclassed), but the method 'scoreOf' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'BoggleSolver' final or making the method 'scoreOf' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
+[ERROR] E:\ADS2\ADS 2 - Assignments\m16\boggle\BoggleSolver.java:52:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] E:\ADS2\ADS 2 - Assignments\m16\boggle\BoggleSolver.java:52:28: Parameter word should be final. [FinalParameters]
+[ERROR] E:\ADS2\ADS 2 - Assignments\m16\boggle\BoggleSolver.java:53:37: '8' is a magic number. [MagicNumber]
+[ERROR] E:\ADS2\ADS 2 - Assignments\m16\boggle\BoggleSolver.java:54:32: '11' is a magic number. [MagicNumber]
+[ERROR] E:\ADS2\ADS 2 - Assignments\m16\boggle\BoggleSolver.java:55:45: '7' is a magic number. [MagicNumber]
+[ERROR] E:\ADS2\ADS 2 - Assignments\m16\boggle\BoggleSolver.java:56:32: '5' is a magic number. [MagicNumber]
+[ERROR] E:\ADS2\ADS 2 - Assignments\m16\boggle\BoggleSolver.java:57:45: '6' is a magic number. [MagicNumber]
+[ERROR] E:\ADS2\ADS 2 - Assignments\m16\boggle\BoggleSolver.java:58:32: '3' is a magic number. [MagicNumber]
+[ERROR] E:\ADS2\ADS 2 - Assignments\m16\boggle\BoggleSolver.java:59:45: '5' is a magic number. [MagicNumber]
+[ERROR] E:\ADS2\ADS 2 - Assignments\m16\boggle\BoggleSolver.java:61:45: '3' is a magic number. [MagicNumber]
+[ERROR] E:\ADS2\ADS 2 - Assignments\m16\boggle\BoggleSolver.java:61:67: '4' is a magic number. [MagicNumber]
 Audit done.
 Checkstyle ends with 38 errors.
 Starting audit...
@@ -1157,4 +1157,6 @@ Starting audit...
 Audit done.
 Checkstyle ends with 183 errors.
 Starting audit...
+[ERROR] E:\ADS2\ADS 2 - Assignments\m16\boggle\TST.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
+Checkstyle ends with 1 errors.

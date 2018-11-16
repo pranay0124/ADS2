@@ -237,6 +237,20 @@ public class TST<Value> {
         collect(x.mid, new StringBuilder(prefix), queue);
         return queue;
     }
+    /**
+     * Determines if it has prefix.
+     *
+     * @param      str   The string
+     *
+     * @return     True if has prefix, False otherwise.
+     */
+    public boolean hasPrefix(final String str) {
+        Node x = get(root, str, 0);
+        if (x == null) {
+            return false;
+        }
+        return true;
+    }
 
     /**
      * all keys in subtrie rooted at x with given prefix.

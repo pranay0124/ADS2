@@ -11,7 +11,7 @@ Expected Output:
 Score = 84
 
 Your Output: 
-Score = 23
+Score = 62
 ----------------------------------------
 
 ########## Testcase 2: Passed ##########
@@ -67,7 +67,7 @@ Expected Output:
 Score = 155
 
 Your Output: 
-Score = 76
+Score = 144
 ----------------------------------------
 
 ########## Testcase 9: Failed ##########
@@ -91,7 +91,7 @@ Expected Output:
 Score = 147
 
 Your Output: 
-Score = 100
+Score = 136
 ----------------------------------------
 
 ########## Testcase 12: Failed ##########
@@ -99,7 +99,7 @@ Expected Output:
 Score = 687
 
 Your Output: 
-Score = 476
+Score = 599
 ----------------------------------------
 
 ########## Testcase 13: Passed ##########
