@@ -66,7 +66,7 @@ public final class StdRandom {
      *      and {@code n} (exclusive)
      * @throws IllegalArgumentException if {@code n <= 0}
      */
-    public static int uniform(int n) {
+    public static int uniform(final int n) {
         if (n <= 0) {
             throw new IllegalArgumentException("argument must be positive");
         }
