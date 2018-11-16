@@ -31,6 +31,9 @@ public class BoggleSolver {
 		} else {
 			str += board.getLetter(row, col);
 		}
+		if (!tstDict.hasPrefix(str)) {
+			return;
+		}
 		if (str.length() > 2 && tstDict.contains(str)) {
 			if (!arraylist.contains(str)) {
 				arraylist.add(str);
@@ -38,7 +41,7 @@ public class BoggleSolver {
 		}
 		for (int i = row - 1; i < row + 2; i++) { // i < row-1 + 3
 			for (int j = col - 1; j < col + 2; j++) {
-				if (i >= 0 && j >= 0 && i < board.rows() && j < board.cols() && !(marked[i][j])) {
+				if ((i >= 0 && j >= 0 && i < board.rows() && j < board.cols()) && !(marked[i][j])) {
 					dfs(board, arraylist, marked, i, j, str);
 					marked[i][j] = false;
 				}
