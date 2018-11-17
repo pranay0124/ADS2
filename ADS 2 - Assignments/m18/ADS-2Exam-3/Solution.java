@@ -90,10 +90,10 @@ public class Solution {
 		// your code goes here
 		String[] tokens = toReadFile(file);
 		for (String line : tokens) {
-			String[] words = line.split(" ");
+			String[] words = line.toLowerCase().split(" ");
 			for (String word : words) {
 				if (st.contains(word)) {
-					st.put(word, 1);
+					st.put(word, st.get(word) + 1);
 				} else {
 					st.put(word, 1);
 				}
