@@ -140,6 +140,7 @@ class T9 {
 				treeset.add(word);
 			}
 		}
+		System.out.println("set" + treeset);
 		return treeset;
 	}
 

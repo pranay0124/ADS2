@@ -169,6 +169,7 @@ right
 words
 
 Your Output: 
+set[hello, is, right, rights, within, words]
 hello
 is
 right
@@ -228,7 +229,7 @@ keep
 Your Output: 
 Exception in thread "main" java.lang.NullPointerException
 	at T9.getSuggestions(Solution.java:135)
-	at T9.t9(Solution.java:149)
+	at T9.t9(Solution.java:150)
 	at Solution.main(Solution.java:71)
 ----------------------------------------
 
