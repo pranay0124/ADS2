@@ -125,9 +125,9 @@ class T9 {
 	public Iterable<String> potentialWords(String t9Signature) {
 		// your code goes here
 		TreeSet<String> treeset = new TreeSet<>();
-		String value = "";
 		for (String word : tst.keys()) {
 			String[] words = word.split(" ");
+			String value = "";
 			for (String each : words) {
 				if (each.equals("a") || each.equals("b") || each.equals("c")) {
 					value += "2";
