@@ -124,7 +124,7 @@ class T9 {
 
 	public Iterable<String> potentialWords(String t9Signature) {
 		// your code goes here
-		TreeSet<String> treeset = new TreeSet<>();
+		HashSet<String> hashset = new HashSet<>();
 		for (String word : tst.keys()) {
 			String[] words = word.split(" ");
 			String value = "";
@@ -155,10 +155,10 @@ class T9 {
 				}
 			}
 			if (value.equals(t9Signature)) {
-				treeset.add(value);
+				hashset.add(value);
 			}
 		}
-		return treeset;
+		return hashset;
 	}
 
 	// return all possibilities(words), find top k with highest frequency.
