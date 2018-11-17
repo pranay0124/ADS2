@@ -146,7 +146,7 @@ final class T9 {
      *
      * @param      st    { parameter_description }
      */
-    protected T9(BinarySearchST<String, Integer> st) {
+    protected T9(final BinarySearchST<String, Integer> st) {
         // your code goes here
         tst = new TST<Integer>();
         for (String word : st.keys()) {

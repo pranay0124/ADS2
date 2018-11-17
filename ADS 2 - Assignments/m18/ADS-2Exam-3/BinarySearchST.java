@@ -297,7 +297,7 @@ public class BinarySearchST<Key extends Comparable<Key>, Value> {
      * @param  k the order statistic
      * @return the {@code k}th smallest key in this symbol table
      * @throws IllegalArgumentException unless {@code k} is between 0 and
-     *        <em>n</em>â€“1
+     *        <em>n</em>–1
      */
     public Key select(final int k) {
         if (k < 0 || k >= size()) {
@@ -475,3 +475,4 @@ public class BinarySearchST<Key extends Comparable<Key>, Value> {
         return true;
     }
 }
+
