@@ -132,15 +132,17 @@ class T9 {
 		// your code goes here
 		TreeSet<String> treeset = new TreeSet<>();
 		MaxPQ<Integer> maxpq = new MaxPQ<>();
-		for(String word : words) {
+		for (String word : words) {
 			maxpq.insert(tst.get(word));
 		}
 		for (int i = 0; i < k; i++) {
 			for (String word : words) {
-				treeset.add(word);
+				if (maxpq.delMax() == tst.get(word)) {
+					treeset.add(word);
+				}
 			}
 		}
-		System.out.println("set" + treeset);
+		// System.out.println("set" + treeset);
 		return treeset;
 	}
 

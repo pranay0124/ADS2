@@ -169,13 +169,10 @@ right
 words
 
 Your Output: 
-set[hello, is, right, rights, within, words]
-hello
-is
-right
-rights
-within
-words
+Exception in thread "main" java.util.NoSuchElementException: Priority queue underflow
+	at MaxPQ.delMax(MaxPQ.java:174)
+	at T9.getSuggestions(Solution.java:140)
+	at Solution.main(Solution.java:58)
 ----------------------------------------
 
 ########## Testcase 4: Failed ##########
@@ -229,7 +226,7 @@ keep
 Your Output: 
 Exception in thread "main" java.lang.NullPointerException
 	at T9.getSuggestions(Solution.java:135)
-	at T9.t9(Solution.java:150)
+	at T9.t9(Solution.java:152)
 	at Solution.main(Solution.java:71)
 ----------------------------------------
 
