@@ -155,7 +155,7 @@ class T9 {
 				}
 			}
 			if (value.equals(t9Signature)) {
-				treeset.add(value);
+				treeset.add(word);
 			}
 		}
 		return treeset;

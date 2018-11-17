@@ -92,7 +92,7 @@ messagesome
 going
 ----------------------------------------
 
-########## Testcase 2: Failed ##########
+########## Testcase 2: Passed ##########
 Expected Output: 
 hello
 pizza
@@ -157,41 +157,67 @@ fine
 seeking
 
 Your Output: 
-43556
-74992
-9428
-786329
-2255
-4686583
-346474
-4663
-2288379
-3743637
-9282437
-6676464
-8664448
-7467
-7463
-269
-529
-2666
-327
-7363
-762533
-7378
-966
-729464
-52637
-42837
-2278464
-7225464
-73377
-226
-228
-64637
-54837
-3463
-7335464
+hello
+pizza
+what
+sunday
+ball
+call
+involve
+finish
+gone
+good
+home
+battery
+friends
+watches
+morning
+tonight
+shop
+phne
+any
+bmw
+box
+boy
+coz
+jay
+jaz
+kay
+law
+lay
+ammo
+das
+ear
+far
+send
+pocked
+pest
+rest
+woo
+paying
+saying
+james
+lands
+hates
+casting
+packing
+peeps
+bam
+bao
+cam
+can
+abt
+act
+bat
+cat
+mines
+liver
+lives
+dime
+dine
+find
+fine
+seeking
 ----------------------------------------
 
 ########## Testcase 3: Passed ##########
@@ -257,7 +283,8 @@ paper
 keep
 
 Your Output: 
-Exception in thread "main" java.lang.NullPointerException
+Exception in thread "main" java.util.NoSuchElementException: Priority queue underflow
+	at MaxPQ.delMax(MaxPQ.java:174)
 	at T9.getSuggestions(Solution.java:173)
 	at T9.t9(Solution.java:187)
 	at Solution.main(Solution.java:71)
