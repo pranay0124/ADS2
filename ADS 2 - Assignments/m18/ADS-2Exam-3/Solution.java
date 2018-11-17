@@ -126,9 +126,9 @@ class T9 {
 		// your code goes here
 		TreeSet<String> treeset = new TreeSet<>();
 		for (String word : tst.keys()) {
-			String[] words = word.split("");
+			String[] character = word.split("");
 			String value = "";
-			for (String each : words) {
+			for (String each : character) {
 				if (each.equals("a") || each.equals("b") || each.equals("c")) {
 					value = value + "2";
 				}
