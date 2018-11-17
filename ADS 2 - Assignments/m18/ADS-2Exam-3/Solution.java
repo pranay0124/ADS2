@@ -136,8 +136,9 @@ class T9 {
 			maxpq.insert(tst.get(word));
 		}
 		for (int i = 0; i < k; i++) {
+			int f = maxpq.delMax();
 			for (String word : words) {
-				if (maxpq.delMax() == tst.get(word)) {
+				if (f == tst.get(word)) {
 					treeset.add(word);
 				}
 			}
