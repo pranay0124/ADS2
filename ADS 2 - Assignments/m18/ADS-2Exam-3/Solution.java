@@ -104,9 +104,15 @@ public class Solution {
 }
 
 class T9 {
+	private TST<Integer> tst;
 
 	public T9(BinarySearchST<String, Integer> st) {
 		// your code goes here
+		tst = new TST<Integer>();
+		for(String word : st.keys()) {
+			tst.put(word, st.get(word));
+		}
+
 	}
 
 	// get all the prefixes that match with given prefix.
