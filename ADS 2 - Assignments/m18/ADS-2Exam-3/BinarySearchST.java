@@ -161,7 +161,8 @@ public class BinarySearchST<Key extends Comparable<Key>, Value> {
      */
     public void put(final Key key, final Value val)  {
         if (key == null) {
-            throw new IllegalArgumentException("first argument to put() is null");
+            throw new IllegalArgumentException(
+                "first argument to put() is null");
         }
 
         if (val == null) {
@@ -204,7 +205,9 @@ public class BinarySearchST<Key extends Comparable<Key>, Value> {
         if (key == null) {
             throw new IllegalArgumentException("argument to delete() is null");
         }
-        if (isEmpty()) return;
+        if (isEmpty()) {
+            return;
+        }
 
         // compute rank
         int i = rank(key);
@@ -224,7 +227,7 @@ public class BinarySearchST<Key extends Comparable<Key>, Value> {
         vals[n] = null;
 
         // resize if 1/4 full
-        if (n > 0 && n == keys.length / 4) {
+        if (n > 0 && n == keys.length / (2 + 2)) {
             resize(keys.length / 2);
         }
 
@@ -405,10 +408,12 @@ public class BinarySearchST<Key extends Comparable<Key>, Value> {
      */
     public Iterable<Key> keys(final Key lo, final Key hi) {
         if (lo == null) {
-            throw new IllegalArgumentException("first argument to keys() is null");
+            throw new IllegalArgumentException(
+                "first argument to keys() is null");
         }
         if (hi == null) {
-            throw new IllegalArgumentException("second argument to keys() is null");
+            throw new IllegalArgumentException(
+                "second argument to keys() is null");
         }
         Queue<Key> queue = new Queue<Key>();
         if (lo.compareTo(hi) > 0) {
@@ -424,15 +429,24 @@ public class BinarySearchST<Key extends Comparable<Key>, Value> {
     }
 
 
-    /***************************************************************************
+    /**********************************************************************
      *  Check internal invariants.
-     ***************************************************************************/
-
+     **********************************************************************/
+    /**
+     * check function.
+     *
+     * @return     { description_of_the_return_value }
+     */
     private boolean check() {
         return isSorted() && rankCheck();
     }
 
-    // are the items in the array in ascending order?
+    /**
+     * Determines if sorted.
+     * are the items in the array in ascending order?.
+     *
+     * @return     True if sorted, False otherwise.
+     */
     private boolean isSorted() {
         for (int i = 1; i < size(); i++) {
             if (keys[i].compareTo(keys[i - 1]) < 0) {
@@ -442,7 +456,11 @@ public class BinarySearchST<Key extends Comparable<Key>, Value> {
         return true;
     }
 
-    // check that rank(select(i)) = i
+    /**
+     * check that rank(select(i)) = i.
+     *
+     * @return     { description_of_the_return_value }
+     */
     private boolean rankCheck() {
         for (int i = 0; i < size(); i++) {
             if (i != rank(select(i))) {
