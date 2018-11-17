@@ -376,7 +376,6 @@ Audit done.
 Checkstyle ends with 33 errors.
 Starting audit...
 [ERROR] E:\ADS2\ADS 2 - Assignments\m18\ADS-2Exam-3\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] E:\ADS2\ADS 2 - Assignments\m18\ADS-2Exam-3\Solution.java:2: Using the '.*' form of import should be avoided - java.util.*. [AvoidStarImport]
 [ERROR] E:\ADS2\ADS 2 - Assignments\m18\ADS-2Exam-3\Solution.java:5: Missing a Javadoc comment. [JavadocType]
 [ERROR] E:\ADS2\ADS 2 - Assignments\m18\ADS-2Exam-3\Solution.java:5:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
 [ERROR] E:\ADS2\ADS 2 - Assignments\m18\ADS-2Exam-3\Solution.java:7:1: File contains tab characters (this is the first instance). [FileTabCharacter]
@@ -414,7 +413,7 @@ Starting audit...
 [ERROR] E:\ADS2\ADS 2 - Assignments\m18\ADS-2Exam-3\Solution.java:186:36: Parameter t9Signature should be final. [FinalParameters]
 [ERROR] E:\ADS2\ADS 2 - Assignments\m18\ADS-2Exam-3\Solution.java:186:56: Parameter k should be final. [FinalParameters]
 Audit done.
-Checkstyle ends with 38 errors.
+Checkstyle ends with 37 errors.
 Starting audit...
 [ERROR] E:\ADS2\ADS 2 - Assignments\m18\ADS-2Exam-3\TST.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] E:\ADS2\ADS 2 - Assignments\m18\ADS-2Exam-3\TST.java:46: Line is longer than 80 characters (found 84). [LineLength]
