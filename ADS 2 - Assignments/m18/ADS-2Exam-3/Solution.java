@@ -130,28 +130,28 @@ class T9 {
 			String value = "";
 			for (String each : words) {
 				if (each.equals("a") || each.equals("b") || each.equals("c")) {
-					value += "2";
+					value = value + "2";
 				}
 				if (each.equals("d") || each.equals("e") || each.equals("f")) {
-					value += "3";
+					value = value + "3";
 				}
 				if (each.equals("g") || each.equals("h") || each.equals("i")) {
-					value += "4";
+					value = value + "4";
 				}
 				if (each.equals("j") || each.equals("k") || each.equals("l")) {
-					value += "5";
+					value = value + "5";
 				}
 				if (each.equals("m") || each.equals("n") || each.equals("o")) {
-					value += "6";
+					value = value + "6";
 				}
 				if (each.equals("p") || each.equals("q") || each.equals("r") || each.equals("s")) {
-					value += "7";
+					value = value + "7";
 				}
 				if (each.equals("t") || each.equals("u") || each.equals("v")) {
-					value += "8";
+					value = value + "8";
 				}
 				if (each.equals("w") || each.equals("x") || each.equals("y") || each.equals("z")) {
-					value += "9";
+					value = value + "9";
 				}
 			}
 			if (value.equals(t9Signature)) {
