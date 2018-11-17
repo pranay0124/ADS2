@@ -157,7 +157,41 @@ fine
 seeking
 
 Your Output: 
-No valid words found.
+43556
+74992
+9428
+786329
+2255
+4686583
+346474
+4663
+2288379
+3743637
+9282437
+6676464
+8664448
+7467
+7463
+269
+529
+2666
+327
+7363
+762533
+7378
+966
+729464
+52637
+42837
+2278464
+7225464
+73377
+226
+228
+64637
+54837
+3463
+7335464
 ----------------------------------------
 
 ########## Testcase 3: Passed ##########
@@ -223,8 +257,7 @@ paper
 keep
 
 Your Output: 
-Exception in thread "main" java.util.NoSuchElementException: Priority queue underflow
-	at MaxPQ.delMax(MaxPQ.java:174)
+Exception in thread "main" java.lang.NullPointerException
 	at T9.getSuggestions(Solution.java:173)
 	at T9.t9(Solution.java:187)
 	at Solution.main(Solution.java:71)

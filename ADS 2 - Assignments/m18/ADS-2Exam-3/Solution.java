@@ -124,9 +124,9 @@ class T9 {
 
 	public Iterable<String> potentialWords(String t9Signature) {
 		// your code goes here
-		ArrayList<String> arraylist = new ArrayList<>();
+		TreeSet<String> treeset = new TreeSet<>();
 		for (String word : tst.keys()) {
-			String[] words = word.split(" ");
+			String[] words = word.split("");
 			String value = "";
 			for (String each : words) {
 				if (each.equals("a") || each.equals("b") || each.equals("c")) {
@@ -155,10 +155,10 @@ class T9 {
 				}
 			}
 			if (value.equals(t9Signature)) {
-				arraylist.add(value);
+				treeset.add(value);
 			}
 		}
-		return arraylist;
+		return treeset;
 	}
 
 	// return all possibilities(words), find top k with highest frequency.
