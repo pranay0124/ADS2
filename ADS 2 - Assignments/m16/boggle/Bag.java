@@ -38,6 +38,7 @@ public class Bag<Item> implements Iterable<Item> {
     }
     /**
      * Determines if empty.
+     * Complexity is O(1)
      *
      * @return     True if empty, False otherwise.
      */
@@ -47,6 +48,8 @@ public class Bag<Item> implements Iterable<Item> {
 
     /**
       * Return the number of items in the bag.
+      * Complexity is O(1)
+      *
       * @return size.
       */
     public int size() {
@@ -55,6 +58,7 @@ public class Bag<Item> implements Iterable<Item> {
 
     /**
      * Function to add an item.
+     * Complexity is O(1)
      *
      * @param      item  The item
      */

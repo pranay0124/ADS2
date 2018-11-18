@@ -15,6 +15,7 @@ public class BoggleSolver {
     private TST<Integer> tstDict;
     /**
      * Constructs the object.
+     * Complexity is O(N)
      *
      * @param      dictionary  The dictionary
      */
@@ -28,6 +29,7 @@ public class BoggleSolver {
     /**
      * Gets all valid words.
      * Returns the set of all valid words in the given Boggle board.
+     * Complexity is O(N^2)
      *
      * @param      board  The board
      *
@@ -46,6 +48,7 @@ public class BoggleSolver {
     }
     /**
      * Depth first search.
+     * Complexity is O(V + E)
      *
      * @param      board      The board
      * @param      arraylist  The arraylist
@@ -89,6 +92,7 @@ public class BoggleSolver {
     /**
      * Returns the score of the given word if it is in the dictionary,
      * zero otherwise.
+     * Complexity is O(1)
      *
      * @param      word  The word
      *
