@@ -143,6 +143,7 @@ final class T9 {
     private TST<Integer> tst;
     /**
      * Constructs the object.
+     * Complexity is O(N)
      *
      * @param      st    { parameter_description }
      */
@@ -158,6 +159,7 @@ final class T9 {
     /**
      * Gets all words.
      * get all the prefixes that match with given prefix.
+     * Complexity is O(L + ln N)
      *
      * @param      prefix  The prefix
      *
@@ -169,6 +171,7 @@ final class T9 {
     }
     /**
      * Gets the potential words.
+     * Complexity is O(N ^ 2)
      *
      * @param      t9Signature  The t 9 signature
      *
@@ -218,6 +221,7 @@ final class T9 {
     /**
      * Gets the suggestions.
      * return all possibilities(words), find top k with highest frequency.
+     * Complexity is O(N ^ 2)
      *
      * @param      words  The words
      * @param      k      { parameter_description }
@@ -246,6 +250,7 @@ final class T9 {
     /**
      * final output.
      * Don't modify this method.
+     * Complexity is O(N ^ 2)
      *
      * @param      t9Signature  The t 9 signature
      * @param      k            { parameter_description }

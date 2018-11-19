@@ -40,6 +40,7 @@ public class TST<Value> {
 
     /**
      * Returns the number of key-value pairs in this symbol table.
+     * Complexity is O(1)
      * @return the number of key-value pairs in this symbol table
      */
     public int size() {
@@ -48,6 +49,8 @@ public class TST<Value> {
 
     /**
      * Does this symbol table contain the given key?
+     * Complexity is O(1)
+     *
      * @param key the key
      * @return {true} if this symbol table contains {key} and
      *     {false} otherwise
@@ -63,6 +66,8 @@ public class TST<Value> {
 
     /**
      * Returns the value associated with the given key.
+     * Complexity is O(L + ln N)
+     *
      * @param key the key
      * @return the value associated with the given key
      *     if the key is in the symbol table
@@ -87,6 +92,7 @@ public class TST<Value> {
 
     /**
      * return subtrie corresponding to given key.
+     * Complexity is O(L + ln N)
      *
      * @param      x     { parameter_description }
      * @param      key   The key
@@ -120,6 +126,7 @@ public class TST<Value> {
      * overwriting the old value with the new value if the
      * key is already in the symbol table. If the value is {null},
      * this effectively deletes the key from the symbol table.
+     * Complexity is O(L + ln N)
      *
      * @param key the key
      * @param val the value
@@ -137,6 +144,7 @@ public class TST<Value> {
     }
     /**
      * put function.
+     * Complexity is O(L + ln N)
      *
      * @param      x1     { parameter_description }
      * @param      key   The key
@@ -168,6 +176,7 @@ public class TST<Value> {
     /**
      * Returns the string in the symbol table that is the longest
      * prefix of {query},or {null}, if no such string.
+     * Complexity is O(L)
      *
      * @param query the query string
      * @return the string in the symbol table that is the longest prefix
@@ -216,6 +225,7 @@ public class TST<Value> {
 
     /**
      * Returns all of the keys in the set that start with {prefix}.
+     * Complexity is O(L + ln N)
      * @param prefix the prefix
      * @return all of the keys in the set that start with {prefix},
      *     as an iterable
@@ -239,6 +249,7 @@ public class TST<Value> {
     }
     /**
      * Determines if it has prefix.
+     * Complexity is O(L + ln N)
      *
      * @param      str   The string
      *
@@ -254,6 +265,7 @@ public class TST<Value> {
 
     /**
      * all keys in subtrie rooted at x with given prefix.
+     * Complexity is O(N)
      *
      * @param      x       { parameter_description }
      * @param      prefix  The prefix
@@ -290,6 +302,7 @@ public class TST<Value> {
     }
     /**
      * collect function.
+     * Complexity is O(N)
      *
      * @param      x        { parameter_description }
      * @param      prefix   The prefix
@@ -365,4 +378,3 @@ public class TST<Value> {
     //         StdOut.println(s);
     // }
 }
-
